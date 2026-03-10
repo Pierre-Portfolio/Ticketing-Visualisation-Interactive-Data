@@ -1,0 +1,5001 @@
+source,target,relation,weight
+U0012,T01106,a_créé,1
+U0095,T00852,assigné_à,1
+T00048,TAG022,tagué,1
+U0089,T01832,a_créé,1
+T02245,TAG021,tagué,1
+U0003,T03240,a_créé,1
+T00075,C0026,appartient_à,1
+T01885,C0042,appartient_à,1
+U0032,T02116,assigné_à,1
+T02011,TAG003,tagué,1
+T02544,C0005,appartient_à,1
+T03430,TAG025,tagué,1
+U0055,T00467,a_créé,1
+U0064,M00489,a_envoyé,1
+T00196,TAG010,tagué,1
+U0026,T01670,assigné_à,1
+U0001,T00771,assigné_à,1
+U0021,T01598,assigné_à,1
+T00713,TAG024,tagué,1
+M00149,T01216,lié_à,1
+T03064,C0002,appartient_à,1
+T03033,TAG009,tagué,1
+T02545,TAG015,tagué,1
+T00774,C0058,appartient_à,1
+T01892,C0030,appartient_à,1
+T02607,TAG011,tagué,1
+T01027,TAG007,tagué,1
+T02956,C0043,appartient_à,1
+U0019,M00649,a_envoyé,1
+T03384,TAG002,tagué,1
+T02107,TAG002,tagué,1
+U0089,T02374,a_créé,1
+T03389,TAG022,tagué,1
+U0070,T02048,a_créé,1
+T02683,TAG010,tagué,1
+U0090,T01026,assigné_à,1
+T01114,C0041,appartient_à,1
+U0060,T02118,assigné_à,1
+M00226,T00543,lié_à,1
+T01221,TAG016,tagué,1
+U0042,M00972,a_envoyé,1
+U0096,T03480,a_créé,1
+T03138,TAG015,tagué,1
+U0014,T00088,assigné_à,1
+U0048,M00294,a_envoyé,1
+U0035,T00197,a_créé,1
+U0019,T02726,assigné_à,1
+U0068,T02250,a_créé,1
+T01067,TAG012,tagué,1
+U0051,T02326,assigné_à,1
+U0030,C0013,gère,3
+T03314,C0023,appartient_à,1
+U0033,T00905,assigné_à,1
+U0026,T01385,a_créé,1
+T00115,TAG002,tagué,1
+U0051,M00299,a_envoyé,1
+U0006,T01472,a_créé,1
+U0028,M01146,a_envoyé,1
+T00975,C0018,appartient_à,1
+T00907,TAG016,tagué,1
+T01584,TAG002,tagué,1
+U0022,T00475,assigné_à,1
+U0024,T02926,a_créé,1
+T00908,TAG018,tagué,1
+T01843,TAG024,tagué,1
+U0091,T02688,a_créé,1
+T01105,TAG019,tagué,1
+U0035,M01113,a_envoyé,1
+U0016,T02783,a_créé,1
+T02425,TAG012,tagué,1
+M00220,T03442,lié_à,1
+T01259,TAG020,tagué,1
+U0047,T00030,a_créé,1
+M00356,T03296,lié_à,1
+T02797,TAG002,tagué,1
+M01074,T02004,lié_à,1
+U0025,T01132,assigné_à,1
+U0088,T00064,a_créé,1
+U0032,T02057,assigné_à,1
+U0064,T00321,a_créé,1
+T00699,C0014,appartient_à,1
+U0066,T02408,a_créé,1
+T02423,TAG025,tagué,1
+U0012,T01575,assigné_à,1
+U0090,T03173,assigné_à,1
+U0091,T00791,assigné_à,1
+U0095,T00056,assigné_à,1
+U0046,T00344,assigné_à,1
+T02978,TAG023,tagué,1
+U0011,T00514,assigné_à,1
+U0071,T00476,a_créé,1
+U0098,T00966,a_créé,1
+U0094,T00299,a_créé,1
+U0010,M00777,a_envoyé,1
+U0045,M00413,a_envoyé,1
+T01457,TAG004,tagué,1
+T00292,TAG016,tagué,1
+U0084,M00604,a_envoyé,1
+T00511,C0054,appartient_à,1
+T02931,C0005,appartient_à,1
+T02944,TAG014,tagué,1
+U0024,T01546,assigné_à,1
+T02861,TAG022,tagué,1
+U0073,T02758,a_créé,1
+T01765,TAG015,tagué,1
+U0086,T00674,a_créé,1
+U0044,T02204,assigné_à,1
+T01630,TAG007,tagué,1
+U0017,M01143,a_envoyé,1
+U0028,T02903,assigné_à,1
+T03189,C0057,appartient_à,1
+U0088,T01042,assigné_à,1
+T01443,TAG018,tagué,1
+U0071,T01092,a_créé,1
+U0082,T02563,assigné_à,1
+U0058,M00101,a_envoyé,1
+U0007,T02377,a_créé,1
+T00725,TAG011,tagué,1
+T02788,TAG020,tagué,1
+T02049,C0027,appartient_à,1
+U0010,T01859,assigné_à,1
+U0011,M00808,a_envoyé,1
+U0036,T00918,assigné_à,1
+U0035,T00831,a_créé,1
+T03262,C0008,appartient_à,1
+U0061,T01398,assigné_à,1
+T01485,TAG016,tagué,1
+U0020,M00952,a_envoyé,1
+U0047,T02230,a_créé,1
+T02043,TAG020,tagué,1
+U0068,T02162,assigné_à,1
+T03133,C0003,appartient_à,1
+U0018,T01883,assigné_à,1
+T02587,TAG016,tagué,1
+T01635,TAG018,tagué,1
+M00792,T01493,lié_à,1
+T00680,TAG012,tagué,1
+T02401,C0014,appartient_à,1
+U0025,T03304,assigné_à,1
+U0051,T01683,a_créé,1
+U0085,T00436,a_créé,1
+U0014,T01242,a_créé,1
+T01330,TAG018,tagué,1
+U0010,T02891,a_créé,1
+T03221,C0053,appartient_à,1
+U0078,T03365,a_créé,1
+U0085,T02398,a_créé,1
+T00678,TAG002,tagué,1
+T02573,TAG011,tagué,1
+U0075,M00481,a_envoyé,1
+T00235,TAG011,tagué,1
+U0006,T01795,a_créé,1
+T00547,TAG006,tagué,1
+U0034,T00446,assigné_à,1
+U0050,T02923,assigné_à,1
+T02867,C0018,appartient_à,1
+T01165,C0018,appartient_à,1
+U0048,T02095,a_créé,1
+T01645,TAG006,tagué,1
+U0037,T00639,assigné_à,1
+T03214,TAG008,tagué,1
+T00884,C0002,appartient_à,1
+T01146,TAG013,tagué,1
+U0042,C0031,gère,1
+T01463,TAG021,tagué,1
+U0058,T01251,assigné_à,1
+M00172,T03037,lié_à,1
+T02873,TAG023,tagué,1
+T00534,TAG020,tagué,1
+T00443,C0051,appartient_à,1
+T01158,TAG009,tagué,1
+U0068,C0010,gère,10
+T01589,TAG021,tagué,1
+M00907,T02971,lié_à,1
+T01794,TAG007,tagué,1
+T01318,TAG021,tagué,1
+T01560,TAG006,tagué,1
+T01916,TAG013,tagué,1
+T00820,C0038,appartient_à,1
+U0062,M01169,a_envoyé,1
+U0100,T00773,a_créé,1
+T01340,TAG025,tagué,1
+T00755,TAG006,tagué,1
+T01053,TAG002,tagué,1
+U0057,M00503,a_envoyé,1
+U0034,T01689,assigné_à,1
+U0022,T01878,assigné_à,1
+T01483,TAG002,tagué,1
+T00422,TAG014,tagué,1
+T01422,TAG016,tagué,1
+U0029,T00242,assigné_à,1
+T02311,TAG007,tagué,1
+M00413,T00566,lié_à,1
+U0075,T01102,a_créé,1
+T01202,TAG023,tagué,1
+T01565,TAG006,tagué,1
+U0083,T02189,a_créé,1
+T02072,C0055,appartient_à,1
+U0022,T00249,assigné_à,1
+U0019,M00093,a_envoyé,1
+U0002,T01684,assigné_à,1
+U0021,T01023,assigné_à,1
+T01863,C0016,appartient_à,1
+U0004,M00660,a_envoyé,1
+T00433,TAG012,tagué,1
+U0034,T01236,a_créé,1
+M01136,T00730,lié_à,1
+T00734,TAG019,tagué,1
+T00142,C0047,appartient_à,1
+T00241,TAG001,tagué,1
+U0045,T00240,assigné_à,1
+T00707,TAG022,tagué,1
+T02492,TAG011,tagué,1
+U0031,T02269,assigné_à,1
+T02182,TAG009,tagué,1
+T02299,TAG015,tagué,1
+U0005,T02565,assigné_à,1
+U0031,T02121,a_créé,1
+T01908,C0054,appartient_à,1
+M00055,T01537,lié_à,1
+T01964,C0042,appartient_à,1
+T02621,TAG002,tagué,1
+T00745,TAG009,tagué,1
+U0061,T02911,a_créé,1
+U0072,T02298,a_créé,1
+T02893,TAG022,tagué,1
+T02111,TAG015,tagué,1
+U0088,T02611,assigné_à,1
+U0012,M00072,a_envoyé,1
+M01186,T01107,lié_à,1
+T02571,TAG021,tagué,1
+T01253,TAG007,tagué,1
+T01049,TAG018,tagué,1
+T02547,C0038,appartient_à,1
+T01465,TAG014,tagué,1
+U0030,M00643,a_envoyé,1
+T02261,TAG009,tagué,1
+U0016,T03291,assigné_à,1
+T01359,C0048,appartient_à,1
+T02250,C0042,appartient_à,1
+T03225,TAG001,tagué,1
+T02457,TAG002,tagué,1
+U0041,T00528,assigné_à,1
+T01615,TAG016,tagué,1
+T01436,C0060,appartient_à,1
+U0054,T02012,a_créé,1
+T02862,TAG023,tagué,1
+U0085,T00607,a_créé,1
+T00676,TAG016,tagué,1
+U0027,T01010,a_créé,1
+U0089,M01168,a_envoyé,1
+U0014,T00128,assigné_à,1
+M00981,T02050,lié_à,1
+T00612,TAG018,tagué,1
+U0061,T01283,assigné_à,1
+T03500,TAG006,tagué,1
+T01285,TAG011,tagué,1
+T02948,TAG014,tagué,1
+T00278,C0004,appartient_à,1
+U0099,T02799,a_créé,1
+T00370,C0034,appartient_à,1
+T03197,C0027,appartient_à,1
+U0049,C0054,gère,6
+T00171,TAG019,tagué,1
+U0002,T02561,assigné_à,1
+T01519,TAG022,tagué,1
+T02958,TAG013,tagué,1
+T01884,TAG012,tagué,1
+U0059,T01719,a_créé,1
+T02962,TAG010,tagué,1
+M01123,T01570,lié_à,1
+U0090,T03438,a_créé,1
+U0098,T02620,assigné_à,1
+U0100,T00247,a_créé,1
+U0100,T00733,assigné_à,1
+U0019,M00064,a_envoyé,1
+U0025,C0008,gère,8
+U0026,T01763,a_créé,1
+U0057,T01886,a_créé,1
+T00016,TAG022,tagué,1
+U0021,T01762,a_créé,1
+T03300,TAG014,tagué,1
+U0027,T00541,assigné_à,1
+T01794,TAG011,tagué,1
+T00241,C0020,appartient_à,1
+U0022,M01176,a_envoyé,1
+T00646,TAG002,tagué,1
+T00623,TAG009,tagué,1
+T03266,C0038,appartient_à,1
+T00202,C0022,appartient_à,1
+U0031,T03436,assigné_à,1
+U0020,T01331,a_créé,1
+U0033,C0045,gère,3
+T02251,TAG015,tagué,1
+U0032,C0024,gère,10
+T01526,C0051,appartient_à,1
+U0025,T01758,a_créé,1
+T00811,TAG002,tagué,1
+T03121,TAG015,tagué,1
+U0072,T03166,a_créé,1
+U0043,M01134,a_envoyé,1
+U0005,T03457,a_créé,1
+T02042,TAG009,tagué,1
+U0068,T01268,assigné_à,1
+T02339,C0030,appartient_à,1
+T01891,C0015,appartient_à,1
+T02724,TAG014,tagué,1
+T03141,TAG017,tagué,1
+U0039,T00243,assigné_à,1
+T02064,C0026,appartient_à,1
+U0081,C0012,gère,6
+U0005,M00271,a_envoyé,1
+T02455,TAG003,tagué,1
+U0015,C0038,gère,2
+U0078,T02360,a_créé,1
+T00399,C0031,appartient_à,1
+T01996,C0029,appartient_à,1
+U0091,C0039,gère,4
+U0043,T01345,assigné_à,1
+T02510,TAG011,tagué,1
+T01976,C0028,appartient_à,1
+T00656,TAG007,tagué,1
+T01292,TAG023,tagué,1
+U0027,T02237,assigné_à,1
+T02922,C0006,appartient_à,1
+U0093,T00420,a_créé,1
+M01026,T03412,lié_à,1
+T00110,TAG012,tagué,1
+U0017,T03176,a_créé,1
+U0040,T01567,a_créé,1
+T02921,TAG001,tagué,1
+T00404,C0013,appartient_à,1
+T01170,TAG016,tagué,1
+U0018,T03381,a_créé,1
+T01865,TAG013,tagué,1
+U0071,T02010,a_créé,1
+U0067,M01051,a_envoyé,1
+U0054,M00631,a_envoyé,1
+T02620,TAG024,tagué,1
+T01979,TAG015,tagué,1
+T00100,C0029,appartient_à,1
+U0002,T00241,a_créé,1
+U0017,T02690,assigné_à,1
+U0021,M00822,a_envoyé,1
+T01628,TAG019,tagué,1
+U0042,T02959,assigné_à,1
+T02086,TAG022,tagué,1
+U0063,M00830,a_envoyé,1
+M00561,T02502,lié_à,1
+U0002,T01176,a_créé,1
+M00164,T02249,lié_à,1
+T02894,C0031,appartient_à,1
+M00094,T00521,lié_à,1
+U0007,T02329,a_créé,1
+U0051,T03062,a_créé,1
+U0075,T03087,assigné_à,1
+U0082,T00443,a_créé,1
+T00079,TAG015,tagué,1
+U0055,T00812,a_créé,1
+T03046,TAG019,tagué,1
+T01260,C0057,appartient_à,1
+U0025,T02991,assigné_à,1
+U0090,T02695,a_créé,1
+T03149,TAG015,tagué,1
+T00731,TAG024,tagué,1
+U0018,T00844,a_créé,1
+M00496,T01614,lié_à,1
+U0074,T02513,a_créé,1
+T01127,TAG023,tagué,1
+M00655,T00205,lié_à,1
+T01007,TAG007,tagué,1
+T01316,TAG010,tagué,1
+U0023,T01349,a_créé,1
+T01863,TAG006,tagué,1
+U0078,T00390,a_créé,1
+U0011,T02289,assigné_à,1
+T00344,TAG011,tagué,1
+U0083,T01310,assigné_à,1
+U0062,T03142,a_créé,1
+U0051,M00230,a_envoyé,1
+U0035,T00317,a_créé,1
+T02872,C0039,appartient_à,1
+U0022,M00983,a_envoyé,1
+T00402,TAG021,tagué,1
+U0054,M00220,a_envoyé,1
+U0082,T02729,a_créé,1
+T02626,TAG021,tagué,1
+U0043,T02270,a_créé,1
+T02876,TAG009,tagué,1
+U0005,T01116,a_créé,1
+T01578,TAG002,tagué,1
+T01103,C0011,appartient_à,1
+T02285,TAG022,tagué,1
+T00661,C0010,appartient_à,1
+U0083,T02066,a_créé,1
+M00406,T00844,lié_à,1
+M01064,T02429,lié_à,1
+T01329,TAG003,tagué,1
+M00306,T03011,lié_à,1
+T00177,C0053,appartient_à,1
+U0004,M00049,a_envoyé,1
+U0054,T00808,a_créé,1
+T01767,TAG017,tagué,1
+T00937,C0008,appartient_à,1
+U0072,T02712,a_créé,1
+T00792,TAG012,tagué,1
+U0072,T01128,a_créé,1
+T00601,TAG025,tagué,1
+T02886,TAG001,tagué,1
+U0043,T02994,a_créé,1
+M00529,T02153,lié_à,1
+U0062,M00751,a_envoyé,1
+U0069,M00676,a_envoyé,1
+T00875,TAG023,tagué,1
+U0034,T02469,a_créé,1
+T01895,TAG012,tagué,1
+T00407,TAG023,tagué,1
+T02111,TAG020,tagué,1
+T02641,TAG010,tagué,1
+T02904,TAG017,tagué,1
+T01129,C0048,appartient_à,1
+T00119,C0001,appartient_à,1
+T01825,TAG017,tagué,1
+T03307,TAG016,tagué,1
+T00833,TAG016,tagué,1
+T00939,TAG001,tagué,1
+T02734,C0015,appartient_à,1
+U0088,T01543,assigné_à,1
+T00101,TAG006,tagué,1
+T03474,TAG019,tagué,1
+T01692,TAG022,tagué,1
+U0092,M00261,a_envoyé,1
+T02742,C0052,appartient_à,1
+M01060,T00417,lié_à,1
+T02696,TAG008,tagué,1
+M01175,T02435,lié_à,1
+T02279,TAG008,tagué,1
+U0068,T00728,a_créé,1
+U0054,T02815,assigné_à,1
+T00841,TAG020,tagué,1
+T01077,C0008,appartient_à,1
+U0092,M00689,a_envoyé,1
+U0002,T02455,assigné_à,1
+T00486,TAG016,tagué,1
+U0076,T01204,assigné_à,1
+T03231,TAG012,tagué,1
+T02960,C0043,appartient_à,1
+U0091,C0025,gère,8
+T01208,TAG001,tagué,1
+U0089,T02958,a_créé,1
+T00609,TAG012,tagué,1
+U0044,M00674,a_envoyé,1
+U0038,T03173,a_créé,1
+T03120,TAG002,tagué,1
+U0072,T02791,a_créé,1
+U0001,T01427,assigné_à,1
+M00271,T00016,lié_à,1
+U0083,T02106,assigné_à,1
+U0020,T01146,a_créé,1
+T00372,C0056,appartient_à,1
+T03004,TAG005,tagué,1
+U0099,T00187,a_créé,1
+T00134,C0021,appartient_à,1
+U0071,T03241,a_créé,1
+T01173,TAG025,tagué,1
+T00844,C0037,appartient_à,1
+T00878,TAG017,tagué,1
+T00800,C0034,appartient_à,1
+T02340,TAG004,tagué,1
+T00854,C0017,appartient_à,1
+U0046,T00769,assigné_à,1
+U0046,T01824,a_créé,1
+U0007,T01987,assigné_à,1
+T01011,TAG001,tagué,1
+U0025,M00644,a_envoyé,1
+U0036,T00043,assigné_à,1
+T02985,TAG018,tagué,1
+U0053,T01665,a_créé,1
+T02639,TAG002,tagué,1
+U0063,M01133,a_envoyé,1
+U0072,C0031,gère,1
+T01323,C0026,appartient_à,1
+T02591,C0039,appartient_à,1
+T03272,TAG003,tagué,1
+U0087,T00749,assigné_à,1
+T00287,TAG001,tagué,1
+T01527,TAG010,tagué,1
+T03450,TAG012,tagué,1
+U0009,M01009,a_envoyé,1
+T01037,TAG022,tagué,1
+U0005,T02800,a_créé,1
+T01758,TAG003,tagué,1
+T02585,C0023,appartient_à,1
+T02593,TAG022,tagué,1
+U0009,T00364,a_créé,1
+U0063,T01324,a_créé,1
+U0048,T02074,a_créé,1
+T00527,TAG004,tagué,1
+T02013,TAG021,tagué,1
+T02950,TAG004,tagué,1
+T01013,C0054,appartient_à,1
+M00415,T02424,lié_à,1
+T00393,C0036,appartient_à,1
+T01501,TAG001,tagué,1
+T03446,TAG021,tagué,1
+T00508,TAG022,tagué,1
+T03127,C0043,appartient_à,1
+U0092,T01838,assigné_à,1
+T03115,C0035,appartient_à,1
+T00578,TAG010,tagué,1
+T01388,C0007,appartient_à,1
+U0046,T02649,a_créé,1
+U0025,T01681,a_créé,1
+U0013,T00680,a_créé,1
+T00017,TAG001,tagué,1
+U0098,T02113,assigné_à,1
+U0057,C0031,gère,8
+U0021,T03207,a_créé,1
+M00107,T03050,lié_à,1
+T02449,TAG013,tagué,1
+T00730,TAG004,tagué,1
+T01320,C0024,appartient_à,1
+T01841,C0018,appartient_à,1
+U0029,M01050,a_envoyé,1
+T02409,C0042,appartient_à,1
+T00192,TAG013,tagué,1
+T01652,TAG008,tagué,1
+U0055,T00904,assigné_à,1
+U0061,T02139,assigné_à,1
+T03062,C0017,appartient_à,1
+U0065,T01461,assigné_à,1
+T00599,TAG024,tagué,1
+M00887,T02639,lié_à,1
+U0028,T00700,assigné_à,1
+U0034,T00785,assigné_à,1
+T00827,C0050,appartient_à,1
+T01663,TAG019,tagué,1
+U0077,T01431,a_créé,1
+U0069,T02098,assigné_à,1
+T00850,C0039,appartient_à,1
+T03047,TAG017,tagué,1
+T01261,C0038,appartient_à,1
+T00373,TAG002,tagué,1
+T02244,C0056,appartient_à,1
+U0088,T01379,assigné_à,1
+T02563,TAG004,tagué,1
+U0082,T02634,a_créé,1
+T03065,C0033,appartient_à,1
+M00543,T00171,lié_à,1
+U0044,M00512,a_envoyé,1
+T02053,TAG001,tagué,1
+U0095,M00853,a_envoyé,1
+U0051,M00189,a_envoyé,1
+T02613,C0030,appartient_à,1
+T01424,TAG005,tagué,1
+T01418,TAG002,tagué,1
+T03121,TAG008,tagué,1
+T00496,TAG023,tagué,1
+T03270,TAG019,tagué,1
+T01998,C0014,appartient_à,1
+U0062,T01997,a_créé,1
+T03495,TAG024,tagué,1
+T03023,TAG004,tagué,1
+T02552,TAG014,tagué,1
+M00258,T01563,lié_à,1
+T00323,TAG005,tagué,1
+T01158,C0053,appartient_à,1
+U0035,M00027,a_envoyé,1
+T00833,C0023,appartient_à,1
+T00627,C0021,appartient_à,1
+U0004,T01860,assigné_à,1
+U0021,T03431,a_créé,1
+U0057,T00833,assigné_à,1
+T01712,TAG025,tagué,1
+T00122,TAG016,tagué,1
+U0017,T00526,a_créé,1
+T02026,C0002,appartient_à,1
+T02436,TAG005,tagué,1
+U0011,T01922,assigné_à,1
+U0088,T01437,assigné_à,1
+M00775,T00258,lié_à,1
+T02756,TAG017,tagué,1
+U0017,T02666,assigné_à,1
+T01769,TAG014,tagué,1
+T00466,TAG002,tagué,1
+T01302,C0037,appartient_à,1
+T02332,C0034,appartient_à,1
+U0041,T01119,a_créé,1
+T02522,TAG019,tagué,1
+T01021,TAG013,tagué,1
+T01266,C0049,appartient_à,1
+U0042,T01585,a_créé,1
+T02930,TAG007,tagué,1
+U0085,T01087,a_créé,1
+U0004,C0034,gère,5
+T00263,C0053,appartient_à,1
+T02859,C0013,appartient_à,1
+T03322,C0017,appartient_à,1
+T00683,C0054,appartient_à,1
+U0022,T03130,a_créé,1
+T00338,TAG018,tagué,1
+M00196,T00626,lié_à,1
+T02320,TAG024,tagué,1
+T03048,TAG005,tagué,1
+T00658,TAG001,tagué,1
+T00317,TAG024,tagué,1
+T00592,TAG022,tagué,1
+U0097,T02071,a_créé,1
+T02352,C0018,appartient_à,1
+T00749,TAG024,tagué,1
+U0061,T02294,a_créé,1
+M00251,T02664,lié_à,1
+T03074,TAG008,tagué,1
+T02312,TAG023,tagué,1
+T02890,C0057,appartient_à,1
+M00829,T01094,lié_à,1
+U0001,T02714,a_créé,1
+M00417,T00362,lié_à,1
+T01007,C0019,appartient_à,1
+T01564,TAG013,tagué,1
+U0001,T03267,a_créé,1
+T02091,C0049,appartient_à,1
+T00840,C0050,appartient_à,1
+T00581,TAG003,tagué,1
+U0088,T01911,a_créé,1
+U0089,T00155,a_créé,1
+U0048,T03035,assigné_à,1
+U0088,M00288,a_envoyé,1
+U0020,T01364,a_créé,1
+T02639,C0007,appartient_à,1
+U0093,T00942,a_créé,1
+T00907,C0012,appartient_à,1
+U0015,T00323,a_créé,1
+T02042,TAG015,tagué,1
+U0080,T02764,assigné_à,1
+T00159,TAG004,tagué,1
+U0031,T02300,assigné_à,1
+T01444,C0028,appartient_à,1
+U0051,T00225,assigné_à,1
+T00663,C0055,appartient_à,1
+T02739,TAG020,tagué,1
+T01521,TAG002,tagué,1
+T01659,TAG020,tagué,1
+U0049,T00078,a_créé,1
+M00310,T00784,lié_à,1
+T01075,C0058,appartient_à,1
+U0077,M00630,a_envoyé,1
+T02450,TAG018,tagué,1
+U0003,M00854,a_envoyé,1
+T00577,TAG001,tagué,1
+U0005,T00154,a_créé,1
+T03306,C0040,appartient_à,1
+U0072,T02195,a_créé,1
+T01328,C0031,appartient_à,1
+T01933,TAG019,tagué,1
+U0051,T01014,a_créé,1
+U0077,T02033,a_créé,1
+T01398,TAG025,tagué,1
+T01060,TAG003,tagué,1
+U0023,T01309,assigné_à,1
+T01656,C0026,appartient_à,1
+M00162,T01477,lié_à,1
+T02725,C0046,appartient_à,1
+U0036,M00457,a_envoyé,1
+T03140,C0010,appartient_à,1
+T03337,TAG002,tagué,1
+T00379,C0009,appartient_à,1
+T02171,C0046,appartient_à,1
+T01552,TAG010,tagué,1
+T03232,TAG024,tagué,1
+T01633,TAG012,tagué,1
+T03157,TAG015,tagué,1
+T01432,TAG024,tagué,1
+M00878,T02218,lié_à,1
+U0037,T02893,assigné_à,1
+T01285,C0030,appartient_à,1
+T01277,C0008,appartient_à,1
+T00331,TAG003,tagué,1
+T03113,C0007,appartient_à,1
+T00875,TAG017,tagué,1
+T01164,TAG012,tagué,1
+U0100,T02641,assigné_à,1
+T02135,C0060,appartient_à,1
+T00162,C0023,appartient_à,1
+T03214,TAG012,tagué,1
+M00844,T00337,lié_à,1
+U0088,T03443,a_créé,1
+T01843,TAG017,tagué,1
+T00983,C0056,appartient_à,1
+T02850,TAG005,tagué,1
+T01421,C0046,appartient_à,1
+T02079,C0009,appartient_à,1
+U0063,T00594,assigné_à,1
+T00594,TAG021,tagué,1
+T00658,TAG008,tagué,1
+T00032,TAG009,tagué,1
+U0015,T02896,assigné_à,1
+M00898,T03196,lié_à,1
+T00572,TAG019,tagué,1
+U0091,T00882,assigné_à,1
+T00679,TAG023,tagué,1
+T03305,C0004,appartient_à,1
+T01727,TAG005,tagué,1
+U0052,T00612,a_créé,1
+T01034,C0059,appartient_à,1
+T03373,C0010,appartient_à,1
+U0043,T00816,a_créé,1
+T00171,C0043,appartient_à,1
+U0029,T03129,assigné_à,1
+U0007,T01925,assigné_à,1
+T01453,C0016,appartient_à,1
+T02029,TAG025,tagué,1
+M00713,T02074,lié_à,1
+T02784,C0022,appartient_à,1
+U0090,T03135,a_créé,1
+T00528,TAG005,tagué,1
+U0072,C0022,gère,3
+T01429,C0060,appartient_à,1
+U0009,T02871,a_créé,1
+U0076,T01643,a_créé,1
+U0085,T02608,assigné_à,1
+T01026,C0029,appartient_à,1
+U0087,T02550,a_créé,1
+U0073,T01453,assigné_à,1
+T00964,C0027,appartient_à,1
+T00913,TAG015,tagué,1
+T00879,TAG024,tagué,1
+T01683,C0030,appartient_à,1
+U0001,T00632,assigné_à,1
+T02077,TAG001,tagué,1
+U0030,M00665,a_envoyé,1
+U0009,T01726,assigné_à,1
+U0012,T01011,assigné_à,1
+T01889,C0007,appartient_à,1
+T00669,C0039,appartient_à,1
+T00608,C0008,appartient_à,1
+U0002,T03063,a_créé,1
+T03224,TAG004,tagué,1
+U0067,T01935,a_créé,1
+T02574,TAG016,tagué,1
+T03266,TAG006,tagué,1
+T01317,C0015,appartient_à,1
+T01478,TAG022,tagué,1
+U0004,T00389,a_créé,1
+T02961,TAG020,tagué,1
+U0003,T02040,assigné_à,1
+U0009,T00620,a_créé,1
+T02113,C0037,appartient_à,1
+U0037,M01078,a_envoyé,1
+T02069,TAG015,tagué,1
+T02490,TAG020,tagué,1
+U0013,T00952,a_créé,1
+U0100,T01206,assigné_à,1
+U0061,T02732,assigné_à,1
+T02452,TAG001,tagué,1
+U0048,T01424,assigné_à,1
+T03291,C0037,appartient_à,1
+T00118,TAG012,tagué,1
+T02640,TAG020,tagué,1
+U0051,T03190,a_créé,1
+U0010,C0013,gère,3
+U0036,T02870,a_créé,1
+U0089,T01085,a_créé,1
+U0018,M00841,a_envoyé,1
+T02935,TAG013,tagué,1
+U0012,T03490,a_créé,1
+U0073,T00845,a_créé,1
+T02484,TAG017,tagué,1
+T00800,TAG003,tagué,1
+T00850,TAG025,tagué,1
+U0062,M00200,a_envoyé,1
+U0051,T02357,a_créé,1
+T00999,TAG016,tagué,1
+T00701,TAG012,tagué,1
+T02246,C0001,appartient_à,1
+M00142,T01314,lié_à,1
+M00991,T02597,lié_à,1
+U0065,T01778,assigné_à,1
+U0049,T00194,assigné_à,1
+T00689,TAG004,tagué,1
+U0021,T01867,a_créé,1
+U0087,T00176,a_créé,1
+T02451,TAG017,tagué,1
+T00343,C0055,appartient_à,1
+T01931,C0005,appartient_à,1
+U0096,T02874,assigné_à,1
+U0094,T00361,assigné_à,1
+U0027,M00760,a_envoyé,1
+T02005,C0057,appartient_à,1
+T03255,TAG006,tagué,1
+U0091,T02874,a_créé,1
+T03111,TAG004,tagué,1
+T02536,C0030,appartient_à,1
+T02145,C0050,appartient_à,1
+T01110,TAG008,tagué,1
+U0042,C0044,gère,5
+U0059,T01421,assigné_à,1
+T00339,C0007,appartient_à,1
+T02153,TAG016,tagué,1
+T01686,TAG014,tagué,1
+U0018,T02154,a_créé,1
+T01027,C0011,appartient_à,1
+T02847,TAG009,tagué,1
+U0071,T00156,assigné_à,1
+T03119,C0036,appartient_à,1
+T01467,TAG017,tagué,1
+M01195,T03086,lié_à,1
+T02891,TAG025,tagué,1
+U0014,C0005,gère,2
+T00409,TAG011,tagué,1
+M01029,T02055,lié_à,1
+T00878,C0028,appartient_à,1
+U0033,T01853,assigné_à,1
+U0009,T00516,assigné_à,1
+T00761,C0036,appartient_à,1
+T01057,C0007,appartient_à,1
+T00152,TAG002,tagué,1
+U0068,T02279,a_créé,1
+U0044,T01312,assigné_à,1
+T03182,C0037,appartient_à,1
+T01447,C0025,appartient_à,1
+T02380,TAG011,tagué,1
+T02932,C0036,appartient_à,1
+U0003,T01756,assigné_à,1
+T03320,TAG002,tagué,1
+T02483,C0015,appartient_à,1
+U0079,M01164,a_envoyé,1
+T03497,C0014,appartient_à,1
+T00773,C0042,appartient_à,1
+M00785,T01821,lié_à,1
+T00154,TAG022,tagué,1
+T03126,TAG011,tagué,1
+T00542,TAG007,tagué,1
+U0044,M00365,a_envoyé,1
+T02532,TAG022,tagué,1
+T01600,C0053,appartient_à,1
+T00974,C0026,appartient_à,1
+T01234,C0026,appartient_à,1
+U0056,T01721,a_créé,1
+U0084,T02702,assigné_à,1
+U0097,M00826,a_envoyé,1
+U0061,T03486,assigné_à,1
+U0019,T01365,a_créé,1
+U0075,T02331,assigné_à,1
+T00641,C0005,appartient_à,1
+T03104,TAG007,tagué,1
+T00099,TAG019,tagué,1
+T02646,C0049,appartient_à,1
+U0077,T02232,a_créé,1
+U0011,C0052,gère,1
+T02105,C0012,appartient_à,1
+U0025,T01417,a_créé,1
+T01483,TAG013,tagué,1
+T02854,TAG006,tagué,1
+T02855,C0013,appartient_à,1
+T02548,TAG007,tagué,1
+T00649,C0009,appartient_à,1
+T00637,TAG014,tagué,1
+T00038,C0024,appartient_à,1
+T02919,TAG004,tagué,1
+U0027,T00307,a_créé,1
+T02602,TAG024,tagué,1
+U0022,T02754,assigné_à,1
+U0032,T01810,a_créé,1
+T03410,TAG017,tagué,1
+T00039,C0032,appartient_à,1
+T03042,C0045,appartient_à,1
+U0082,M00315,a_envoyé,1
+U0067,T02807,a_créé,1
+T01826,C0049,appartient_à,1
+U0014,T02333,a_créé,1
+T03165,C0044,appartient_à,1
+U0020,T00415,a_créé,1
+T01325,C0028,appartient_à,1
+U0039,T00890,a_créé,1
+U0075,T03226,assigné_à,1
+T01938,TAG001,tagué,1
+U0033,M00366,a_envoyé,1
+U0083,T00287,a_créé,1
+T00910,TAG006,tagué,1
+T02041,C0052,appartient_à,1
+U0044,T03010,assigné_à,1
+U0096,T01188,a_créé,1
+T02964,TAG007,tagué,1
+T02663,C0030,appartient_à,1
+T00254,TAG001,tagué,1
+T01737,TAG007,tagué,1
+U0092,T00785,a_créé,1
+U0049,T01990,assigné_à,1
+M00483,T01675,lié_à,1
+U0086,T01134,assigné_à,1
+T02315,TAG016,tagué,1
+T01560,C0057,appartient_à,1
+T03345,TAG007,tagué,1
+T01012,TAG023,tagué,1
+T01791,C0018,appartient_à,1
+U0061,T00731,a_créé,1
+U0061,T02664,a_créé,1
+T01419,C0035,appartient_à,1
+U0072,T00591,a_créé,1
+U0030,T00822,assigné_à,1
+T01384,TAG018,tagué,1
+U0090,T02104,assigné_à,1
+T01974,TAG018,tagué,1
+T00177,TAG006,tagué,1
+T01811,C0029,appartient_à,1
+U0014,T00793,assigné_à,1
+T01397,C0034,appartient_à,1
+T00361,TAG002,tagué,1
+U0011,M00621,a_envoyé,1
+M00749,T01610,lié_à,1
+T01754,TAG005,tagué,1
+U0091,T02393,a_créé,1
+U0078,T01816,a_créé,1
+U0051,T00652,assigné_à,1
+U0039,M00524,a_envoyé,1
+T01217,TAG023,tagué,1
+T01038,TAG014,tagué,1
+U0098,T02056,a_créé,1
+U0026,T02977,a_créé,1
+T02040,TAG004,tagué,1
+T02749,C0026,appartient_à,1
+T02806,TAG005,tagué,1
+U0067,C0029,gère,3
+T00229,TAG009,tagué,1
+U0009,T00083,assigné_à,1
+T01250,C0015,appartient_à,1
+U0043,M00310,a_envoyé,1
+U0090,T02261,a_créé,1
+U0036,T02232,assigné_à,1
+T02821,TAG003,tagué,1
+T01361,C0035,appartient_à,1
+T00794,TAG004,tagué,1
+T01876,TAG013,tagué,1
+U0089,T00782,assigné_à,1
+U0048,C0004,gère,1
+U0064,T01351,a_créé,1
+U0030,T00712,a_créé,1
+T02123,C0038,appartient_à,1
+T01378,TAG006,tagué,1
+T00282,C0039,appartient_à,1
+U0083,T01375,a_créé,1
+U0001,M00425,a_envoyé,1
+U0062,M00872,a_envoyé,1
+T02162,TAG012,tagué,1
+U0018,T02661,a_créé,1
+U0094,T02253,a_créé,1
+T01898,TAG003,tagué,1
+T00311,TAG024,tagué,1
+T01054,TAG001,tagué,1
+T00541,TAG002,tagué,1
+T01328,TAG015,tagué,1
+T00728,C0050,appartient_à,1
+T03455,C0017,appartient_à,1
+T01822,TAG023,tagué,1
+T02146,TAG020,tagué,1
+T01492,C0050,appartient_à,1
+T00939,TAG017,tagué,1
+T00395,TAG013,tagué,1
+T01633,TAG013,tagué,1
+U0038,T01776,assigné_à,1
+T02657,TAG005,tagué,1
+T01031,C0029,appartient_à,1
+U0061,T01889,a_créé,1
+T01862,TAG021,tagué,1
+U0020,T01027,assigné_à,1
+U0058,T03409,assigné_à,1
+T00316,C0036,appartient_à,1
+U0093,T01461,a_créé,1
+T01215,C0053,appartient_à,1
+T01227,TAG012,tagué,1
+U0004,T02275,a_créé,1
+T00693,TAG014,tagué,1
+T02736,C0037,appartient_à,1
+U0038,T02635,a_créé,1
+U0003,T01660,a_créé,1
+U0071,T01510,a_créé,1
+U0032,T00468,assigné_à,1
+U0017,M00765,a_envoyé,1
+T03450,TAG011,tagué,1
+T00213,TAG023,tagué,1
+T01554,TAG018,tagué,1
+U0018,T03006,assigné_à,1
+T02314,TAG007,tagué,1
+T00420,TAG025,tagué,1
+U0060,T00865,a_créé,1
+T02120,C0013,appartient_à,1
+T01063,C0015,appartient_à,1
+T01359,TAG019,tagué,1
+U0003,T03345,a_créé,1
+T01883,TAG011,tagué,1
+M00503,T03110,lié_à,1
+U0049,C0029,gère,1
+U0090,T00152,assigné_à,1
+T03202,TAG022,tagué,1
+T02057,TAG010,tagué,1
+T02485,C0049,appartient_à,1
+T01531,C0011,appartient_à,1
+T00392,C0002,appartient_à,1
+T03222,TAG006,tagué,1
+U0040,T02231,a_créé,1
+U0060,M00191,a_envoyé,1
+T02204,C0022,appartient_à,1
+U0017,T02083,a_créé,1
+T01714,C0028,appartient_à,1
+T00693,C0023,appartient_à,1
+U0069,T01850,a_créé,1
+T00306,C0049,appartient_à,1
+T00476,TAG025,tagué,1
+U0048,M00390,a_envoyé,1
+T02150,TAG015,tagué,1
+U0020,C0045,gère,2
+U0062,T02345,a_créé,1
+T00779,TAG020,tagué,1
+T02402,TAG023,tagué,1
+M00465,T00500,lié_à,1
+T00076,C0055,appartient_à,1
+T02608,TAG022,tagué,1
+T01500,TAG020,tagué,1
+U0020,T01264,a_créé,1
+T03317,TAG015,tagué,1
+U0019,T03317,assigné_à,1
+T00311,TAG001,tagué,1
+T03185,C0016,appartient_à,1
+T00960,TAG011,tagué,1
+U0027,M00605,a_envoyé,1
+U0094,T01011,a_créé,1
+T02493,C0053,appartient_à,1
+U0003,T03385,a_créé,1
+U0076,T02665,assigné_à,1
+T02039,C0044,appartient_à,1
+U0033,T01421,a_créé,1
+U0075,T01801,a_créé,1
+U0065,T03136,assigné_à,1
+T02448,TAG021,tagué,1
+T00091,TAG022,tagué,1
+T01455,TAG012,tagué,1
+T03145,C0058,appartient_à,1
+T01300,TAG025,tagué,1
+T01933,C0043,appartient_à,1
+U0007,T01125,a_créé,1
+T01535,TAG004,tagué,1
+U0065,T00203,a_créé,1
+T03218,TAG014,tagué,1
+U0082,T03419,a_créé,1
+T03140,TAG018,tagué,1
+T01537,TAG022,tagué,1
+T01568,C0011,appartient_à,1
+U0014,T02849,assigné_à,1
+M00281,T02596,lié_à,1
+T01549,C0049,appartient_à,1
+U0029,T01049,a_créé,1
+M00987,T01404,lié_à,1
+T02852,TAG003,tagué,1
+T01241,C0052,appartient_à,1
+U0048,T03308,assigné_à,1
+T01110,TAG005,tagué,1
+T02530,TAG011,tagué,1
+T01696,TAG007,tagué,1
+U0097,M00445,a_envoyé,1
+U0017,M00073,a_envoyé,1
+T03398,TAG007,tagué,1
+T01161,TAG009,tagué,1
+U0026,T00809,a_créé,1
+T01612,C0042,appartient_à,1
+M00170,T01871,lié_à,1
+U0026,T00023,a_créé,1
+T02732,C0022,appartient_à,1
+T01548,TAG001,tagué,1
+T02420,TAG002,tagué,1
+U0093,M01191,a_envoyé,1
+T01061,C0048,appartient_à,1
+T02964,C0004,appartient_à,1
+T00945,TAG006,tagué,1
+U0058,T02957,a_créé,1
+T02261,TAG001,tagué,1
+M00371,T02069,lié_à,1
+T00455,C0019,appartient_à,1
+U0067,T03469,assigné_à,1
+T00534,C0011,appartient_à,1
+U0084,T00973,assigné_à,1
+T02378,TAG009,tagué,1
+T01971,C0016,appartient_à,1
+U0064,T00113,a_créé,1
+T02559,TAG001,tagué,1
+T00951,TAG021,tagué,1
+T01941,TAG004,tagué,1
+U0082,T00067,assigné_à,1
+U0095,T01004,assigné_à,1
+T01710,TAG013,tagué,1
+U0065,M00964,a_envoyé,1
+U0076,T02804,a_créé,1
+M01001,T00877,lié_à,1
+U0062,T01181,a_créé,1
+U0068,C0047,gère,1
+T01887,TAG008,tagué,1
+T02460,TAG012,tagué,1
+T02194,C0037,appartient_à,1
+U0073,C0043,gère,5
+U0094,T02325,a_créé,1
+T02828,TAG003,tagué,1
+T01289,C0018,appartient_à,1
+U0016,T03263,a_créé,1
+T00963,TAG017,tagué,1
+T00592,TAG014,tagué,1
+T00496,TAG018,tagué,1
+T01569,TAG004,tagué,1
+T02617,TAG004,tagué,1
+U0049,T00751,a_créé,1
+U0059,T01803,assigné_à,1
+U0011,T01723,assigné_à,1
+T01707,C0060,appartient_à,1
+M00937,T02509,lié_à,1
+U0098,M01162,a_envoyé,1
+U0029,T00993,assigné_à,1
+M00989,T02655,lié_à,1
+T02693,TAG024,tagué,1
+T02538,TAG003,tagué,1
+U0092,T02609,assigné_à,1
+T01105,C0042,appartient_à,1
+T02404,TAG002,tagué,1
+T02961,TAG009,tagué,1
+T02087,TAG007,tagué,1
+U0036,T01655,assigné_à,1
+T00682,C0048,appartient_à,1
+U0098,T02869,a_créé,1
+T02976,TAG010,tagué,1
+T03372,TAG005,tagué,1
+T02975,C0058,appartient_à,1
+U0052,T02724,assigné_à,1
+M00737,T01991,lié_à,1
+T00284,C0036,appartient_à,1
+U0057,T02346,a_créé,1
+U0098,T01140,a_créé,1
+T02835,TAG004,tagué,1
+T00830,C0016,appartient_à,1
+T01404,C0041,appartient_à,1
+T02598,TAG013,tagué,1
+T00973,TAG023,tagué,1
+T02751,TAG016,tagué,1
+T02417,TAG013,tagué,1
+T03136,TAG019,tagué,1
+T00269,C0047,appartient_à,1
+U0055,T03460,assigné_à,1
+T03175,TAG004,tagué,1
+T01148,TAG023,tagué,1
+M00355,T01848,lié_à,1
+M00547,T01405,lié_à,1
+T03104,C0013,appartient_à,1
+U0080,T00119,a_créé,1
+T03148,TAG015,tagué,1
+U0066,T01540,a_créé,1
+U0073,T03168,a_créé,1
+M00457,T02942,lié_à,1
+T01527,TAG025,tagué,1
+T02772,TAG022,tagué,1
+U0033,T01775,assigné_à,1
+M00804,T02689,lié_à,1
+U0062,T01738,assigné_à,1
+T00164,TAG002,tagué,1
+U0072,M00994,a_envoyé,1
+U0019,T03059,a_créé,1
+U0025,T02046,a_créé,1
+U0057,T00446,a_créé,1
+T02081,TAG005,tagué,1
+T00434,TAG005,tagué,1
+U0006,T03180,a_créé,1
+T00337,TAG012,tagué,1
+T00200,C0020,appartient_à,1
+U0046,T02659,assigné_à,1
+T01738,C0024,appartient_à,1
+T01766,TAG007,tagué,1
+T02328,TAG001,tagué,1
+T02585,TAG023,tagué,1
+T02429,C0010,appartient_à,1
+T01092,TAG025,tagué,1
+U0035,T01872,a_créé,1
+U0051,T00904,a_créé,1
+T00441,C0036,appartient_à,1
+T02347,C0012,appartient_à,1
+T01859,TAG014,tagué,1
+U0084,T01652,a_créé,1
+T01366,TAG003,tagué,1
+T03247,TAG011,tagué,1
+U0061,T00323,assigné_à,1
+U0074,M01197,a_envoyé,1
+T03443,C0009,appartient_à,1
+U0033,M00269,a_envoyé,1
+U0027,T02296,assigné_à,1
+T01975,TAG024,tagué,1
+T02192,C0023,appartient_à,1
+U0051,C0037,gère,4
+U0043,T02967,a_créé,1
+T02243,C0033,appartient_à,1
+U0095,T01199,a_créé,1
+U0095,T02125,assigné_à,1
+T00582,C0052,appartient_à,1
+T02090,TAG012,tagué,1
+T02867,TAG015,tagué,1
+T01446,TAG021,tagué,1
+U0061,T02566,a_créé,1
+T01147,TAG002,tagué,1
+U0099,T02545,a_créé,1
+T03124,C0026,appartient_à,1
+T03473,TAG021,tagué,1
+T00323,C0041,appartient_à,1
+T00041,TAG001,tagué,1
+T02345,C0022,appartient_à,1
+U0009,T00917,assigné_à,1
+M00357,T01635,lié_à,1
+T02707,TAG008,tagué,1
+U0089,M01094,a_envoyé,1
+U0074,T02345,assigné_à,1
+U0046,T01682,assigné_à,1
+T03165,TAG022,tagué,1
+T03222,C0036,appartient_à,1
+U0007,C0046,gère,4
+M00847,T02305,lié_à,1
+T00228,TAG002,tagué,1
+U0076,T01446,assigné_à,1
+T00428,TAG016,tagué,1
+T02035,TAG016,tagué,1
+T02799,TAG001,tagué,1
+T01394,C0043,appartient_à,1
+T00357,TAG024,tagué,1
+U0088,M00860,a_envoyé,1
+T00916,TAG025,tagué,1
+U0053,T03212,a_créé,1
+T00583,TAG017,tagué,1
+T01760,C0052,appartient_à,1
+U0034,T02929,a_créé,1
+T00351,C0059,appartient_à,1
+U0040,M00096,a_envoyé,1
+T02279,TAG009,tagué,1
+T01211,TAG018,tagué,1
+T00838,C0054,appartient_à,1
+T00846,TAG007,tagué,1
+U0089,T02875,a_créé,1
+U0002,M00398,a_envoyé,1
+U0002,C0027,gère,5
+T02321,TAG003,tagué,1
+T01028,TAG023,tagué,1
+T02512,C0010,appartient_à,1
+T00852,C0029,appartient_à,1
+U0056,T00428,assigné_à,1
+T02131,TAG019,tagué,1
+T01232,TAG001,tagué,1
+T00621,TAG011,tagué,1
+T02586,TAG019,tagué,1
+U0062,T02057,a_créé,1
+T00299,TAG009,tagué,1
+U0034,T01561,a_créé,1
+T03049,TAG009,tagué,1
+T02388,TAG011,tagué,1
+T02081,TAG014,tagué,1
+T00188,C0035,appartient_à,1
+T00974,TAG002,tagué,1
+U0073,T01445,a_créé,1
+T00516,TAG016,tagué,1
+T03286,TAG015,tagué,1
+T00004,C0021,appartient_à,1
+U0026,T03360,assigné_à,1
+T03117,TAG019,tagué,1
+U0020,T02431,assigné_à,1
+T01445,TAG025,tagué,1
+U0049,T01988,assigné_à,1
+T02342,C0033,appartient_à,1
+T01045,TAG019,tagué,1
+T01314,TAG024,tagué,1
+U0026,T02258,assigné_à,1
+M00238,T03377,lié_à,1
+T03079,TAG020,tagué,1
+U0046,T02773,assigné_à,1
+T00750,TAG015,tagué,1
+U0040,T01327,assigné_à,1
+T01073,TAG012,tagué,1
+T02274,TAG023,tagué,1
+T01130,C0032,appartient_à,1
+T02311,TAG006,tagué,1
+T02653,TAG004,tagué,1
+T01911,C0023,appartient_à,1
+U0060,T03383,assigné_à,1
+U0045,T01774,a_créé,1
+T00364,TAG004,tagué,1
+T02106,TAG023,tagué,1
+U0079,T02181,assigné_à,1
+U0076,T03394,assigné_à,1
+T02103,C0026,appartient_à,1
+T02309,C0034,appartient_à,1
+T00427,C0036,appartient_à,1
+M00687,T02218,lié_à,1
+T01704,TAG022,tagué,1
+U0097,T01467,assigné_à,1
+T01405,TAG012,tagué,1
+T01140,TAG017,tagué,1
+U0070,T01214,a_créé,1
+U0027,T00862,assigné_à,1
+T02972,TAG002,tagué,1
+U0049,T01846,a_créé,1
+U0066,T02273,a_créé,1
+T00135,TAG007,tagué,1
+T00977,TAG008,tagué,1
+T01624,C0015,appartient_à,1
+T03342,TAG025,tagué,1
+U0038,T01539,a_créé,1
+T00171,TAG021,tagué,1
+T03016,TAG003,tagué,1
+U0074,T00417,assigné_à,1
+U0097,T02540,a_créé,1
+U0072,M00435,a_envoyé,1
+M00088,T00267,lié_à,1
+U0087,T00103,a_créé,1
+U0034,C0024,gère,1
+T01379,TAG016,tagué,1
+U0079,T01578,assigné_à,1
+U0089,T01382,a_créé,1
+T02435,TAG023,tagué,1
+T01659,TAG014,tagué,1
+T03019,TAG010,tagué,1
+T02150,TAG005,tagué,1
+T02385,TAG005,tagué,1
+M00157,T00409,lié_à,1
+T03241,TAG016,tagué,1
+U0081,T01798,a_créé,1
+T01152,TAG016,tagué,1
+U0044,T02091,a_créé,1
+T00936,TAG002,tagué,1
+T02675,TAG007,tagué,1
+U0038,T00943,assigné_à,1
+U0059,T02653,assigné_à,1
+U0091,T01017,a_créé,1
+U0034,T02265,a_créé,1
+U0067,M00229,a_envoyé,1
+U0062,T01089,assigné_à,1
+T02495,TAG019,tagué,1
+U0055,T00709,a_créé,1
+U0063,C0048,gère,10
+U0004,T03467,a_créé,1
+U0044,T01511,a_créé,1
+T00972,C0012,appartient_à,1
+M01192,T01415,lié_à,1
+T00631,TAG001,tagué,1
+U0060,T03322,assigné_à,1
+T02673,TAG010,tagué,1
+M01097,T03140,lié_à,1
+T02998,TAG020,tagué,1
+T02109,TAG015,tagué,1
+T01860,TAG007,tagué,1
+U0084,T00732,a_créé,1
+T00491,C0005,appartient_à,1
+U0049,T02072,assigné_à,1
+M00614,T01756,lié_à,1
+T03022,TAG006,tagué,1
+U0092,T01353,assigné_à,1
+T01774,C0032,appartient_à,1
+U0019,T01454,a_créé,1
+T01070,TAG013,tagué,1
+U0047,T00048,a_créé,1
+M00747,T02400,lié_à,1
+T03109,C0052,appartient_à,1
+T01302,TAG011,tagué,1
+T02615,TAG020,tagué,1
+U0038,T02332,assigné_à,1
+T03174,C0049,appartient_à,1
+T01154,C0005,appartient_à,1
+T01665,TAG001,tagué,1
+T02643,TAG012,tagué,1
+U0059,T00724,a_créé,1
+U0082,T01047,assigné_à,1
+U0045,T02430,a_créé,1
+U0021,M00642,a_envoyé,1
+T00157,TAG017,tagué,1
+T01192,C0052,appartient_à,1
+M00124,T01210,lié_à,1
+T03233,TAG023,tagué,1
+T00973,C0044,appartient_à,1
+T01863,TAG019,tagué,1
+U0032,T02192,a_créé,1
+T02256,TAG019,tagué,1
+U0086,T02399,assigné_à,1
+U0075,C0051,gère,2
+M00553,T03408,lié_à,1
+U0077,T03399,a_créé,1
+U0046,T03064,assigné_à,1
+T00170,TAG004,tagué,1
+T00747,TAG011,tagué,1
+U0004,T01950,a_créé,1
+U0002,M00564,a_envoyé,1
+T01395,TAG019,tagué,1
+U0055,M00794,a_envoyé,1
+U0077,T02396,a_créé,1
+U0078,M00003,a_envoyé,1
+T01514,TAG015,tagué,1
+T00803,TAG016,tagué,1
+T02333,C0021,appartient_à,1
+U0031,T03250,a_créé,1
+U0016,T00908,assigné_à,1
+T01501,TAG007,tagué,1
+T02636,TAG001,tagué,1
+T02671,TAG015,tagué,1
+U0024,T00529,assigné_à,1
+T00770,TAG001,tagué,1
+U0066,T02613,a_créé,1
+U0032,M00703,a_envoyé,1
+T02098,TAG021,tagué,1
+T00017,TAG013,tagué,1
+T01824,C0025,appartient_à,1
+T02679,TAG010,tagué,1
+U0012,T03330,a_créé,1
+M00560,T00076,lié_à,1
+T02517,TAG009,tagué,1
+T00796,TAG005,tagué,1
+T01647,TAG014,tagué,1
+T03254,TAG024,tagué,1
+T02858,TAG022,tagué,1
+T03363,C0022,appartient_à,1
+U0021,M01055,a_envoyé,1
+U0066,T00658,assigné_à,1
+M00779,T00628,lié_à,1
+T02872,TAG010,tagué,1
+T01247,TAG013,tagué,1
+U0008,T02775,assigné_à,1
+T00376,TAG017,tagué,1
+T00178,TAG005,tagué,1
+M00971,T02701,lié_à,1
+U0011,T00297,a_créé,1
+U0015,T00352,a_créé,1
+U0092,T02594,a_créé,1
+T01065,C0030,appartient_à,1
+T00125,TAG003,tagué,1
+M00485,T00881,lié_à,1
+T02813,TAG016,tagué,1
+U0065,T00897,assigné_à,1
+U0081,M00707,a_envoyé,1
+U0098,M00066,a_envoyé,1
+U0062,T03305,a_créé,1
+T01352,C0015,appartient_à,1
+U0073,T00021,a_créé,1
+T01329,C0021,appartient_à,1
+U0023,M00784,a_envoyé,1
+T03447,C0005,appartient_à,1
+T01714,TAG017,tagué,1
+U0062,C0027,gère,6
+T00272,C0033,appartient_à,1
+T00494,C0045,appartient_à,1
+U0022,T03195,assigné_à,1
+T01165,TAG005,tagué,1
+U0062,T02088,a_créé,1
+T00860,TAG010,tagué,1
+U0044,T01911,assigné_à,1
+M00491,T02985,lié_à,1
+M01066,T02596,lié_à,1
+T02652,TAG007,tagué,1
+M00674,T01341,lié_à,1
+T02647,C0039,appartient_à,1
+U0006,T01926,assigné_à,1
+T01115,C0038,appartient_à,1
+U0039,T01881,a_créé,1
+T03039,TAG017,tagué,1
+T01897,TAG003,tagué,1
+U0086,T01172,a_créé,1
+U0074,T02429,a_créé,1
+T01836,TAG006,tagué,1
+U0062,T00022,assigné_à,1
+T01184,C0023,appartient_à,1
+T02980,C0020,appartient_à,1
+T02022,C0018,appartient_à,1
+T00856,TAG025,tagué,1
+T02970,C0004,appartient_à,1
+U0045,T00811,a_créé,1
+M00260,T00125,lié_à,1
+U0044,M00963,a_envoyé,1
+U0021,T00264,a_créé,1
+T01747,TAG024,tagué,1
+M00109,T00992,lié_à,1
+U0035,T02732,a_créé,1
+T03070,TAG001,tagué,1
+T02965,TAG018,tagué,1
+T02701,TAG021,tagué,1
+U0098,T01552,assigné_à,1
+U0054,T01099,assigné_à,1
+T01094,TAG008,tagué,1
+T00642,C0058,appartient_à,1
+U0035,T01209,a_créé,1
+T02412,C0034,appartient_à,1
+T00008,TAG023,tagué,1
+T00508,C0004,appartient_à,1
+T01914,TAG020,tagué,1
+M00399,T01744,lié_à,1
+T03329,C0021,appartient_à,1
+U0037,T00456,a_créé,1
+T01793,TAG005,tagué,1
+U0092,T00586,assigné_à,1
+M00410,T01707,lié_à,1
+T00360,TAG005,tagué,1
+U0006,T00967,a_créé,1
+T03011,TAG025,tagué,1
+U0015,T01366,a_créé,1
+U0046,T01117,assigné_à,1
+T01367,TAG013,tagué,1
+U0053,T02745,assigné_à,1
+U0004,C0059,gère,10
+U0084,T01217,assigné_à,1
+T00093,C0040,appartient_à,1
+T01612,TAG024,tagué,1
+T01654,TAG012,tagué,1
+T01309,TAG002,tagué,1
+U0071,T02908,assigné_à,1
+T02335,TAG021,tagué,1
+T01676,TAG009,tagué,1
+T00133,C0016,appartient_à,1
+U0026,T00054,assigné_à,1
+T02040,TAG007,tagué,1
+U0037,M01090,a_envoyé,1
+T00760,TAG011,tagué,1
+T00244,TAG022,tagué,1
+U0032,T02716,assigné_à,1
+U0016,M00941,a_envoyé,1
+T02203,TAG025,tagué,1
+T02677,C0015,appartient_à,1
+T02503,TAG004,tagué,1
+T02355,C0027,appartient_à,1
+U0098,T00322,assigné_à,1
+U0013,T00720,assigné_à,1
+T00547,TAG011,tagué,1
+T00902,TAG015,tagué,1
+U0020,T01640,a_créé,1
+U0038,T00407,assigné_à,1
+U0056,T00888,a_créé,1
+T00792,TAG021,tagué,1
+T02937,C0023,appartient_à,1
+U0098,T03235,a_créé,1
+T02664,C0060,appartient_à,1
+M00011,T00770,lié_à,1
+U0036,T02054,assigné_à,1
+U0064,T02183,a_créé,1
+T02375,C0009,appartient_à,1
+T01754,TAG025,tagué,1
+T02694,TAG022,tagué,1
+T02592,TAG016,tagué,1
+U0044,T03299,a_créé,1
+T00027,C0041,appartient_à,1
+U0028,T01804,assigné_à,1
+T02560,TAG016,tagué,1
+U0033,M00654,a_envoyé,1
+U0046,T00663,a_créé,1
+T01132,C0049,appartient_à,1
+U0036,T03027,assigné_à,1
+T02650,TAG009,tagué,1
+T01877,TAG015,tagué,1
+T00480,C0017,appartient_à,1
+U0030,T01122,a_créé,1
+U0046,T01015,a_créé,1
+U0064,C0060,gère,3
+T02915,C0016,appartient_à,1
+U0063,T00735,assigné_à,1
+T00649,TAG013,tagué,1
+M00372,T01354,lié_à,1
+U0073,T00879,a_créé,1
+T00033,C0040,appartient_à,1
+T00398,C0040,appartient_à,1
+T02028,TAG012,tagué,1
+T00542,TAG021,tagué,1
+U0086,T03343,assigné_à,1
+U0091,T03387,a_créé,1
+T03212,C0025,appartient_à,1
+U0013,M00143,a_envoyé,1
+T01380,C0001,appartient_à,1
+M00531,T02937,lié_à,1
+T03192,TAG024,tagué,1
+T02459,TAG006,tagué,1
+T00980,TAG007,tagué,1
+U0073,M00547,a_envoyé,1
+U0042,T02324,a_créé,1
+T02032,TAG024,tagué,1
+U0091,T02879,a_créé,1
+M00650,T01749,lié_à,1
+U0001,M00667,a_envoyé,1
+U0022,T02145,a_créé,1
+T00829,TAG002,tagué,1
+U0093,T01386,assigné_à,1
+U0047,M00922,a_envoyé,1
+T00289,TAG025,tagué,1
+T00068,TAG003,tagué,1
+M00654,T03314,lié_à,1
+U0078,T00066,a_créé,1
+U0068,T02169,assigné_à,1
+U0076,T01474,a_créé,1
+M00605,T02810,lié_à,1
+T01165,TAG012,tagué,1
+T00058,C0035,appartient_à,1
+T02840,TAG005,tagué,1
+U0006,T02192,assigné_à,1
+U0046,T00360,a_créé,1
+T01813,TAG009,tagué,1
+T00089,TAG004,tagué,1
+U0064,T02158,assigné_à,1
+U0026,M00170,a_envoyé,1
+T00504,TAG005,tagué,1
+U0019,T02901,a_créé,1
+T02066,TAG006,tagué,1
+T02782,TAG005,tagué,1
+U0056,M00927,a_envoyé,1
+T00780,TAG022,tagué,1
+T01102,C0056,appartient_à,1
+T01228,C0013,appartient_à,1
+U0045,T01409,assigné_à,1
+U0096,T02443,a_créé,1
+U0058,T01713,a_créé,1
+T01404,TAG009,tagué,1
+M00030,T02204,lié_à,1
+U0090,M00502,a_envoyé,1
+T02434,TAG013,tagué,1
+U0077,T01341,a_créé,1
+T00516,TAG018,tagué,1
+T01324,TAG004,tagué,1
+U0096,T03013,assigné_à,1
+T01230,C0011,appartient_à,1
+T02638,TAG001,tagué,1
+T03009,TAG021,tagué,1
+U0098,M01059,a_envoyé,1
+T00097,C0027,appartient_à,1
+T01823,TAG018,tagué,1
+T02462,TAG002,tagué,1
+M00122,T01935,lié_à,1
+T00523,TAG009,tagué,1
+T02262,C0049,appartient_à,1
+T00238,TAG019,tagué,1
+T00444,TAG006,tagué,1
+T00368,TAG007,tagué,1
+T01109,TAG005,tagué,1
+T00706,TAG016,tagué,1
+T00047,TAG005,tagué,1
+U0073,T00779,a_créé,1
+T00904,TAG009,tagué,1
+T00925,TAG007,tagué,1
+M00148,T01259,lié_à,1
+T00390,TAG025,tagué,1
+U0074,M00418,a_envoyé,1
+T00593,C0043,appartient_à,1
+U0040,T00065,a_créé,1
+U0051,C0012,gère,9
+T03020,TAG023,tagué,1
+U0052,M00258,a_envoyé,1
+T01494,C0045,appartient_à,1
+U0010,T02814,assigné_à,1
+T01475,TAG025,tagué,1
+T03213,C0005,appartient_à,1
+T02546,TAG020,tagué,1
+U0038,T02126,a_créé,1
+T01074,C0011,appartient_à,1
+U0002,T03230,a_créé,1
+U0058,T02572,assigné_à,1
+T01096,C0026,appartient_à,1
+T02397,TAG010,tagué,1
+U0072,T00674,assigné_à,1
+U0080,T01252,a_créé,1
+T03462,TAG005,tagué,1
+T03394,C0028,appartient_à,1
+U0008,T03125,assigné_à,1
+U0053,T02783,assigné_à,1
+T01123,C0035,appartient_à,1
+T00266,TAG014,tagué,1
+U0035,T00251,a_créé,1
+U0075,M00520,a_envoyé,1
+U0032,T00573,a_créé,1
+T02706,TAG006,tagué,1
+T00172,TAG009,tagué,1
+T00994,TAG024,tagué,1
+U0073,T01688,assigné_à,1
+T02843,TAG025,tagué,1
+T01686,TAG020,tagué,1
+T01478,C0022,appartient_à,1
+T01745,TAG019,tagué,1
+T02470,C0019,appartient_à,1
+T00754,C0044,appartient_à,1
+T00389,C0027,appartient_à,1
+T01422,C0053,appartient_à,1
+T02008,TAG009,tagué,1
+T01556,TAG009,tagué,1
+U0025,T03003,a_créé,1
+M00947,T01475,lié_à,1
+M00990,T02996,lié_à,1
+T02857,TAG024,tagué,1
+T00236,TAG023,tagué,1
+T01458,TAG022,tagué,1
+U0002,M00278,a_envoyé,1
+T00289,C0059,appartient_à,1
+T02088,TAG020,tagué,1
+T03115,TAG023,tagué,1
+T02044,TAG022,tagué,1
+U0024,T02483,a_créé,1
+T02275,TAG002,tagué,1
+T03371,TAG015,tagué,1
+T01290,TAG005,tagué,1
+T03016,TAG014,tagué,1
+U0050,T02255,assigné_à,1
+U0085,T00600,a_créé,1
+T01216,TAG002,tagué,1
+T00525,C0024,appartient_à,1
+T03428,TAG013,tagué,1
+T02973,C0038,appartient_à,1
+T01548,C0011,appartient_à,1
+U0052,T00069,assigné_à,1
+U0035,T02664,assigné_à,1
+T00985,TAG023,tagué,1
+U0012,T00074,assigné_à,1
+T01150,TAG023,tagué,1
+U0074,T03258,a_créé,1
+T02533,TAG012,tagué,1
+T02457,TAG007,tagué,1
+U0100,T01707,a_créé,1
+U0045,T01118,assigné_à,1
+T01448,C0054,appartient_à,1
+T02919,TAG015,tagué,1
+T03080,TAG009,tagué,1
+T02655,TAG007,tagué,1
+U0046,T03231,a_créé,1
+U0074,M00862,a_envoyé,1
+T00071,C0026,appartient_à,1
+U0051,T01019,a_créé,1
+T02233,TAG004,tagué,1
+T00473,TAG007,tagué,1
+U0020,M00047,a_envoyé,1
+U0035,T00505,assigné_à,1
+U0074,T00277,assigné_à,1
+T00716,TAG014,tagué,1
+T01816,TAG003,tagué,1
+U0057,C0041,gère,2
+U0047,T01037,a_créé,1
+M00657,T00847,lié_à,1
+T02690,TAG012,tagué,1
+T03201,TAG015,tagué,1
+U0037,T00782,a_créé,1
+T01608,TAG020,tagué,1
+M00179,T01252,lié_à,1
+T01185,TAG001,tagué,1
+T02979,TAG025,tagué,1
+T01313,TAG015,tagué,1
+T01989,TAG009,tagué,1
+U0055,M00896,a_envoyé,1
+M00151,T01843,lié_à,1
+T00845,C0027,appartient_à,1
+U0011,T01229,assigné_à,1
+T00769,TAG016,tagué,1
+T00084,C0045,appartient_à,1
+T00739,C0021,appartient_à,1
+T00107,TAG022,tagué,1
+U0019,T01474,assigné_à,1
+M00320,T00763,lié_à,1
+U0014,T02240,assigné_à,1
+T03465,TAG012,tagué,1
+M00276,T00570,lié_à,1
+T03151,C0018,appartient_à,1
+T01159,TAG019,tagué,1
+M01085,T02924,lié_à,1
+M00798,T01315,lié_à,1
+U0014,T01001,assigné_à,1
+T00140,TAG016,tagué,1
+M00891,T01950,lié_à,1
+U0092,T00126,a_créé,1
+T00214,TAG022,tagué,1
+T01258,TAG003,tagué,1
+T00957,TAG012,tagué,1
+U0002,T03498,a_créé,1
+T03075,TAG002,tagué,1
+T01353,TAG006,tagué,1
+U0049,T02363,a_créé,1
+T01408,C0039,appartient_à,1
+T02522,TAG022,tagué,1
+T02551,C0032,appartient_à,1
+T02865,C0055,appartient_à,1
+T02054,TAG002,tagué,1
+U0022,T02097,assigné_à,1
+M00047,T02141,lié_à,1
+T00066,TAG001,tagué,1
+T02633,TAG023,tagué,1
+T02294,TAG009,tagué,1
+T00210,C0033,appartient_à,1
+T00997,TAG009,tagué,1
+T00374,C0029,appartient_à,1
+U0092,T02585,assigné_à,1
+T01675,TAG003,tagué,1
+T01138,C0003,appartient_à,1
+T02182,C0016,appartient_à,1
+T02104,C0014,appartient_à,1
+T00442,TAG017,tagué,1
+T01746,TAG024,tagué,1
+T01909,TAG011,tagué,1
+T00013,C0020,appartient_à,1
+T02020,TAG017,tagué,1
+T02774,TAG004,tagué,1
+T01107,C0023,appartient_à,1
+U0085,T01636,assigné_à,1
+T03312,C0056,appartient_à,1
+M00929,T00716,lié_à,1
+T02269,TAG025,tagué,1
+T00910,TAG015,tagué,1
+T00965,C0037,appartient_à,1
+T00748,TAG018,tagué,1
+U0034,T03391,assigné_à,1
+U0071,T00627,assigné_à,1
+T00274,C0004,appartient_à,1
+T00258,C0040,appartient_à,1
+T02120,TAG025,tagué,1
+U0026,C0045,gère,3
+U0060,M00995,a_envoyé,1
+M01058,T00075,lié_à,1
+U0022,M00163,a_envoyé,1
+M01167,T01994,lié_à,1
+T00876,TAG003,tagué,1
+T00723,TAG014,tagué,1
+M00158,T00195,lié_à,1
+M00044,T00238,lié_à,1
+U0009,T03410,a_créé,1
+T00169,TAG016,tagué,1
+U0021,T01141,a_créé,1
+T01650,C0010,appartient_à,1
+M00163,T02515,lié_à,1
+T03424,TAG021,tagué,1
+T02397,TAG007,tagué,1
+T02708,TAG003,tagué,1
+M00903,T00077,lié_à,1
+U0029,M01060,a_envoyé,1
+T02801,TAG007,tagué,1
+T01670,TAG013,tagué,1
+T01867,TAG012,tagué,1
+U0068,T02459,assigné_à,1
+T03138,C0044,appartient_à,1
+T00016,C0003,appartient_à,1
+U0067,T00309,assigné_à,1
+U0044,T01680,a_créé,1
+U0010,T00900,a_créé,1
+T00421,TAG025,tagué,1
+U0063,T03264,assigné_à,1
+T01000,TAG006,tagué,1
+T00071,TAG001,tagué,1
+T03235,TAG011,tagué,1
+T00464,TAG018,tagué,1
+U0044,M00875,a_envoyé,1
+M00342,T00711,lié_à,1
+U0056,M00575,a_envoyé,1
+T02929,C0039,appartient_à,1
+T00660,TAG020,tagué,1
+T01140,TAG002,tagué,1
+U0082,T01589,a_créé,1
+U0006,M00940,a_envoyé,1
+T01847,TAG001,tagué,1
+T03039,C0058,appartient_à,1
+T00887,TAG025,tagué,1
+T00698,TAG001,tagué,1
+U0018,T02591,a_créé,1
+U0033,T02555,assigné_à,1
+T02266,TAG022,tagué,1
+T03323,C0052,appartient_à,1
+T01609,C0031,appartient_à,1
+U0032,T00151,a_créé,1
+U0045,T01425,assigné_à,1
+T01985,C0018,appartient_à,1
+T02660,C0042,appartient_à,1
+U0075,M00302,a_envoyé,1
+T02156,C0001,appartient_à,1
+U0044,T00725,a_créé,1
+T00065,TAG021,tagué,1
+U0096,T00037,assigné_à,1
+U0029,T03490,assigné_à,1
+T00692,TAG024,tagué,1
+U0028,T01717,assigné_à,1
+T01473,TAG001,tagué,1
+M01174,T02160,lié_à,1
+U0065,T01083,a_créé,1
+U0048,T00509,assigné_à,1
+T01694,TAG015,tagué,1
+T00620,C0053,appartient_à,1
+T01493,TAG016,tagué,1
+M00060,T03439,lié_à,1
+U0092,T00183,a_créé,1
+U0055,T01796,a_créé,1
+T03414,C0024,appartient_à,1
+U0036,T02210,assigné_à,1
+U0049,T00204,a_créé,1
+U0089,T03093,assigné_à,1
+T02515,TAG006,tagué,1
+T03048,C0014,appartient_à,1
+T02296,TAG006,tagué,1
+T03472,TAG015,tagué,1
+T02301,C0057,appartient_à,1
+T00441,TAG007,tagué,1
+M00831,T03066,lié_à,1
+T03015,TAG019,tagué,1
+U0092,T03247,assigné_à,1
+T03460,C0047,appartient_à,1
+U0066,T01309,a_créé,1
+T01733,TAG002,tagué,1
+U0075,M00070,a_envoyé,1
+T00979,TAG007,tagué,1
+T02173,TAG014,tagué,1
+U0064,T02323,assigné_à,1
+T00860,C0042,appartient_à,1
+T02838,TAG004,tagué,1
+T01289,TAG024,tagué,1
+T00409,C0038,appartient_à,1
+T03112,TAG002,tagué,1
+U0088,T03349,assigné_à,1
+U0056,T03131,a_créé,1
+M00444,T03113,lié_à,1
+U0032,T00011,a_créé,1
+U0025,T02942,a_créé,1
+T01219,TAG017,tagué,1
+U0085,T03331,a_créé,1
+U0048,T01847,a_créé,1
+U0060,T01239,a_créé,1
+M00206,T00094,lié_à,1
+U0014,T02619,assigné_à,1
+U0076,T01842,assigné_à,1
+M01200,T01115,lié_à,1
+T03163,TAG014,tagué,1
+T01475,C0004,appartient_à,1
+T02815,TAG024,tagué,1
+T01243,C0002,appartient_à,1
+U0097,T01568,a_créé,1
+T02835,TAG012,tagué,1
+T02267,TAG006,tagué,1
+U0096,T03224,a_créé,1
+T02220,TAG002,tagué,1
+T02644,TAG003,tagué,1
+T00403,C0058,appartient_à,1
+U0058,T02636,a_créé,1
+U0029,M01145,a_envoyé,1
+T00365,TAG011,tagué,1
+T01426,C0044,appartient_à,1
+T01936,C0045,appartient_à,1
+T02533,TAG025,tagué,1
+T02321,TAG020,tagué,1
+T00046,C0020,appartient_à,1
+T02189,TAG004,tagué,1
+T01797,TAG012,tagué,1
+T02369,C0008,appartient_à,1
+T01974,TAG001,tagué,1
+T02295,TAG012,tagué,1
+T00549,C0035,appartient_à,1
+U0094,T03073,a_créé,1
+T03223,C0059,appartient_à,1
+U0001,T03372,assigné_à,1
+T02648,TAG022,tagué,1
+U0016,T00828,assigné_à,1
+U0081,T01875,a_créé,1
+M00117,T00711,lié_à,1
+T00945,TAG023,tagué,1
+U0023,T03447,a_créé,1
+U0044,T02248,assigné_à,1
+U0045,M00509,a_envoyé,1
+T01484,TAG008,tagué,1
+T03041,TAG012,tagué,1
+U0065,T02761,a_créé,1
+T03117,C0036,appartient_à,1
+T02235,TAG024,tagué,1
+U0035,T02187,a_créé,1
+T03438,TAG023,tagué,1
+T02791,C0047,appartient_à,1
+T02083,C0045,appartient_à,1
+U0087,T03285,a_créé,1
+T00772,C0029,appartient_à,1
+T01905,TAG012,tagué,1
+M00959,T01034,lié_à,1
+T00698,TAG012,tagué,1
+U0086,T01495,a_créé,1
+U0024,C0019,gère,5
+U0055,T00388,a_créé,1
+T02046,TAG016,tagué,1
+T02543,TAG023,tagué,1
+U0051,T00946,assigné_à,1
+T01135,TAG019,tagué,1
+T02728,C0004,appartient_à,1
+U0086,M00035,a_envoyé,1
+T01357,C0011,appartient_à,1
+T00378,TAG025,tagué,1
+T01982,C0046,appartient_à,1
+T01790,C0020,appartient_à,1
+U0057,T01578,a_créé,1
+U0069,M01157,a_envoyé,1
+T01256,TAG019,tagué,1
+U0011,T02694,assigné_à,1
+U0042,M00720,a_envoyé,1
+T01386,TAG002,tagué,1
+T00633,TAG007,tagué,1
+U0015,T00393,assigné_à,1
+T00642,TAG003,tagué,1
+U0025,T00011,assigné_à,1
+U0087,T00351,assigné_à,1
+U0072,T00725,assigné_à,1
+T02754,C0050,appartient_à,1
+U0037,T00457,assigné_à,1
+U0033,T01357,assigné_à,1
+T00804,TAG023,tagué,1
+T02955,C0026,appartient_à,1
+T01111,TAG001,tagué,1
+T02232,C0045,appartient_à,1
+U0083,C0019,gère,2
+T00726,TAG004,tagué,1
+T01485,TAG014,tagué,1
+T00446,C0056,appartient_à,1
+T01287,C0038,appartient_à,1
+T00602,TAG019,tagué,1
+U0041,T02314,a_créé,1
+U0050,T03295,a_créé,1
+M00696,T01965,lié_à,1
+T03067,C0033,appartient_à,1
+U0095,T03184,a_créé,1
+U0048,T02423,a_créé,1
+U0081,T00358,a_créé,1
+T02694,TAG007,tagué,1
+T00482,C0043,appartient_à,1
+T02391,TAG010,tagué,1
+U0040,M01153,a_envoyé,1
+U0001,M00920,a_envoyé,1
+U0054,M00848,a_envoyé,1
+U0021,T00954,a_créé,1
+U0068,T02678,assigné_à,1
+T02934,TAG021,tagué,1
+T01267,TAG008,tagué,1
+T00093,TAG018,tagué,1
+U0067,T02288,a_créé,1
+T00445,TAG022,tagué,1
+U0080,T01732,assigné_à,1
+T02164,TAG015,tagué,1
+T03359,TAG008,tagué,1
+T02040,TAG013,tagué,1
+U0076,T01930,assigné_à,1
+T00900,TAG001,tagué,1
+T02790,TAG001,tagué,1
+T01321,TAG022,tagué,1
+T01672,TAG018,tagué,1
+T01735,TAG012,tagué,1
+T00215,TAG019,tagué,1
+T00710,TAG019,tagué,1
+U0079,T01863,a_créé,1
+T01303,TAG014,tagué,1
+U0034,M00567,a_envoyé,1
+T00536,TAG004,tagué,1
+T02889,TAG008,tagué,1
+T02459,TAG013,tagué,1
+U0095,M00293,a_envoyé,1
+T00021,C0058,appartient_à,1
+U0007,T00583,assigné_à,1
+U0048,C0040,gère,9
+T02829,TAG024,tagué,1
+T02649,TAG020,tagué,1
+U0057,T01077,assigné_à,1
+U0084,T02873,assigné_à,1
+M00707,T02683,lié_à,1
+U0012,T03430,a_créé,1
+T02505,TAG012,tagué,1
+U0015,T01701,assigné_à,1
+T02954,TAG014,tagué,1
+U0088,T00288,a_créé,1
+U0089,T01278,a_créé,1
+U0094,T01779,a_créé,1
+T02487,TAG024,tagué,1
+T02093,C0049,appartient_à,1
+U0014,T01626,assigné_à,1
+M01118,T03105,lié_à,1
+T00069,C0043,appartient_à,1
+T02944,C0052,appartient_à,1
+U0085,T01604,a_créé,1
+T00465,TAG012,tagué,1
+T01823,TAG023,tagué,1
+T01521,TAG004,tagué,1
+U0074,T00944,a_créé,1
+U0075,T02466,a_créé,1
+U0021,T01226,a_créé,1
+T01273,C0039,appartient_à,1
+U0039,T01439,assigné_à,1
+T01312,TAG010,tagué,1
+U0053,M00998,a_envoyé,1
+M00241,T00623,lié_à,1
+U0084,T02869,assigné_à,1
+U0069,T00729,a_créé,1
+U0094,T02102,assigné_à,1
+U0082,T01259,a_créé,1
+U0072,T03435,a_créé,1
+U0024,M00221,a_envoyé,1
+T01644,TAG022,tagué,1
+T03036,TAG022,tagué,1
+T00919,C0042,appartient_à,1
+T00929,TAG016,tagué,1
+U0062,M00213,a_envoyé,1
+U0074,T02262,a_créé,1
+T00723,C0021,appartient_à,1
+T03160,TAG013,tagué,1
+T02377,C0036,appartient_à,1
+T01269,TAG021,tagué,1
+U0037,T01297,assigné_à,1
+T01581,TAG004,tagué,1
+U0073,T03175,a_créé,1
+U0059,T00215,assigné_à,1
+T03325,C0041,appartient_à,1
+T01000,C0050,appartient_à,1
+T03448,C0014,appartient_à,1
+T00863,TAG017,tagué,1
+U0016,T03027,a_créé,1
+T00501,TAG015,tagué,1
+U0066,T03201,a_créé,1
+T01569,TAG011,tagué,1
+T01524,TAG015,tagué,1
+U0073,T01675,assigné_à,1
+T02016,TAG011,tagué,1
+U0010,T01536,a_créé,1
+U0079,T02004,assigné_à,1
+T01964,TAG024,tagué,1
+U0069,T01758,assigné_à,1
+T01341,TAG012,tagué,1
+T03294,C0039,appartient_à,1
+T01461,C0007,appartient_à,1
+T01621,TAG023,tagué,1
+U0084,T00429,assigné_à,1
+T00106,C0040,appartient_à,1
+T02809,TAG022,tagué,1
+T01795,TAG022,tagué,1
+T00395,TAG003,tagué,1
+T01331,TAG024,tagué,1
+M00645,T02505,lié_à,1
+M00516,T02822,lié_à,1
+T03021,TAG012,tagué,1
+M00827,T02627,lié_à,1
+T02596,TAG002,tagué,1
+U0020,T02302,assigné_à,1
+T00242,TAG009,tagué,1
+T03389,TAG003,tagué,1
+T01612,TAG004,tagué,1
+T03038,C0006,appartient_à,1
+U0088,T02137,a_créé,1
+U0025,T01295,a_créé,1
+U0063,M00089,a_envoyé,1
+U0035,T01794,assigné_à,1
+T00895,TAG018,tagué,1
+T03244,TAG005,tagué,1
+T02298,TAG005,tagué,1
+T00557,C0020,appartient_à,1
+T03114,TAG021,tagué,1
+T01739,TAG001,tagué,1
+U0084,T02403,a_créé,1
+U0020,T00598,a_créé,1
+T02281,TAG022,tagué,1
+T02729,TAG024,tagué,1
+M00337,T01557,lié_à,1
+T01036,TAG011,tagué,1
+U0052,T02976,assigné_à,1
+T01995,TAG006,tagué,1
+T02027,TAG007,tagué,1
+T01401,TAG013,tagué,1
+T03274,TAG009,tagué,1
+U0002,T02996,a_créé,1
+U0077,T00264,assigné_à,1
+U0039,T01113,assigné_à,1
+U0047,T02297,assigné_à,1
+U0031,T00736,a_créé,1
+T02844,C0040,appartient_à,1
+T00180,TAG001,tagué,1
+U0096,T00205,assigné_à,1
+U0016,T03265,a_créé,1
+U0098,T03207,assigné_à,1
+T02498,TAG025,tagué,1
+T01287,TAG020,tagué,1
+T02905,TAG015,tagué,1
+U0015,T00266,a_créé,1
+T01731,TAG015,tagué,1
+U0082,T02123,a_créé,1
+T01082,C0042,appartient_à,1
+T00099,TAG002,tagué,1
+T03328,C0003,appartient_à,1
+T02205,TAG008,tagué,1
+U0013,T02997,assigné_à,1
+U0055,T03487,a_créé,1
+U0083,T01971,assigné_à,1
+U0052,T01552,a_créé,1
+U0036,M00655,a_envoyé,1
+U0043,C0051,gère,10
+T02720,TAG010,tagué,1
+U0047,T00147,a_créé,1
+M00760,T00565,lié_à,1
+T02783,TAG003,tagué,1
+T00499,C0059,appartient_à,1
+M00580,T00947,lié_à,1
+T01343,TAG016,tagué,1
+T00703,TAG005,tagué,1
+T01941,TAG015,tagué,1
+U0059,T02767,a_créé,1
+U0035,M00173,a_envoyé,1
+T00884,TAG023,tagué,1
+U0033,C0017,gère,6
+T03031,TAG016,tagué,1
+U0032,T00359,assigné_à,1
+M00515,T01557,lié_à,1
+T01024,C0056,appartient_à,1
+U0002,T00027,a_créé,1
+U0062,T00321,assigné_à,1
+U0051,T02656,a_créé,1
+U0040,T02144,assigné_à,1
+U0071,T00787,assigné_à,1
+T01237,TAG023,tagué,1
+T02192,TAG016,tagué,1
+T01553,TAG019,tagué,1
+U0018,T03415,a_créé,1
+T00095,TAG023,tagué,1
+U0086,C0011,gère,9
+U0072,T01562,a_créé,1
+U0073,T01632,a_créé,1
+T02807,TAG008,tagué,1
+T01739,C0031,appartient_à,1
+U0089,T02651,assigné_à,1
+U0042,T02104,a_créé,1
+T02012,C0048,appartient_à,1
+T00521,C0060,appartient_à,1
+M00423,T01566,lié_à,1
+U0068,M00734,a_envoyé,1
+T00150,TAG005,tagué,1
+U0034,T02615,assigné_à,1
+T03236,TAG003,tagué,1
+T02165,TAG004,tagué,1
+T03017,TAG009,tagué,1
+T02987,TAG005,tagué,1
+U0003,T00738,assigné_à,1
+U0092,T00702,assigné_à,1
+T01937,TAG007,tagué,1
+T01764,TAG014,tagué,1
+U0061,T02813,a_créé,1
+T00842,TAG021,tagué,1
+U0080,T00694,a_créé,1
+T01511,TAG007,tagué,1
+U0039,T01833,a_créé,1
+U0050,T02013,assigné_à,1
+T02169,C0002,appartient_à,1
+U0047,M00831,a_envoyé,1
+T00654,C0037,appartient_à,1
+U0086,T02184,assigné_à,1
+T00712,C0035,appartient_à,1
+T02676,C0043,appartient_à,1
+U0053,T03358,a_créé,1
+T01107,TAG010,tagué,1
+U0095,T01880,a_créé,1
+T02319,TAG001,tagué,1
+U0062,T01208,assigné_à,1
+T00594,TAG017,tagué,1
+M00057,T01479,lié_à,1
+T01002,TAG015,tagué,1
+T00958,C0012,appartient_à,1
+T00697,TAG008,tagué,1
+U0077,T01018,a_créé,1
+T01415,TAG004,tagué,1
+T00429,TAG012,tagué,1
+U0088,T00318,a_créé,1
+T01852,TAG006,tagué,1
+T00756,TAG018,tagué,1
+U0005,T02269,a_créé,1
+T00609,C0057,appartient_à,1
+T00296,TAG003,tagué,1
+T02350,TAG014,tagué,1
+T02665,TAG021,tagué,1
+T02839,TAG011,tagué,1
+T00752,TAG005,tagué,1
+U0083,T00931,assigné_à,1
+U0067,M00587,a_envoyé,1
+T03307,C0046,appartient_à,1
+T02238,C0047,appartient_à,1
+U0056,T01751,a_créé,1
+U0066,T03161,a_créé,1
+T03301,TAG010,tagué,1
+T01699,TAG012,tagué,1
+U0090,T02392,assigné_à,1
+T03381,TAG015,tagué,1
+T00489,C0044,appartient_à,1
+T01449,C0037,appartient_à,1
+U0020,T01121,a_créé,1
+M01134,T02871,lié_à,1
+T03338,TAG020,tagué,1
+U0079,T01182,a_créé,1
+U0039,T00267,a_créé,1
+U0096,T03396,assigné_à,1
+T01554,TAG025,tagué,1
+U0094,T01525,assigné_à,1
+T01928,C0052,appartient_à,1
+U0084,T03022,a_créé,1
+U0100,T00171,a_créé,1
+U0005,T03006,a_créé,1
+T00604,C0001,appartient_à,1
+U0022,T02421,a_créé,1
+T01665,C0054,appartient_à,1
+U0079,T01854,a_créé,1
+T00313,TAG001,tagué,1
+T02952,TAG023,tagué,1
+T00066,C0009,appartient_à,1
+U0082,M00008,a_envoyé,1
+U0087,T00938,assigné_à,1
+T02366,TAG022,tagué,1
+T03022,TAG004,tagué,1
+U0021,T00927,assigné_à,1
+T00954,C0014,appartient_à,1
+U0050,T00084,a_créé,1
+T02812,TAG020,tagué,1
+T02356,C0035,appartient_à,1
+T01092,TAG018,tagué,1
+U0033,C0014,gère,4
+T03361,TAG013,tagué,1
+U0051,T01902,a_créé,1
+T02223,C0043,appartient_à,1
+T00687,C0028,appartient_à,1
+U0099,T00892,assigné_à,1
+T02214,C0011,appartient_à,1
+T02022,TAG014,tagué,1
+T01844,TAG015,tagué,1
+M00003,T00392,lié_à,1
+T00769,TAG018,tagué,1
+T02399,TAG008,tagué,1
+T00164,TAG001,tagué,1
+T01539,C0035,appartient_à,1
+T01987,TAG008,tagué,1
+T00819,C0026,appartient_à,1
+T03302,TAG014,tagué,1
+T03483,TAG014,tagué,1
+U0089,T00490,assigné_à,1
+M01165,T03239,lié_à,1
+M00712,T02596,lié_à,1
+T02974,TAG021,tagué,1
+T01763,TAG010,tagué,1
+T00485,C0025,appartient_à,1
+U0074,T00233,a_créé,1
+T02681,TAG002,tagué,1
+T02723,TAG015,tagué,1
+T00847,C0006,appartient_à,1
+U0052,T01972,a_créé,1
+M00430,T02726,lié_à,1
+T03481,TAG020,tagué,1
+U0077,T01368,assigné_à,1
+U0033,T03141,a_créé,1
+U0092,T02443,assigné_à,1
+T02190,C0008,appartient_à,1
+U0098,T02027,a_créé,1
+U0085,T02449,a_créé,1
+T00321,TAG019,tagué,1
+U0024,T03141,assigné_à,1
+U0039,T02974,assigné_à,1
+T02806,TAG025,tagué,1
+U0010,T00687,a_créé,1
+T01826,TAG023,tagué,1
+U0076,T02017,assigné_à,1
+T02966,C0032,appartient_à,1
+U0059,T02556,assigné_à,1
+U0058,T00237,a_créé,1
+U0036,T02081,assigné_à,1
+T00622,TAG021,tagué,1
+U0095,T01432,a_créé,1
+T02102,C0027,appartient_à,1
+U0025,T01065,a_créé,1
+U0092,T01535,assigné_à,1
+U0029,M00239,a_envoyé,1
+T03270,TAG023,tagué,1
+T02617,C0040,appartient_à,1
+U0097,T02519,assigné_à,1
+M00723,T00295,lié_à,1
+M00504,T02118,lié_à,1
+U0062,M00187,a_envoyé,1
+T00218,C0038,appartient_à,1
+T00912,TAG020,tagué,1
+T00563,TAG023,tagué,1
+M01048,T00875,lié_à,1
+U0003,T02059,a_créé,1
+T00885,TAG021,tagué,1
+T00407,TAG022,tagué,1
+T01009,C0013,appartient_à,1
+M00965,T02518,lié_à,1
+T01019,TAG018,tagué,1
+U0100,T00133,assigné_à,1
+U0066,C0046,gère,5
+U0006,T00110,a_créé,1
+T02553,TAG013,tagué,1
+T00752,C0049,appartient_à,1
+U0041,T02150,a_créé,1
+U0080,T02694,a_créé,1
+U0091,T03031,a_créé,1
+U0091,T03384,assigné_à,1
+U0034,T01070,a_créé,1
+T00551,TAG011,tagué,1
+U0090,T01423,a_créé,1
+T02350,C0030,appartient_à,1
+T01323,TAG016,tagué,1
+T00199,TAG014,tagué,1
+M00822,T00892,lié_à,1
+U0050,T00986,assigné_à,1
+U0093,T02798,a_créé,1
+U0035,T01751,assigné_à,1
+U0054,M00573,a_envoyé,1
+U0075,T02645,a_créé,1
+T00912,TAG015,tagué,1
+T00802,TAG023,tagué,1
+T01349,C0029,appartient_à,1
+T02780,C0060,appartient_à,1
+T01622,C0006,appartient_à,1
+T01512,TAG022,tagué,1
+U0005,T00604,assigné_à,1
+U0031,T01766,assigné_à,1
+T02977,TAG009,tagué,1
+U0049,T02263,assigné_à,1
+U0080,T01973,assigné_à,1
+T01767,TAG011,tagué,1
+U0006,T01816,assigné_à,1
+U0065,T02805,a_créé,1
+T00870,C0057,appartient_à,1
+M00520,T00684,lié_à,1
+U0019,T01605,assigné_à,1
+U0075,T02672,assigné_à,1
+U0003,T01080,assigné_à,1
+U0041,C0015,gère,3
+T01778,C0013,appartient_à,1
+T01582,TAG006,tagué,1
+U0087,T03362,assigné_à,1
+T01051,TAG014,tagué,1
+U0082,T02181,a_créé,1
+T00209,TAG015,tagué,1
+T01989,C0033,appartient_à,1
+T00355,C0005,appartient_à,1
+T01901,TAG006,tagué,1
+U0077,T01745,assigné_à,1
+T01785,TAG016,tagué,1
+T00545,TAG002,tagué,1
+T00909,TAG012,tagué,1
+U0005,T02709,a_créé,1
+T00978,C0005,appartient_à,1
+T00580,C0024,appartient_à,1
+T03377,C0032,appartient_à,1
+U0080,T02183,assigné_à,1
+T01166,TAG008,tagué,1
+U0044,T01137,a_créé,1
+U0047,T00049,a_créé,1
+T03142,TAG018,tagué,1
+U0082,T01804,a_créé,1
+U0089,T01246,a_créé,1
+U0041,T03153,assigné_à,1
+T01188,TAG019,tagué,1
+T03206,C0001,appartient_à,1
+T03478,TAG001,tagué,1
+T03296,C0015,appartient_à,1
+U0032,T03297,assigné_à,1
+T00062,TAG016,tagué,1
+U0016,T02586,a_créé,1
+U0094,T02908,a_créé,1
+U0044,T01738,a_créé,1
+U0073,C0028,gère,7
+U0010,T01048,a_créé,1
+T00912,TAG021,tagué,1
+T03180,TAG011,tagué,1
+T00352,C0001,appartient_à,1
+U0007,T02371,assigné_à,1
+T01418,TAG019,tagué,1
+U0078,T01455,a_créé,1
+U0047,T02012,assigné_à,1
+U0038,T01386,a_créé,1
+T03177,C0025,appartient_à,1
+U0048,T00937,assigné_à,1
+T02003,TAG023,tagué,1
+U0007,T02438,a_créé,1
+U0076,M00745,a_envoyé,1
+U0084,T01518,a_créé,1
+T02427,C0060,appartient_à,1
+T03458,TAG007,tagué,1
+T01404,TAG022,tagué,1
+U0059,T00315,a_créé,1
+T02419,TAG015,tagué,1
+U0077,T02671,a_créé,1
+U0093,T02025,a_créé,1
+T03211,TAG024,tagué,1
+T00842,C0031,appartient_à,1
+U0087,T02225,assigné_à,1
+T03332,TAG024,tagué,1
+U0049,M01041,a_envoyé,1
+M00150,T00043,lié_à,1
+U0095,T02244,assigné_à,1
+U0046,T03093,a_créé,1
+T01217,TAG008,tagué,1
+T02940,C0048,appartient_à,1
+T02764,TAG008,tagué,1
+M00986,T00915,lié_à,1
+U0029,T00579,assigné_à,1
+M00564,T01327,lié_à,1
+T00627,TAG025,tagué,1
+T02181,C0050,appartient_à,1
+U0039,M00792,a_envoyé,1
+M00133,T00344,lié_à,1
+T03018,TAG009,tagué,1
+U0094,T03289,a_créé,1
+T00964,TAG011,tagué,1
+U0042,T01560,a_créé,1
+T01907,TAG003,tagué,1
+U0077,M01080,a_envoyé,1
+U0083,T00355,a_créé,1
+T02456,TAG003,tagué,1
+T03243,TAG013,tagué,1
+U0094,T01164,assigné_à,1
+T01296,C0039,appartient_à,1
+U0093,T00571,a_créé,1
+T02491,TAG022,tagué,1
+T02291,TAG007,tagué,1
+T00895,TAG004,tagué,1
+U0039,M01034,a_envoyé,1
+U0014,T01944,a_créé,1
+T00837,TAG011,tagué,1
+U0056,T03202,a_créé,1
+T02521,TAG013,tagué,1
+U0070,T01709,assigné_à,1
+U0052,M00013,a_envoyé,1
+T01322,TAG016,tagué,1
+U0086,T03074,a_créé,1
+U0017,T03194,a_créé,1
+T02697,TAG018,tagué,1
+U0009,T02974,a_créé,1
+T01950,C0060,appartient_à,1
+U0088,T03316,a_créé,1
+T03082,TAG017,tagué,1
+T03427,TAG007,tagué,1
+U0053,M00589,a_envoyé,1
+T02688,TAG025,tagué,1
+T03341,C0006,appartient_à,1
+U0073,T01277,assigné_à,1
+T03220,TAG022,tagué,1
+T02103,TAG002,tagué,1
+U0083,T01107,a_créé,1
+U0039,T02248,a_créé,1
+U0039,T00970,a_créé,1
+T01227,C0016,appartient_à,1
+T00494,TAG017,tagué,1
+T00045,TAG021,tagué,1
+T00640,TAG022,tagué,1
+T01909,TAG004,tagué,1
+U0017,T03470,a_créé,1
+T01807,TAG010,tagué,1
+U0044,T00671,assigné_à,1
+T02609,TAG017,tagué,1
+U0096,T03018,a_créé,1
+T01185,C0005,appartient_à,1
+T00315,TAG023,tagué,1
+T02282,TAG022,tagué,1
+U0094,T00378,a_créé,1
+T01239,TAG013,tagué,1
+U0043,T03338,a_créé,1
+T00860,TAG024,tagué,1
+U0029,T00767,assigné_à,1
+U0078,T02965,assigné_à,1
+T03229,C0034,appartient_à,1
+U0032,T00911,a_créé,1
+M00577,T01372,lié_à,1
+T02908,TAG006,tagué,1
+T03027,C0029,appartient_à,1
+M00964,T01179,lié_à,1
+T01509,TAG003,tagué,1
+M00724,T03435,lié_à,1
+U0023,T03197,assigné_à,1
+T00141,TAG008,tagué,1
+T03365,C0026,appartient_à,1
+U0055,T01131,a_créé,1
+T02177,TAG016,tagué,1
+T01574,C0037,appartient_à,1
+T02589,C0059,appartient_à,1
+M00239,T02063,lié_à,1
+T03226,C0014,appartient_à,1
+U0042,T00231,a_créé,1
+T03308,C0035,appartient_à,1
+M01071,T02019,lié_à,1
+U0023,T01746,a_créé,1
+U0037,C0011,gère,8
+T03321,C0021,appartient_à,1
+T02328,C0019,appartient_à,1
+U0016,T02076,a_créé,1
+T03487,TAG012,tagué,1
+U0057,T01899,a_créé,1
+T03025,TAG024,tagué,1
+U0059,T01221,assigné_à,1
+U0044,T00886,assigné_à,1
+T01268,TAG022,tagué,1
+U0052,T02214,a_créé,1
+T00484,C0002,appartient_à,1
+U0057,C0055,gère,7
+T02100,C0029,appartient_à,1
+T00877,TAG022,tagué,1
+T00527,C0053,appartient_à,1
+U0003,T03311,a_créé,1
+T02572,C0001,appartient_à,1
+T01499,C0009,appartient_à,1
+T03006,C0050,appartient_à,1
+U0018,C0003,gère,10
+T02296,TAG009,tagué,1
+U0096,T02554,a_créé,1
+T01100,C0011,appartient_à,1
+T03354,C0023,appartient_à,1
+U0078,M01040,a_envoyé,1
+U0067,T02571,assigné_à,1
+T00070,TAG008,tagué,1
+T03106,TAG018,tagué,1
+U0002,T02828,a_créé,1
+T01194,TAG018,tagué,1
+U0061,T01243,a_créé,1
+M00600,T02202,lié_à,1
+U0034,T00834,assigné_à,1
+T03461,C0048,appartient_à,1
+M01145,T00450,lié_à,1
+T01040,C0003,appartient_à,1
+U0017,T03148,a_créé,1
+U0075,C0009,gère,7
+U0097,T02538,a_créé,1
+U0077,T00425,assigné_à,1
+U0014,T02964,assigné_à,1
+U0020,T00685,a_créé,1
+M00709,T00202,lié_à,1
+U0023,T00555,a_créé,1
+U0018,T01635,assigné_à,1
+T01744,TAG023,tagué,1
+M01047,T00977,lié_à,1
+U0096,T02347,a_créé,1
+T03242,TAG013,tagué,1
+T03429,TAG025,tagué,1
+T00435,C0019,appartient_à,1
+T01419,TAG012,tagué,1
+U0077,T01253,a_créé,1
+U0050,C0029,gère,3
+U0061,M00767,a_envoyé,1
+M00587,T01412,lié_à,1
+T01832,C0018,appartient_à,1
+M01106,T01591,lié_à,1
+T01139,C0035,appartient_à,1
+M00369,T02985,lié_à,1
+T00802,TAG015,tagué,1
+U0087,T02191,assigné_à,1
+T01172,C0015,appartient_à,1
+U0003,T00890,assigné_à,1
+U0063,T02826,assigné_à,1
+U0075,T01883,a_créé,1
+U0068,T00332,a_créé,1
+U0085,T02511,a_créé,1
+T00890,C0010,appartient_à,1
+T00598,TAG024,tagué,1
+U0040,T02567,a_créé,1
+T01999,TAG008,tagué,1
+T01774,TAG011,tagué,1
+U0008,T00608,a_créé,1
+T01705,C0001,appartient_à,1
+T02962,C0059,appartient_à,1
+T00621,TAG015,tagué,1
+U0024,T02315,a_créé,1
+U0088,T01093,assigné_à,1
+T01750,TAG018,tagué,1
+T02466,C0001,appartient_à,1
+T01900,TAG021,tagué,1
+T00549,TAG002,tagué,1
+T01221,TAG024,tagué,1
+U0061,T02626,assigné_à,1
+U0057,T00965,assigné_à,1
+U0042,T01859,a_créé,1
+U0057,T02677,assigné_à,1
+T01198,TAG015,tagué,1
+U0076,T00769,a_créé,1
+U0039,T00801,a_créé,1
+T02132,TAG020,tagué,1
+U0081,T00710,assigné_à,1
+M00896,T01436,lié_à,1
+U0029,T02940,assigné_à,1
+T02160,TAG016,tagué,1
+T01721,TAG012,tagué,1
+U0037,T00778,a_créé,1
+T01418,TAG001,tagué,1
+M00906,T01242,lié_à,1
+U0050,T02470,assigné_à,1
+T02351,TAG014,tagué,1
+U0095,T01367,assigné_à,1
+T01297,TAG023,tagué,1
+T00629,C0016,appartient_à,1
+T03320,TAG021,tagué,1
+U0027,T02036,a_créé,1
+T00825,TAG005,tagué,1
+M00359,T02487,lié_à,1
+U0064,M00612,a_envoyé,1
+T01115,TAG017,tagué,1
+T01649,TAG004,tagué,1
+M01160,T01646,lié_à,1
+M01148,T01496,lié_à,1
+U0080,T00887,assigné_à,1
+U0013,T03037,assigné_à,1
+U0005,T01896,assigné_à,1
+T03145,TAG021,tagué,1
+T02008,C0036,appartient_à,1
+T01598,C0058,appartient_à,1
+U0058,T03008,a_créé,1
+U0064,T01420,a_créé,1
+U0022,M00858,a_envoyé,1
+U0075,M00997,a_envoyé,1
+T01573,TAG003,tagué,1
+T00329,C0049,appartient_à,1
+T00106,TAG004,tagué,1
+M00263,T02587,lié_à,1
+U0065,T02543,assigné_à,1
+U0022,T02161,a_créé,1
+U0098,T03053,a_créé,1
+T00792,TAG003,tagué,1
+T02456,TAG001,tagué,1
+T02056,C0033,appartient_à,1
+T00474,C0049,appartient_à,1
+T02604,TAG010,tagué,1
+T02495,TAG020,tagué,1
+T01726,TAG007,tagué,1
+U0023,T03029,assigné_à,1
+T00969,C0007,appartient_à,1
+T03444,TAG006,tagué,1
+T01488,TAG008,tagué,1
+U0013,T02947,a_créé,1
+U0100,T02175,a_créé,1
+T01524,TAG001,tagué,1
+T01151,TAG004,tagué,1
+M00002,T01239,lié_à,1
+M00809,T02759,lié_à,1
+T00015,TAG008,tagué,1
+U0067,T03386,assigné_à,1
+U0014,T01185,assigné_à,1
+U0076,C0011,gère,4
+T03199,TAG019,tagué,1
+U0043,T00273,assigné_à,1
+U0084,T00029,assigné_à,1
+T00100,TAG011,tagué,1
+T02815,TAG016,tagué,1
+U0081,T01095,assigné_à,1
+T01278,TAG001,tagué,1
+T02578,C0060,appartient_à,1
+T03400,C0056,appartient_à,1
+U0085,T01760,a_créé,1
+T03076,C0033,appartient_à,1
+T02390,TAG005,tagué,1
+T02778,C0027,appartient_à,1
+T00175,C0019,appartient_à,1
+U0043,T01666,assigné_à,1
+U0023,T01979,a_créé,1
+M00812,T01394,lié_à,1
+U0014,T00282,a_créé,1
+T01457,TAG005,tagué,1
+U0065,T01821,a_créé,1
+U0011,T03100,a_créé,1
+U0002,T00599,a_créé,1
+T01829,TAG020,tagué,1
+M00403,T03398,lié_à,1
+U0045,T00662,assigné_à,1
+T00581,TAG004,tagué,1
+U0051,T03034,assigné_à,1
+T01547,TAG011,tagué,1
+U0030,T00763,a_créé,1
+U0054,M00482,a_envoyé,1
+U0019,M00208,a_envoyé,1
+T00478,C0055,appartient_à,1
+T03440,TAG001,tagué,1
+T01801,TAG003,tagué,1
+T00203,TAG005,tagué,1
+U0036,T01746,assigné_à,1
+T00554,TAG006,tagué,1
+T01437,TAG007,tagué,1
+U0089,T03170,assigné_à,1
+T01415,C0009,appartient_à,1
+T00488,C0044,appartient_à,1
+T00691,C0010,appartient_à,1
+T01554,TAG017,tagué,1
+U0084,T01116,assigné_à,1
+T00746,C0011,appartient_à,1
+U0060,C0039,gère,2
+U0087,T01041,assigné_à,1
+U0057,T02814,a_créé,1
+T02289,TAG014,tagué,1
+T00056,C0032,appartient_à,1
+T00102,C0055,appartient_à,1
+U0040,T00897,a_créé,1
+T01179,C0014,appartient_à,1
+M00453,T02990,lié_à,1
+T01184,TAG007,tagué,1
+U0070,M01006,a_envoyé,1
+T02985,TAG005,tagué,1
+T00117,TAG020,tagué,1
+T01165,TAG023,tagué,1
+T01593,TAG012,tagué,1
+U0013,T03321,a_créé,1
+T00250,TAG005,tagué,1
+T01694,TAG021,tagué,1
+T02612,TAG007,tagué,1
+U0046,T01415,assigné_à,1
+U0060,T03001,a_créé,1
+T01519,TAG014,tagué,1
+U0004,T02842,assigné_à,1
+T02260,C0038,appartient_à,1
+T00674,TAG005,tagué,1
+U0086,T00810,assigné_à,1
+U0035,T00102,a_créé,1
+T03469,TAG003,tagué,1
+U0039,T02597,assigné_à,1
+U0075,C0026,gère,10
+T03241,C0016,appartient_à,1
+U0004,T02997,a_créé,1
+U0077,T02197,assigné_à,1
+T02676,TAG025,tagué,1
+T03289,TAG012,tagué,1
+T01100,TAG009,tagué,1
+U0078,T02037,assigné_à,1
+T01505,C0033,appartient_à,1
+T00767,TAG015,tagué,1
+U0059,T00471,assigné_à,1
+T02906,C0059,appartient_à,1
+U0066,T03145,a_créé,1
+T02241,TAG010,tagué,1
+U0030,T01198,a_créé,1
+T00186,TAG006,tagué,1
+U0083,T00410,assigné_à,1
+T00541,TAG017,tagué,1
+U0056,T00027,assigné_à,1
+T03208,TAG009,tagué,1
+T03267,TAG009,tagué,1
+T01072,TAG010,tagué,1
+T02066,TAG017,tagué,1
+U0002,T02891,assigné_à,1
+T02744,TAG020,tagué,1
+T01881,TAG017,tagué,1
+U0076,T01334,a_créé,1
+U0049,M00207,a_envoyé,1
+M00800,T03481,lié_à,1
+M00318,T01210,lié_à,1
+U0059,T00427,assigné_à,1
+T02190,TAG018,tagué,1
+T00315,C0042,appartient_à,1
+T01136,C0002,appartient_à,1
+U0081,T01688,a_créé,1
+U0096,T01451,assigné_à,1
+T02695,C0021,appartient_à,1
+U0014,M00235,a_envoyé,1
+U0072,M00046,a_envoyé,1
+T02520,C0016,appartient_à,1
+U0007,T01256,a_créé,1
+T02777,TAG003,tagué,1
+U0095,T02005,a_créé,1
+U0004,T01817,assigné_à,1
+T02951,TAG025,tagué,1
+U0097,T03070,a_créé,1
+U0010,T00601,a_créé,1
+T00114,C0038,appartient_à,1
+T03398,TAG013,tagué,1
+U0041,T01441,a_créé,1
+T02946,TAG018,tagué,1
+T02788,C0049,appartient_à,1
+U0080,T01512,assigné_à,1
+T03013,TAG017,tagué,1
+T01552,TAG015,tagué,1
+U0009,T00947,assigné_à,1
+T03240,TAG015,tagué,1
+U0010,C0031,gère,8
+T01728,C0048,appartient_à,1
+U0054,T01455,assigné_à,1
+M00693,T02715,lié_à,1
+T03252,TAG017,tagué,1
+U0094,T01169,a_créé,1
+T00599,C0015,appartient_à,1
+U0029,C0047,gère,1
+U0074,T01393,assigné_à,1
+U0071,T00789,assigné_à,1
+T00283,TAG017,tagué,1
+T00897,TAG022,tagué,1
+U0033,T01337,a_créé,1
+T01334,TAG020,tagué,1
+M00711,T03296,lié_à,1
+T02227,TAG008,tagué,1
+T01716,TAG016,tagué,1
+U0079,T00419,assigné_à,1
+T00113,TAG023,tagué,1
+T02415,TAG016,tagué,1
+U0059,T03056,assigné_à,1
+U0003,T02034,assigné_à,1
+T01186,C0003,appartient_à,1
+U0057,T02432,assigné_à,1
+T03345,TAG020,tagué,1
+U0039,T01508,assigné_à,1
+T01825,C0054,appartient_à,1
+U0006,T02852,a_créé,1
+U0059,T00477,a_créé,1
+U0097,T00524,a_créé,1
+U0059,T03246,assigné_à,1
+T02067,TAG020,tagué,1
+U0096,T01593,a_créé,1
+T00415,C0050,appartient_à,1
+T00123,TAG014,tagué,1
+T03013,C0033,appartient_à,1
+U0078,M00565,a_envoyé,1
+U0022,T02050,assigné_à,1
+U0035,M00834,a_envoyé,1
+T02070,TAG022,tagué,1
+U0056,T01547,a_créé,1
+U0070,T03132,a_créé,1
+M00219,T03088,lié_à,1
+U0090,T00041,a_créé,1
+T01619,TAG020,tagué,1
+T01682,TAG011,tagué,1
+U0056,T00634,assigné_à,1
+T01015,TAG020,tagué,1
+U0044,T00625,assigné_à,1
+U0043,T00179,a_créé,1
+T03178,TAG013,tagué,1
+T00717,TAG001,tagué,1
+T02196,C0027,appartient_à,1
+T00883,TAG007,tagué,1
+T01128,TAG007,tagué,1
+U0082,M00918,a_envoyé,1
+U0082,T01579,a_créé,1
+U0044,T02660,assigné_à,1
+T03485,TAG010,tagué,1
+U0050,T00720,a_créé,1
+U0070,M00384,a_envoyé,1
+M01057,T01232,lié_à,1
+T01606,C0013,appartient_à,1
+M00452,T01322,lié_à,1
+T02019,TAG021,tagué,1
+U0066,T03019,a_créé,1
+T02952,TAG020,tagué,1
+T03331,TAG010,tagué,1
+T01328,TAG023,tagué,1
+U0035,T00639,a_créé,1
+T01003,TAG023,tagué,1
+T01749,TAG021,tagué,1
+T01168,TAG007,tagué,1
+U0050,T02336,assigné_à,1
+T02989,TAG015,tagué,1
+U0003,T00669,a_créé,1
+U0084,M00638,a_envoyé,1
+U0001,T01674,a_créé,1
+U0029,C0043,gère,9
+U0082,M00392,a_envoyé,1
+T02079,TAG021,tagué,1
+U0091,M00372,a_envoyé,1
+U0100,T01008,a_créé,1
+T01416,C0010,appartient_à,1
+T03180,C0053,appartient_à,1
+T01355,C0037,appartient_à,1
+T01649,C0034,appartient_à,1
+T00009,C0047,appartient_à,1
+T03043,C0028,appartient_à,1
+U0003,T01361,a_créé,1
+M00917,T00912,lié_à,1
+U0003,C0048,gère,9
+U0083,T02165,assigné_à,1
+U0020,T00175,assigné_à,1
+M00242,T02815,lié_à,1
+T01752,TAG023,tagué,1
+M00700,T00200,lié_à,1
+U0047,T00144,a_créé,1
+U0038,T01055,a_créé,1
+T00859,TAG012,tagué,1
+T01847,C0022,appartient_à,1
+T01252,TAG015,tagué,1
+T02751,TAG017,tagué,1
+U0056,T00451,assigné_à,1
+T02362,TAG024,tagué,1
+U0025,T01760,assigné_à,1
+T00432,TAG016,tagué,1
+T03314,TAG011,tagué,1
+T00853,C0028,appartient_à,1
+U0054,M00197,a_envoyé,1
+U0092,M00583,a_envoyé,1
+U0065,T02025,assigné_à,1
+U0059,T00180,a_créé,1
+U0034,T02043,a_créé,1
+T01561,C0012,appartient_à,1
+U0021,T01127,a_créé,1
+U0033,M00429,a_envoyé,1
+T00025,C0015,appartient_à,1
+M00141,T00258,lié_à,1
+U0052,T02094,a_créé,1
+T02698,C0041,appartient_à,1
+U0007,T00293,assigné_à,1
+T03118,C0022,appartient_à,1
+U0006,T01346,assigné_à,1
+T01300,C0042,appartient_à,1
+U0072,T02422,a_créé,1
+T02863,C0052,appartient_à,1
+U0077,T01396,a_créé,1
+T02048,C0037,appartient_à,1
+M00442,T01349,lié_à,1
+T02988,C0049,appartient_à,1
+U0037,T00141,a_créé,1
+T03419,TAG021,tagué,1
+T00733,TAG008,tagué,1
+T01808,C0025,appartient_à,1
+U0009,T01332,assigné_à,1
+T02605,C0049,appartient_à,1
+T02932,TAG021,tagué,1
+U0061,T03430,assigné_à,1
+U0018,T02870,assigné_à,1
+T02826,TAG012,tagué,1
+U0019,T03229,a_créé,1
+U0027,T02473,a_créé,1
+T02394,TAG017,tagué,1
+U0059,T01977,assigné_à,1
+U0039,M00501,a_envoyé,1
+T00449,TAG019,tagué,1
+T02729,TAG009,tagué,1
+U0068,T02520,assigné_à,1
+U0031,M00996,a_envoyé,1
+T01990,C0016,appartient_à,1
+U0014,T01251,a_créé,1
+U0024,T02127,assigné_à,1
+T01441,TAG022,tagué,1
+T02308,TAG004,tagué,1
+T02831,C0015,appartient_à,1
+T02626,C0016,appartient_à,1
+U0065,M00349,a_envoyé,1
+T00067,C0053,appartient_à,1
+T00864,C0029,appartient_à,1
+T01731,C0012,appartient_à,1
+U0029,T00281,a_créé,1
+U0031,T02969,a_créé,1
+U0006,T00299,assigné_à,1
+T01959,TAG025,tagué,1
+T02971,TAG016,tagué,1
+T03343,C0036,appartient_à,1
+T00863,TAG007,tagué,1
+T01451,TAG016,tagué,1
+T02044,C0025,appartient_à,1
+T02711,TAG024,tagué,1
+U0095,T03392,assigné_à,1
+M00090,T01058,lié_à,1
+T03245,TAG024,tagué,1
+T02884,TAG018,tagué,1
+T02560,TAG005,tagué,1
+T00559,TAG018,tagué,1
+T01512,C0050,appartient_à,1
+T01387,TAG022,tagué,1
+U0028,T02741,a_créé,1
+U0011,T02364,assigné_à,1
+U0010,T01812,a_créé,1
+T02768,TAG018,tagué,1
+T03291,TAG022,tagué,1
+T00649,TAG015,tagué,1
+T03332,C0036,appartient_à,1
+U0036,T01094,assigné_à,1
+T01892,TAG006,tagué,1
+U0090,T01564,assigné_à,1
+T02641,TAG023,tagué,1
+T00388,C0008,appartient_à,1
+U0049,T00655,a_créé,1
+M00801,T03214,lié_à,1
+U0080,T01335,a_créé,1
+M00923,T02018,lié_à,1
+U0052,T01939,a_créé,1
+U0041,M00113,a_envoyé,1
+U0086,T00945,a_créé,1
+M01198,T00030,lié_à,1
+T01555,C0027,appartient_à,1
+U0100,M00519,a_envoyé,1
+U0045,M01002,a_envoyé,1
+U0043,T03232,a_créé,1
+M00897,T01554,lié_à,1
+T00637,TAG019,tagué,1
+U0007,T03377,a_créé,1
+T03425,TAG008,tagué,1
+T01311,TAG004,tagué,1
+T03416,TAG002,tagué,1
+T03178,TAG001,tagué,1
+T01553,C0012,appartient_à,1
+U0044,T02047,assigné_à,1
+U0068,M00718,a_envoyé,1
+T01886,TAG003,tagué,1
+U0074,T03288,a_créé,1
+T01143,C0060,appartient_à,1
+T03293,C0045,appartient_à,1
+U0079,T03000,a_créé,1
+T00607,C0053,appartient_à,1
+U0067,T00824,assigné_à,1
+T01525,C0006,appartient_à,1
+T00846,TAG015,tagué,1
+T02185,C0044,appartient_à,1
+M00870,T00677,lié_à,1
+T02157,TAG015,tagué,1
+T02914,TAG025,tagué,1
+U0028,T02323,a_créé,1
+T00144,TAG004,tagué,1
+U0041,T01953,a_créé,1
+U0015,T01608,assigné_à,1
+U0046,T00821,a_créé,1
+T01859,TAG005,tagué,1
+T03439,TAG019,tagué,1
+T03044,TAG016,tagué,1
+T02619,TAG022,tagué,1
+U0007,T02669,assigné_à,1
+U0058,M00486,a_envoyé,1
+T00219,C0052,appartient_à,1
+U0058,T01416,assigné_à,1
+U0024,T01069,a_créé,1
+T00524,C0013,appartient_à,1
+T02542,TAG017,tagué,1
+T00190,TAG021,tagué,1
+U0011,M00470,a_envoyé,1
+T01093,TAG007,tagué,1
+T03258,TAG018,tagué,1
+T03388,C0052,appartient_à,1
+T00453,C0043,appartient_à,1
+T02639,TAG005,tagué,1
+T00786,TAG014,tagué,1
+U0096,T03090,assigné_à,1
+T00055,TAG019,tagué,1
+T00148,C0036,appartient_à,1
+U0028,T00564,a_créé,1
+T02427,TAG025,tagué,1
+T00531,C0017,appartient_à,1
+U0045,T01451,a_créé,1
+U0003,T00923,a_créé,1
+U0001,M00185,a_envoyé,1
+T02776,TAG010,tagué,1
+U0082,M00467,a_envoyé,1
+T02584,TAG013,tagué,1
+T00754,TAG017,tagué,1
+T02337,C0055,appartient_à,1
+M00556,T01678,lié_à,1
+T00168,C0012,appartient_à,1
+T00186,TAG004,tagué,1
+U0013,T02146,a_créé,1
+T01430,TAG002,tagué,1
+T03211,TAG010,tagué,1
+T03161,C0056,appartient_à,1
+T02107,TAG012,tagué,1
+U0100,T01671,assigné_à,1
+U0065,M00884,a_envoyé,1
+T02790,TAG005,tagué,1
+U0003,T01102,assigné_à,1
+U0055,T01097,assigné_à,1
+U0056,T00494,assigné_à,1
+T01883,TAG014,tagué,1
+M00405,T00304,lié_à,1
+T02152,TAG025,tagué,1
+M00535,T03130,lié_à,1
+T00425,C0057,appartient_à,1
+T01638,TAG014,tagué,1
+T01930,TAG008,tagué,1
+U0091,T02389,a_créé,1
+T03014,TAG005,tagué,1
+T01545,TAG025,tagué,1
+T03476,TAG007,tagué,1
+T02090,C0028,appartient_à,1
+U0009,T01897,a_créé,1
+U0018,T01111,assigné_à,1
+U0046,T01959,assigné_à,1
+U0064,T00842,assigné_à,1
+U0003,T02577,assigné_à,1
+U0097,M01047,a_envoyé,1
+U0041,T01475,a_créé,1
+T00148,TAG005,tagué,1
+T02084,TAG007,tagué,1
+T02685,C0005,appartient_à,1
+U0086,T03058,assigné_à,1
+U0028,T02280,a_créé,1
+U0043,T03149,assigné_à,1
+U0018,T02992,assigné_à,1
+T01740,TAG020,tagué,1
+M00513,T03276,lié_à,1
+U0070,T00812,assigné_à,1
+T01827,TAG004,tagué,1
+T02222,TAG024,tagué,1
+T02305,TAG003,tagué,1
+T02010,C0009,appartient_à,1
+U0050,T02405,a_créé,1
+T02643,TAG013,tagué,1
+T00638,TAG011,tagué,1
+U0009,T00380,a_créé,1
+T01086,C0037,appartient_à,1
+U0014,T02793,a_créé,1
+M00363,T02374,lié_à,1
+U0014,T02693,a_créé,1
+T02390,TAG001,tagué,1
+T02688,TAG022,tagué,1
+T01813,C0049,appartient_à,1
+T02973,TAG022,tagué,1
+U0059,T01909,a_créé,1
+U0035,T03110,a_créé,1
+U0066,T02885,assigné_à,1
+T00939,C0018,appartient_à,1
+T02857,TAG011,tagué,1
+U0009,C0026,gère,10
+T02017,TAG010,tagué,1
+M01121,T03071,lié_à,1
+U0093,T02484,a_créé,1
+T00421,TAG021,tagué,1
+T01693,TAG001,tagué,1
+T01718,C0046,appartient_à,1
+T00969,TAG020,tagué,1
+T03453,TAG021,tagué,1
+U0080,T02893,a_créé,1
+T02371,TAG023,tagué,1
+U0023,T01348,a_créé,1
+U0029,T01329,a_créé,1
+T03281,C0039,appartient_à,1
+T01917,TAG023,tagué,1
+U0047,T02242,a_créé,1
+T01456,C0038,appartient_à,1
+T02070,C0041,appartient_à,1
+T01180,TAG013,tagué,1
+T03250,TAG017,tagué,1
+T00632,TAG008,tagué,1
+U0089,T01668,a_créé,1
+T03494,C0046,appartient_à,1
+T00546,TAG016,tagué,1
+T03478,TAG020,tagué,1
+U0062,M00017,a_envoyé,1
+T01556,TAG008,tagué,1
+T00472,TAG022,tagué,1
+T02746,TAG009,tagué,1
+U0035,T02769,a_créé,1
+U0100,M00155,a_envoyé,1
+T02514,TAG006,tagué,1
+U0020,M01102,a_envoyé,1
+T02549,C0037,appartient_à,1
+T03276,TAG011,tagué,1
+T02376,C0001,appartient_à,1
+U0079,T02533,assigné_à,1
+T00688,TAG004,tagué,1
+T03006,TAG004,tagué,1
+T01263,TAG019,tagué,1
+U0067,M00028,a_envoyé,1
+T00397,C0050,appartient_à,1
+T01412,TAG005,tagué,1
+T02489,TAG010,tagué,1
+T03046,C0014,appartient_à,1
+T00577,TAG018,tagué,1
+T01531,TAG009,tagué,1
+T01399,TAG002,tagué,1
+T01761,TAG004,tagué,1
+U0018,T00570,assigné_à,1
+T02630,C0004,appartient_à,1
+U0031,T02888,a_créé,1
+T00626,TAG013,tagué,1
+T02547,TAG002,tagué,1
+T01257,C0018,appartient_à,1
+T01959,C0020,appartient_à,1
+U0022,T01853,a_créé,1
+U0096,M00540,a_envoyé,1
+T01798,TAG004,tagué,1
+U0051,T00418,a_créé,1
+U0020,C0060,gère,8
+T03182,TAG021,tagué,1
+U0018,T02348,assigné_à,1
+T00737,C0033,appartient_à,1
+T02992,TAG019,tagué,1
+U0035,T03078,a_créé,1
+T03186,TAG008,tagué,1
+T03401,TAG014,tagué,1
+T03446,TAG005,tagué,1
+T03264,TAG010,tagué,1
+U0095,T01289,a_créé,1
+T02231,TAG007,tagué,1
+T02092,TAG015,tagué,1
+M00194,T01094,lié_à,1
+T02924,TAG007,tagué,1
+T02515,C0056,appartient_à,1
+T01702,TAG005,tagué,1
+T02008,TAG016,tagué,1
+T02058,TAG017,tagué,1
+T01538,TAG010,tagué,1
+U0044,T00979,a_créé,1
+T00906,TAG003,tagué,1
+T00049,C0010,appartient_à,1
+T01811,TAG016,tagué,1
+T01454,TAG013,tagué,1
+U0095,M00572,a_envoyé,1
+M00725,T03500,lié_à,1
+T02979,C0046,appartient_à,1
+U0075,T01022,a_créé,1
+U0056,T01874,a_créé,1
+U0069,T01759,assigné_à,1
+T00721,C0007,appartient_à,1
+U0013,M01116,a_envoyé,1
+U0065,M00065,a_envoyé,1
+U0046,T02034,a_créé,1
+T01140,TAG005,tagué,1
+U0099,T02246,a_créé,1
+U0093,T03279,assigné_à,1
+U0052,T00181,a_créé,1
+M00445,T02954,lié_à,1
+T01466,TAG009,tagué,1
+T01378,C0022,appartient_à,1
+U0019,T00532,a_créé,1
+T00505,TAG008,tagué,1
+T00639,C0035,appartient_à,1
+T00360,TAG020,tagué,1
+U0070,M00737,a_envoyé,1
+U0094,T01940,a_créé,1
+U0037,M00115,a_envoyé,1
+T00579,C0047,appartient_à,1
+T02580,TAG010,tagué,1
+T00797,TAG012,tagué,1
+U0019,T01895,assigné_à,1
+T02116,C0058,appartient_à,1
+U0082,T02458,a_créé,1
+U0038,T02654,a_créé,1
+U0074,T01952,assigné_à,1
+U0004,T00301,assigné_à,1
+T03478,C0060,appartient_à,1
+T03116,TAG022,tagué,1
+T02268,C0025,appartient_à,1
+U0048,T02419,a_créé,1
+U0024,T01775,a_créé,1
+T01520,TAG001,tagué,1
+U0027,T02156,assigné_à,1
+U0071,T03376,assigné_à,1
+T02199,C0025,appartient_à,1
+T01544,C0043,appartient_à,1
+U0008,T01362,assigné_à,1
+T02257,TAG008,tagué,1
+T02655,C0058,appartient_à,1
+U0040,C0009,gère,6
+U0055,M00251,a_envoyé,1
+T01862,C0018,appartient_à,1
+U0079,T02467,assigné_à,1
+T03026,C0043,appartient_à,1
+T02692,C0052,appartient_à,1
+U0077,T02180,assigné_à,1
+T00737,TAG021,tagué,1
+U0035,T02238,a_créé,1
+T03262,TAG017,tagué,1
+T00754,TAG023,tagué,1
+T02632,C0056,appartient_à,1
+T01998,TAG005,tagué,1
+T01130,TAG010,tagué,1
+M00341,T00118,lié_à,1
+T02722,TAG013,tagué,1
+T03035,TAG002,tagué,1
+U0032,T01198,assigné_à,1
+U0069,T02447,a_créé,1
+T01625,TAG025,tagué,1
+T00935,C0035,appartient_à,1
+T00270,TAG013,tagué,1
+U0084,T02095,assigné_à,1
+T01242,TAG013,tagué,1
+M00642,T01786,lié_à,1
+U0070,T03303,assigné_à,1
+U0035,M00909,a_envoyé,1
+U0075,T02418,a_créé,1
+T01842,C0005,appartient_à,1
+T02143,C0021,appartient_à,1
+T03302,TAG016,tagué,1
+U0072,T02075,assigné_à,1
+T02208,TAG003,tagué,1
+T00985,C0029,appartient_à,1
+T01717,C0013,appartient_à,1
+U0069,T00503,assigné_à,1
+U0098,T00127,assigné_à,1
+U0081,T00741,assigné_à,1
+T02685,TAG023,tagué,1
+T02352,TAG006,tagué,1
+U0001,T02867,a_créé,1
+U0051,T01088,a_créé,1
+T02956,TAG007,tagué,1
+T01526,TAG014,tagué,1
+U0024,T02918,assigné_à,1
+T01700,C0057,appartient_à,1
+U0014,T02867,assigné_à,1
+T01031,TAG010,tagué,1
+T01119,TAG006,tagué,1
+U0077,M00982,a_envoyé,1
+T00257,TAG017,tagué,1
+U0060,C0041,gère,9
+T01777,TAG011,tagué,1
+U0016,M00527,a_envoyé,1
+T03178,C0048,appartient_à,1
+T01353,C0002,appartient_à,1
+T00002,TAG015,tagué,1
+U0042,T01371,a_créé,1
+U0088,T00740,a_créé,1
+U0042,T02922,assigné_à,1
+T01134,TAG017,tagué,1
+T02032,TAG001,tagué,1
+T03274,C0016,appartient_à,1
+T02407,TAG002,tagué,1
+T00194,C0016,appartient_à,1
+U0068,T02580,a_créé,1
+T00791,TAG013,tagué,1
+U0078,T03199,assigné_à,1
+U0033,T01588,assigné_à,1
+U0012,T03115,assigné_à,1
+T01945,TAG011,tagué,1
+U0036,T00583,a_créé,1
+T00927,TAG001,tagué,1
+T01059,TAG016,tagué,1
+T00872,C0032,appartient_à,1
+U0100,T01034,assigné_à,1
+T01053,C0040,appartient_à,1
+U0006,T01521,a_créé,1
+T03216,TAG024,tagué,1
+U0083,M01053,a_envoyé,1
+T01939,C0024,appartient_à,1
+U0005,M00592,a_envoyé,1
+M00138,T00802,lié_à,1
+M01159,T01824,lié_à,1
+M00814,T02249,lié_à,1
+U0026,T00653,assigné_à,1
+T00437,TAG006,tagué,1
+T02253,TAG013,tagué,1
+U0072,T02071,assigné_à,1
+T00239,TAG010,tagué,1
+U0037,T01628,a_créé,1
+U0030,T02821,a_créé,1
+U0085,T01227,a_créé,1
+T00416,C0008,appartient_à,1
+T02395,TAG025,tagué,1
+M00931,T02974,lié_à,1
+U0058,T02235,a_créé,1
+U0004,T02988,a_créé,1
+T03137,TAG014,tagué,1
+M00856,T01535,lié_à,1
+T00658,C0022,appartient_à,1
+U0057,T02047,a_créé,1
+U0063,T02501,a_créé,1
+U0071,T00448,assigné_à,1
+T00230,C0055,appartient_à,1
+T00731,TAG006,tagué,1
+U0002,T00241,assigné_à,1
+T02453,TAG014,tagué,1
+U0095,T00012,a_créé,1
+T02825,TAG002,tagué,1
+U0047,T02261,assigné_à,1
+T00267,TAG008,tagué,1
+U0095,T00261,assigné_à,1
+T01993,C0026,appartient_à,1
+U0055,T02525,a_créé,1
+T02585,TAG006,tagué,1
+U0098,T00506,assigné_à,1
+U0043,T02627,a_créé,1
+U0074,T02979,assigné_à,1
+T01284,TAG016,tagué,1
+U0016,T00408,a_créé,1
+T01472,C0019,appartient_à,1
+M00021,T01304,lié_à,1
+T00526,TAG001,tagué,1
+T00957,TAG010,tagué,1
+U0044,T02381,a_créé,1
+U0061,T01541,assigné_à,1
+T01491,C0011,appartient_à,1
+U0039,T02454,a_créé,1
+T01678,TAG008,tagué,1
+T00721,TAG001,tagué,1
+T02594,TAG014,tagué,1
+U0068,T03407,a_créé,1
+U0024,T01497,a_créé,1
+T01315,TAG002,tagué,1
+T02413,TAG018,tagué,1
+U0073,M01077,a_envoyé,1
+T02828,TAG014,tagué,1
+U0021,T00019,a_créé,1
+T03499,C0022,appartient_à,1
+U0073,T00274,assigné_à,1
+T01669,C0056,appartient_à,1
+U0077,T02146,assigné_à,1
+U0038,T01325,a_créé,1
+T01082,TAG021,tagué,1
+T02219,TAG006,tagué,1
+U0039,M00993,a_envoyé,1
+U0008,T01711,a_créé,1
+M01117,T00162,lié_à,1
+T00362,TAG013,tagué,1
+T02494,C0029,appartient_à,1
+U0066,C0015,gère,9
+U0007,T02226,a_créé,1
+T00026,TAG009,tagué,1
+T01246,TAG023,tagué,1
+U0001,T01066,assigné_à,1
+U0065,C0043,gère,9
+T02761,C0024,appartient_à,1
+T02465,TAG017,tagué,1
+U0010,C0038,gère,10
+T02233,C0044,appartient_à,1
+U0049,T01146,assigné_à,1
+T00018,TAG011,tagué,1
+U0015,T03117,a_créé,1
+U0012,M00387,a_envoyé,1
+U0041,T03094,a_créé,1
+T01637,TAG003,tagué,1
+U0005,T00553,assigné_à,1
+M00944,T00462,lié_à,1
+U0093,T01799,a_créé,1
+T01674,TAG018,tagué,1
+T00614,TAG023,tagué,1
+T00015,C0047,appartient_à,1
+M00286,T00544,lié_à,1
+U0093,M00829,a_envoyé,1
+U0001,T00002,assigné_à,1
+U0032,T01188,assigné_à,1
+M01091,T02920,lié_à,1
+U0059,T01241,assigné_à,1
+U0085,T02322,a_créé,1
+U0084,T03007,a_créé,1
+T03482,TAG023,tagué,1
+T01675,TAG023,tagué,1
+U0018,T00713,assigné_à,1
+M00559,T02058,lié_à,1
+T02014,C0027,appartient_à,1
+T01163,TAG023,tagué,1
+U0085,T02450,a_créé,1
+T02414,TAG007,tagué,1
+T00536,TAG025,tagué,1
+U0016,T02188,assigné_à,1
+T01761,C0005,appartient_à,1
+T00006,C0053,appartient_à,1
+T00324,TAG023,tagué,1
+M01024,T02449,lié_à,1
+U0011,M00257,a_envoyé,1
+T00467,TAG023,tagué,1
+T02076,TAG024,tagué,1
+T02296,C0027,appartient_à,1
+U0046,T00587,assigné_à,1
+T00543,C0035,appartient_à,1
+U0067,M01005,a_envoyé,1
+U0092,M01048,a_envoyé,1
+U0093,T01493,a_créé,1
+T01919,TAG003,tagué,1
+T00713,TAG006,tagué,1
+T02309,TAG018,tagué,1
+U0092,T03496,a_créé,1
+T03339,TAG022,tagué,1
+T03392,TAG006,tagué,1
+T02709,C0021,appartient_à,1
+T01963,C0030,appartient_à,1
+U0004,C0045,gère,5
+T01254,C0051,appartient_à,1
+U0046,T02357,assigné_à,1
+U0030,T02090,assigné_à,1
+T00153,TAG017,tagué,1
+T02472,TAG020,tagué,1
+U0079,T01423,assigné_à,1
+T03194,C0027,appartient_à,1
+T03009,TAG002,tagué,1
+U0044,T00511,assigné_à,1
+T02455,C0053,appartient_à,1
+U0064,T01913,a_créé,1
+U0091,M00031,a_envoyé,1
+U0021,T01430,a_créé,1
+T01640,TAG021,tagué,1
+U0074,T00741,a_créé,1
+T02693,TAG022,tagué,1
+T01295,TAG001,tagué,1
+T01655,TAG017,tagué,1
+T01697,TAG010,tagué,1
+T00722,C0032,appartient_à,1
+U0035,T03079,assigné_à,1
+T00264,TAG013,tagué,1
+T03422,TAG016,tagué,1
+U0051,T01747,a_créé,1
+T00216,C0034,appartient_à,1
+U0051,T03463,assigné_à,1
+T01756,TAG004,tagué,1
+T00054,C0027,appartient_à,1
+U0072,T00531,assigné_à,1
+T03436,TAG024,tagué,1
+U0079,T00144,assigné_à,1
+T02076,C0041,appartient_à,1
+T00184,TAG002,tagué,1
+U0015,M00284,a_envoyé,1
+U0065,T00469,a_créé,1
+T01438,TAG001,tagué,1
+T03024,C0048,appartient_à,1
+T01136,TAG014,tagué,1
+T02988,TAG007,tagué,1
+T00642,TAG013,tagué,1
+T02318,TAG018,tagué,1
+T00526,TAG011,tagué,1
+U0028,T00706,a_créé,1
+T00336,C0047,appartient_à,1
+U0078,T02448,a_créé,1
+T02780,TAG009,tagué,1
+T02764,C0009,appartient_à,1
+T01709,TAG025,tagué,1
+U0049,T02126,assigné_à,1
+T02936,C0001,appartient_à,1
+U0033,T02082,a_créé,1
+U0014,T00538,a_créé,1
+U0086,T01994,a_créé,1
+U0031,T03344,assigné_à,1
+T02540,TAG007,tagué,1
+U0093,M00945,a_envoyé,1
+T00961,C0058,appartient_à,1
+U0079,T00434,a_créé,1
+T02546,C0024,appartient_à,1
+T02798,TAG010,tagué,1
+U0091,T00996,assigné_à,1
+U0087,T00721,a_créé,1
+M01089,T00171,lié_à,1
+T02907,C0045,appartient_à,1
+T00063,TAG014,tagué,1
+T01699,TAG003,tagué,1
+T01541,TAG019,tagué,1
+U0049,T00779,assigné_à,1
+T02514,C0023,appartient_à,1
+U0005,T02147,assigné_à,1
+T02970,TAG017,tagué,1
+U0087,T01422,assigné_à,1
+U0055,M00732,a_envoyé,1
+T03150,TAG011,tagué,1
+T02272,C0057,appartient_à,1
+T02643,C0034,appartient_à,1
+U0003,T02508,a_créé,1
+U0048,T02521,a_créé,1
+U0015,T01345,a_créé,1
+U0042,T01869,a_créé,1
+U0098,T01852,a_créé,1
+U0070,T02670,a_créé,1
+U0037,T01189,assigné_à,1
+T00828,TAG008,tagué,1
+U0082,T00395,assigné_à,1
+U0066,T00614,assigné_à,1
+U0072,T02952,assigné_à,1
+T02464,TAG005,tagué,1
+T00796,TAG018,tagué,1
+U0040,T01910,a_créé,1
+T02503,C0026,appartient_à,1
+T01978,TAG001,tagué,1
+U0076,T02279,assigné_à,1
+T02583,C0013,appartient_à,1
+T03097,TAG002,tagué,1
+T02446,TAG014,tagué,1
+T03122,C0011,appartient_à,1
+U0010,T01501,a_créé,1
+T03358,TAG021,tagué,1
+T03297,TAG013,tagué,1
+U0061,M01069,a_envoyé,1
+U0080,T01544,assigné_à,1
+T02162,TAG011,tagué,1
+T01131,TAG010,tagué,1
+T03363,TAG008,tagué,1
+T02035,C0014,appartient_à,1
+U0093,T03479,a_créé,1
+U0060,T02256,a_créé,1
+U0057,T01263,a_créé,1
+U0074,T03170,a_créé,1
+U0100,T01241,a_créé,1
+T00384,TAG009,tagué,1
+U0059,T02780,a_créé,1
+U0080,T01492,a_créé,1
+T02750,TAG014,tagué,1
+T00040,TAG005,tagué,1
+U0015,T02837,a_créé,1
+T01244,TAG020,tagué,1
+U0044,T02599,a_créé,1
+T02377,TAG021,tagué,1
+U0026,T02786,a_créé,1
+M00777,T02455,lié_à,1
+U0050,T02759,assigné_à,1
+U0073,T03288,assigné_à,1
+U0038,M00190,a_envoyé,1
+T03336,TAG003,tagué,1
+T02465,C0029,appartient_à,1
+T02262,TAG019,tagué,1
+U0017,T02935,assigné_à,1
+T00205,TAG023,tagué,1
+U0017,T02623,assigné_à,1
+U0010,C0018,gère,4
+T00491,TAG011,tagué,1
+U0054,T00267,assigné_à,1
+U0035,T02885,a_créé,1
+T02997,TAG012,tagué,1
+T01854,C0021,appartient_à,1
+T00203,C0044,appartient_à,1
+T01454,TAG021,tagué,1
+T00584,C0036,appartient_à,1
+T03271,TAG008,tagué,1
+T01452,TAG022,tagué,1
+T01730,TAG020,tagué,1
+T02248,C0041,appartient_à,1
+T03463,TAG018,tagué,1
+U0068,T00317,assigné_à,1
+M01034,T00182,lié_à,1
+M00340,T02263,lié_à,1
+T02299,TAG017,tagué,1
+T01537,TAG012,tagué,1
+T01136,TAG022,tagué,1
+M00324,T01357,lié_à,1
+U0030,T01854,assigné_à,1
+T02174,C0035,appartient_à,1
+M00915,T03422,lié_à,1
+T00227,TAG025,tagué,1
+M00061,T00454,lié_à,1
+U0041,T00873,a_créé,1
+U0079,T00902,a_créé,1
+T01614,C0002,appartient_à,1
+U0006,T01970,a_créé,1
+T00744,TAG017,tagué,1
+U0011,T02616,assigné_à,1
+T00562,TAG018,tagué,1
+U0042,T00101,a_créé,1
+U0044,M01033,a_envoyé,1
+M01094,T01161,lié_à,1
+T00852,TAG022,tagué,1
+M01115,T02700,lié_à,1
+T01094,TAG022,tagué,1
+U0074,T02361,a_créé,1
+T02634,TAG019,tagué,1
+T01287,TAG006,tagué,1
+T01577,C0039,appartient_à,1
+T01193,C0022,appartient_à,1
+T01389,C0038,appartient_à,1
+U0075,T00515,assigné_à,1
+T03416,C0024,appartient_à,1
+U0028,T03127,assigné_à,1
+U0050,T00568,a_créé,1
+U0016,T01964,a_créé,1
+U0072,T03143,a_créé,1
+T02465,TAG005,tagué,1
+U0079,T02765,a_créé,1
+U0018,T02319,assigné_à,1
+T00858,TAG020,tagué,1
+T02287,C0029,appartient_à,1
+U0044,T00097,a_créé,1
+T02428,C0043,appartient_à,1
+T03229,TAG009,tagué,1
+U0058,T03336,assigné_à,1
+T01223,C0040,appartient_à,1
+U0008,T02185,assigné_à,1
+U0089,T01314,a_créé,1
+U0006,T01792,assigné_à,1
+T01288,TAG009,tagué,1
+T00229,C0023,appartient_à,1
+T03239,C0026,appartient_à,1
+T00396,TAG008,tagué,1
+T03099,C0019,appartient_à,1
+U0094,T00289,a_créé,1
+U0068,T00924,a_créé,1
+U0052,T03439,assigné_à,1
+U0062,T02317,assigné_à,1
+T00515,TAG020,tagué,1
+T02267,C0007,appartient_à,1
+U0088,T00585,assigné_à,1
+U0051,T00168,assigné_à,1
+T03044,TAG006,tagué,1
+T02701,TAG007,tagué,1
+U0038,T01985,assigné_à,1
+T03271,C0004,appartient_à,1
+M00599,T01125,lié_à,1
+T01949,TAG025,tagué,1
+T00037,TAG011,tagué,1
+T01387,C0009,appartient_à,1
+U0008,T02873,a_créé,1
+U0008,T00954,assigné_à,1
+T02827,C0005,appartient_à,1
+U0007,M01108,a_envoyé,1
+T01497,TAG022,tagué,1
+T02928,TAG011,tagué,1
+U0093,T00758,a_créé,1
+U0044,T02150,assigné_à,1
+T02707,TAG015,tagué,1
+T00652,TAG021,tagué,1
+T01979,C0058,appartient_à,1
+T03092,TAG025,tagué,1
+U0027,T01429,a_créé,1
+T03439,TAG014,tagué,1
+U0043,T00705,assigné_à,1
+T01546,TAG024,tagué,1
+T01800,TAG016,tagué,1
+T01582,TAG003,tagué,1
+T01818,C0019,appartient_à,1
+T01534,TAG007,tagué,1
+T00188,TAG019,tagué,1
+T00154,TAG002,tagué,1
+T02214,TAG018,tagué,1
+U0062,T01733,a_créé,1
+T02385,TAG008,tagué,1
+T02784,TAG021,tagué,1
+T01972,TAG008,tagué,1
+T00935,TAG023,tagué,1
+T00116,C0041,appartient_à,1
+T02134,TAG013,tagué,1
+M00203,T03006,lié_à,1
+U0031,T02460,assigné_à,1
+U0069,M01062,a_envoyé,1
+U0012,T01388,assigné_à,1
+U0015,T03442,a_créé,1
+U0063,C0026,gère,1
+U0015,T00576,a_créé,1
+T01783,TAG012,tagué,1
+U0099,T01148,assigné_à,1
+U0087,T01869,assigné_à,1
+T00748,C0012,appartient_à,1
+U0098,M00617,a_envoyé,1
+U0071,T00601,assigné_à,1
+T00230,TAG009,tagué,1
+U0015,T01635,a_créé,1
+T02673,C0020,appartient_à,1
+U0006,T00988,a_créé,1
+T03380,C0045,appartient_à,1
+T02339,TAG001,tagué,1
+T00262,C0001,appartient_à,1
+T03406,C0059,appartient_à,1
+T00064,C0048,appartient_à,1
+T00291,C0006,appartient_à,1
+U0081,T00632,a_créé,1
+T02231,C0056,appartient_à,1
+T02082,TAG020,tagué,1
+T00107,TAG010,tagué,1
+T00319,TAG021,tagué,1
+T00213,TAG005,tagué,1
+T01265,TAG004,tagué,1
+T01073,TAG003,tagué,1
+T02387,C0004,appartient_à,1
+M00479,T02411,lié_à,1
+T03081,C0003,appartient_à,1
+U0014,T02438,assigné_à,1
+T02011,C0012,appartient_à,1
+T01734,C0043,appartient_à,1
+U0075,T03158,assigné_à,1
+T01902,TAG007,tagué,1
+T02027,C0050,appartient_à,1
+T02555,TAG025,tagué,1
+T00076,TAG020,tagué,1
+T02843,C0054,appartient_à,1
+M00613,T00641,lié_à,1
+U0041,T01900,assigné_à,1
+U0004,T00772,a_créé,1
+M00791,T02054,lié_à,1
+U0042,T02362,assigné_à,1
+T00124,C0052,appartient_à,1
+T02530,TAG014,tagué,1
+T03494,TAG011,tagué,1
+U0058,T01826,assigné_à,1
+U0086,T01220,assigné_à,1
+U0086,T00802,assigné_à,1
+T00909,TAG005,tagué,1
+U0031,T02177,a_créé,1
+U0095,T03485,a_créé,1
+U0069,T02563,a_créé,1
+U0049,T00410,a_créé,1
+U0022,T00432,assigné_à,1
+T01484,C0048,appartient_à,1
+T02879,C0029,appartient_à,1
+T02606,TAG013,tagué,1
+U0098,T02241,a_créé,1
+T02733,C0054,appartient_à,1
+U0058,T01860,a_créé,1
+U0062,T00664,assigné_à,1
+U0030,T02618,assigné_à,1
+U0046,T03418,a_créé,1
+T02487,TAG004,tagué,1
+T00854,TAG024,tagué,1
+T00439,TAG024,tagué,1
+U0013,T02583,a_créé,1
+U0036,T02903,a_créé,1
+T01174,TAG025,tagué,1
+T00331,C0044,appartient_à,1
+U0074,T00958,a_créé,1
+U0006,T02819,assigné_à,1
+T00111,TAG001,tagué,1
+U0040,T02943,a_créé,1
+T01597,C0054,appartient_à,1
+U0060,T00836,a_créé,1
+U0060,M00304,a_envoyé,1
+U0020,M00549,a_envoyé,1
+T03106,C0055,appartient_à,1
+M00797,T01464,lié_à,1
+U0078,M00265,a_envoyé,1
+M00826,T01957,lié_à,1
+M00763,T00197,lié_à,1
+U0021,T00487,a_créé,1
+T03463,TAG005,tagué,1
+T02372,TAG003,tagué,1
+U0027,C0055,gère,5
+T00041,TAG004,tagué,1
+T00196,TAG009,tagué,1
+U0078,T03102,assigné_à,1
+T02780,TAG018,tagué,1
+T01962,TAG020,tagué,1
+M00960,T01894,lié_à,1
+T00065,TAG009,tagué,1
+T00387,C0030,appartient_à,1
+T01268,C0026,appartient_à,1
+T02693,C0037,appartient_à,1
+U0014,T02894,assigné_à,1
+T02264,C0058,appartient_à,1
+T01664,TAG018,tagué,1
+T03338,TAG016,tagué,1
+U0051,T01044,a_créé,1
+U0083,M01065,a_envoyé,1
+T03351,C0025,appartient_à,1
+U0015,M00117,a_envoyé,1
+U0029,T01662,a_créé,1
+U0066,M00334,a_envoyé,1
+T00350,TAG015,tagué,1
+U0007,T03187,assigné_à,1
+T00528,TAG010,tagué,1
+U0048,T00169,a_créé,1
+T00893,C0031,appartient_à,1
+U0048,T00366,a_créé,1
+T03109,TAG003,tagué,1
+T01899,TAG012,tagué,1
+U0049,C0026,gère,6
+T01430,TAG007,tagué,1
+M01182,T00545,lié_à,1
+U0082,M00219,a_envoyé,1
+U0014,T02875,assigné_à,1
+T03147,TAG010,tagué,1
+U0048,T02921,a_créé,1
+T01327,TAG009,tagué,1
+U0078,M00341,a_envoyé,1
+U0044,T02821,assigné_à,1
+T01916,TAG025,tagué,1
+T02737,C0060,appartient_à,1
+T01847,TAG008,tagué,1
+M00272,T00046,lié_à,1
+U0032,T02718,assigné_à,1
+T02276,TAG003,tagué,1
+T03260,TAG020,tagué,1
+U0039,T02743,assigné_à,1
+M00499,T03309,lié_à,1
+T02506,TAG022,tagué,1
+T03496,TAG008,tagué,1
+T02180,TAG003,tagué,1
+U0037,T00188,assigné_à,1
+T00182,C0043,appartient_à,1
+T02491,TAG020,tagué,1
+U0100,T03225,assigné_à,1
+U0043,M00487,a_envoyé,1
+U0099,T01528,assigné_à,1
+T00274,TAG013,tagué,1
+U0074,T00802,a_créé,1
+U0025,T02490,assigné_à,1
+U0077,T01351,assigné_à,1
+T03377,TAG014,tagué,1
+U0008,T00559,a_créé,1
+T01618,C0005,appartient_à,1
+T01744,TAG004,tagué,1
+U0007,T02229,a_créé,1
+T00303,C0008,appartient_à,1
+U0048,T01544,a_créé,1
+U0037,T01284,a_créé,1
+U0075,T01200,a_créé,1
+U0047,M01099,a_envoyé,1
+T00198,TAG019,tagué,1
+T03436,TAG012,tagué,1
+U0086,T02818,assigné_à,1
+T00923,TAG022,tagué,1
+T00611,TAG020,tagué,1
+T03187,TAG021,tagué,1
+T00969,TAG009,tagué,1
+T01627,TAG012,tagué,1
+T01969,C0002,appartient_à,1
+T02133,TAG009,tagué,1
+T00625,C0055,appartient_à,1
+U0009,T03273,assigné_à,1
+T03045,TAG022,tagué,1
+U0015,T01247,assigné_à,1
+U0013,T00691,assigné_à,1
+T00200,TAG011,tagué,1
+U0081,T02123,assigné_à,1
+U0050,T00316,assigné_à,1
+T01723,C0058,appartient_à,1
+U0093,T02636,assigné_à,1
+T00534,TAG014,tagué,1
+U0095,T02344,a_créé,1
+T00670,TAG022,tagué,1
+M01100,T00503,lié_à,1
+T02540,TAG010,tagué,1
+U0055,T03465,a_créé,1
+T02476,C0049,appartient_à,1
+T01820,C0035,appartient_à,1
+T00199,C0015,appartient_à,1
+T03261,C0038,appartient_à,1
+U0048,T02658,assigné_à,1
+U0082,T01245,a_créé,1
+U0095,T03257,assigné_à,1
+U0039,M01011,a_envoyé,1
+M00890,T02337,lié_à,1
+U0032,T00263,a_créé,1
+T01923,C0049,appartient_à,1
+U0021,T00059,assigné_à,1
+U0094,T02820,a_créé,1
+T01376,C0015,appartient_à,1
+U0014,C0007,gère,4
+T01308,TAG022,tagué,1
+U0056,T03146,assigné_à,1
+U0056,T03219,assigné_à,1
+U0068,T00863,a_créé,1
+T01932,TAG013,tagué,1
+U0084,T03101,a_créé,1
+T03249,C0034,appartient_à,1
+T00598,C0022,appartient_à,1
+T03080,TAG007,tagué,1
+U0091,T02159,assigné_à,1
+T01346,TAG016,tagué,1
+T02459,TAG022,tagué,1
+T00156,TAG021,tagué,1
+T02786,C0010,appartient_à,1
+T00135,TAG015,tagué,1
+U0041,T00627,a_créé,1
+U0015,T02103,a_créé,1
+T02810,C0043,appartient_à,1
+T00647,TAG022,tagué,1
+T01965,C0054,appartient_à,1
+U0036,T03033,a_créé,1
+T02666,C0010,appartient_à,1
+T00194,TAG007,tagué,1
+T03203,TAG021,tagué,1
+U0094,T00172,a_créé,1
+M00040,T01408,lié_à,1
+T02900,TAG022,tagué,1
+T02172,C0045,appartient_à,1
+T02476,TAG007,tagué,1
+U0070,T03297,a_créé,1
+T00394,C0045,appartient_à,1
+T02209,TAG022,tagué,1
+U0001,T01515,assigné_à,1
+T00519,C0001,appartient_à,1
+T00547,C0009,appartient_à,1
+T03365,TAG015,tagué,1
+U0052,T00695,a_créé,1
+T03223,TAG008,tagué,1
+T03346,C0036,appartient_à,1
+T02095,TAG022,tagué,1
+U0081,T03486,a_créé,1
+U0064,M00007,a_envoyé,1
+U0064,T00404,a_créé,1
+U0094,T03211,assigné_à,1
+T00458,C0050,appartient_à,1
+U0082,T03347,a_créé,1
+T02386,TAG006,tagué,1
+T03482,C0042,appartient_à,1
+U0089,T00386,assigné_à,1
+U0021,T02884,a_créé,1
+T02758,TAG012,tagué,1
+T00391,TAG005,tagué,1
+T03131,TAG022,tagué,1
+T02619,C0024,appartient_à,1
+T02909,TAG015,tagué,1
+T00610,C0049,appartient_à,1
+U0034,T00316,a_créé,1
+U0045,T01313,a_créé,1
+T01415,TAG012,tagué,1
+T02950,C0017,appartient_à,1
+U0035,T02757,assigné_à,1
+U0062,T02337,a_créé,1
+U0035,T01809,a_créé,1
+U0056,T03255,assigné_à,1
+M00813,T01311,lié_à,1
+U0022,T02800,assigné_à,1
+U0002,M00711,a_envoyé,1
+U0046,T01855,a_créé,1
+U0055,T01326,assigné_à,1
+T00616,TAG021,tagué,1
+M00370,T02394,lié_à,1
+U0093,M00485,a_envoyé,1
+U0031,T03277,a_créé,1
+U0092,T01468,assigné_à,1
+T00326,C0057,appartient_à,1
+U0062,M00363,a_envoyé,1
+T02615,TAG003,tagué,1
+U0080,T01892,a_créé,1
+T01753,C0012,appartient_à,1
+U0006,M00602,a_envoyé,1
+U0086,T01509,a_créé,1
+T02629,C0012,appartient_à,1
+T03121,TAG006,tagué,1
+T00471,TAG002,tagué,1
+T00942,C0026,appartient_à,1
+T00859,C0044,appartient_à,1
+U0033,T02858,assigné_à,1
+U0051,M00738,a_envoyé,1
+U0029,T01987,a_créé,1
+T02343,C0043,appartient_à,1
+T00862,C0021,appartient_à,1
+U0007,T03050,a_créé,1
+U0086,T00651,a_créé,1
+U0059,M00597,a_envoyé,1
+U0068,T03187,a_créé,1
+U0060,T00589,assigné_à,1
+U0053,T00093,a_créé,1
+U0081,T01267,a_créé,1
+U0028,M00128,a_envoyé,1
+T01120,C0001,appartient_à,1
+T00655,TAG005,tagué,1
+U0086,T01478,a_créé,1
+U0059,M00465,a_envoyé,1
+T00565,TAG003,tagué,1
+U0005,T03193,assigné_à,1
+T01552,TAG024,tagué,1
+U0083,T00186,assigné_à,1
+T02404,TAG001,tagué,1
+T01991,C0014,appartient_à,1
+U0100,T01595,a_créé,1
+U0065,T02154,assigné_à,1
+T02260,TAG007,tagué,1
+U0077,T01645,a_créé,1
+U0044,M00126,a_envoyé,1
+T00971,TAG017,tagué,1
+U0043,T00042,assigné_à,1
+T01687,TAG022,tagué,1
+T00077,C0027,appartient_à,1
+M00449,T02404,lié_à,1
+T01715,C0020,appartient_à,1
+T02377,TAG001,tagué,1
+T00783,TAG001,tagué,1
+T01137,C0011,appartient_à,1
+T03051,TAG011,tagué,1
+U0045,T02158,a_créé,1
+T00925,C0032,appartient_à,1
+T02343,TAG015,tagué,1
+T02792,C0042,appartient_à,1
+T01827,C0009,appartient_à,1
+T03146,TAG005,tagué,1
+U0045,T01675,a_créé,1
+T03468,TAG020,tagué,1
+T02479,TAG024,tagué,1
+U0078,T02267,a_créé,1
+U0063,T02665,a_créé,1
+T01324,TAG022,tagué,1
+T01682,TAG017,tagué,1
+T01784,C0057,appartient_à,1
+U0093,T00459,assigné_à,1
+T02106,C0054,appartient_à,1
+U0069,T00626,assigné_à,1
+T01695,TAG006,tagué,1
+T01910,TAG010,tagué,1
+T00475,TAG008,tagué,1
+T00362,TAG002,tagué,1
+U0094,M00823,a_envoyé,1
+T01088,C0028,appartient_à,1
+T03220,C0032,appartient_à,1
+T00785,TAG021,tagué,1
+U0053,T03444,assigné_à,1
+T01961,TAG015,tagué,1
+T03146,C0031,appartient_à,1
+T01640,C0015,appartient_à,1
+T00931,C0019,appartient_à,1
+T02890,TAG006,tagué,1
+T00082,C0023,appartient_à,1
+T01312,TAG020,tagué,1
+T00281,C0007,appartient_à,1
+T02502,TAG019,tagué,1
+T00981,TAG013,tagué,1
+T00575,C0059,appartient_à,1
+T01929,TAG014,tagué,1
+U0066,T01205,assigné_à,1
+T02808,TAG025,tagué,1
+U0042,T03449,a_créé,1
+U0079,T01607,a_créé,1
+U0048,T03335,a_créé,1
+U0065,T01179,assigné_à,1
+T02000,TAG007,tagué,1
+T01919,TAG019,tagué,1
+U0009,M00025,a_envoyé,1
+U0029,T01162,a_créé,1
+U0017,T01213,a_créé,1
+U0001,T00906,assigné_à,1
+T00358,TAG013,tagué,1
+T01789,TAG002,tagué,1
+U0027,T03353,a_créé,1
+T03356,TAG023,tagué,1
+T00295,C0003,appartient_à,1
+U0028,T01868,assigné_à,1
+T03488,TAG019,tagué,1
+T03189,TAG014,tagué,1
+T02897,C0005,appartient_à,1
+U0029,T02529,a_créé,1
+U0099,M00344,a_envoyé,1
+T01589,TAG003,tagué,1
+U0080,T00907,assigné_à,1
+U0019,T00792,assigné_à,1
+U0032,T01722,a_créé,1
+T03497,TAG014,tagué,1
+M00735,T01640,lié_à,1
+T01140,C0001,appartient_à,1
+T02977,C0052,appartient_à,1
+M00026,T00861,lié_à,1
+U0012,T02639,a_créé,1
+T02399,C0018,appartient_à,1
+T03091,TAG016,tagué,1
+T01507,TAG007,tagué,1
+T02716,TAG002,tagué,1
+U0086,T01574,assigné_à,1
+U0036,T03214,a_créé,1
+U0071,T02889,a_créé,1
+T00529,TAG006,tagué,1
+U0033,T02915,a_créé,1
+T02017,TAG017,tagué,1
+U0023,T02114,a_créé,1
+U0060,T02879,assigné_à,1
+T02822,C0032,appartient_à,1
+U0005,T00471,a_créé,1
+U0081,T01830,assigné_à,1
+T03479,TAG017,tagué,1
+T02837,C0043,appartient_à,1
+T03174,TAG017,tagué,1
+T03485,TAG017,tagué,1
+M00336,T03302,lié_à,1
+U0014,M00087,a_envoyé,1
+T03498,TAG020,tagué,1
+U0009,M00312,a_envoyé,1
+U0049,M00576,a_envoyé,1
+T01920,TAG016,tagué,1
+T01209,TAG006,tagué,1
+U0084,M00852,a_envoyé,1
+T03207,C0024,appartient_à,1
+T00072,TAG015,tagué,1
+T01106,TAG019,tagué,1
+U0046,T00843,a_créé,1
+U0090,T00095,assigné_à,1
+T00815,C0034,appartient_à,1
+U0034,T00010,a_créé,1
+T00877,TAG009,tagué,1
+U0037,T02309,assigné_à,1
+T00212,C0012,appartient_à,1
+U0062,T01147,assigné_à,1
+T01189,TAG009,tagué,1
+U0032,M00311,a_envoyé,1
+U0070,T02979,a_créé,1
+M00015,T02106,lié_à,1
+T02318,C0010,appartient_à,1
+T01917,C0055,appartient_à,1
+T01456,TAG010,tagué,1
+T01134,C0055,appartient_à,1
+U0099,T02113,a_créé,1
+T01199,TAG024,tagué,1
+T02795,TAG004,tagué,1
+T02746,TAG003,tagué,1
+T01400,C0032,appartient_à,1
+T02290,C0008,appartient_à,1
+U0087,T00867,a_créé,1
+T00529,TAG014,tagué,1
+M00307,T00528,lié_à,1
+U0040,T01391,a_créé,1
+M00354,T01080,lié_à,1
+T00641,TAG014,tagué,1
+U0059,T02236,a_créé,1
+U0005,M00259,a_envoyé,1
+U0052,T01154,a_créé,1
+T00157,C0054,appartient_à,1
+T00556,TAG018,tagué,1
+T03295,C0024,appartient_à,1
+M00266,T02347,lié_à,1
+U0093,T01044,assigné_à,1
+T00274,TAG021,tagué,1
+T02195,TAG001,tagué,1
+T01853,TAG004,tagué,1
+U0037,T00885,a_créé,1
+T02396,TAG004,tagué,1
+U0096,T02063,assigné_à,1
+T03061,C0020,appartient_à,1
+U0047,M00336,a_envoyé,1
+U0027,T02936,assigné_à,1
+T02365,TAG012,tagué,1
+U0052,T02405,assigné_à,1
+U0074,T00697,assigné_à,1
+T03088,C0039,appartient_à,1
+M00130,T00361,lié_à,1
+T02073,TAG011,tagué,1
+T02366,TAG018,tagué,1
+T01373,TAG017,tagué,1
+T02995,TAG001,tagué,1
+U0077,T02458,assigné_à,1
+T00431,TAG013,tagué,1
+T00209,C0056,appartient_à,1
+T01476,TAG012,tagué,1
+U0029,T00062,assigné_à,1
+U0034,T02234,a_créé,1
+T02720,C0019,appartient_à,1
+U0038,T00089,a_créé,1
+U0019,T00234,assigné_à,1
+U0029,T00824,a_créé,1
+T02807,TAG005,tagué,1
+U0033,T00670,a_créé,1
+T01838,TAG009,tagué,1
+U0034,T01200,assigné_à,1
+U0010,T02340,assigné_à,1
+T01375,TAG017,tagué,1
+T00513,TAG014,tagué,1
+T00485,TAG014,tagué,1
+T03435,TAG003,tagué,1
+T00738,C0055,appartient_à,1
+T02210,TAG019,tagué,1
+T03193,TAG002,tagué,1
+T00707,TAG020,tagué,1
+U0031,T02775,a_créé,1
+T01133,TAG002,tagué,1
+U0050,T02039,a_créé,1
+M00066,T02543,lié_à,1
+U0067,T02478,a_créé,1
+T01394,TAG019,tagué,1
+U0069,T00711,assigné_à,1
+T02603,C0014,appartient_à,1
+T00778,TAG013,tagué,1
+T03043,TAG005,tagué,1
+T02874,C0050,appartient_à,1
+U0083,T00699,a_créé,1
+U0077,M00286,a_envoyé,1
+U0032,T00820,a_créé,1
+T01506,TAG002,tagué,1
+M00914,T02616,lié_à,1
+T03266,TAG002,tagué,1
+U0066,T02840,a_créé,1
+T00980,TAG006,tagué,1
+U0003,M01175,a_envoyé,1
+T02185,TAG011,tagué,1
+T02849,C0047,appartient_à,1
+T00837,TAG020,tagué,1
+U0015,M01124,a_envoyé,1
+T02113,TAG009,tagué,1
+U0073,T03261,a_créé,1
+T02910,C0050,appartient_à,1
+T01524,TAG024,tagué,1
+U0043,T01153,a_créé,1
+T03407,TAG017,tagué,1
+T00526,TAG004,tagué,1
+T00865,C0004,appartient_à,1
+T02088,C0055,appartient_à,1
+T01170,TAG017,tagué,1
+T00940,TAG004,tagué,1
+T00645,C0032,appartient_à,1
+T02299,C0003,appartient_à,1
+T02709,TAG020,tagué,1
+T03169,C0041,appartient_à,1
+T03333,C0039,appartient_à,1
+U0073,T00698,a_créé,1
+T02531,C0028,appartient_à,1
+T01975,C0057,appartient_à,1
+U0069,T02917,assigné_à,1
+T03228,C0025,appartient_à,1
+T00838,TAG015,tagué,1
+U0068,T02133,assigné_à,1
+T02724,TAG005,tagué,1
+T00610,TAG012,tagué,1
+U0072,M00442,a_envoyé,1
+T02291,TAG014,tagué,1
+T02812,C0031,appartient_à,1
+U0060,M00850,a_envoyé,1
+U0056,T01108,assigné_à,1
+T02886,C0015,appartient_à,1
+T01016,TAG008,tagué,1
+U0042,T01783,a_créé,1
+T02174,TAG020,tagué,1
+U0049,T02643,a_créé,1
+M00729,T03063,lié_à,1
+T00256,TAG009,tagué,1
+U0088,M00645,a_envoyé,1
+U0094,T00200,a_créé,1
+T01876,C0035,appartient_à,1
+T02111,C0049,appartient_à,1
+U0095,T01379,a_créé,1
+U0065,T01927,a_créé,1
+U0001,T01686,a_créé,1
+T03018,TAG024,tagué,1
+T02986,TAG018,tagué,1
+T00281,TAG013,tagué,1
+T02725,TAG008,tagué,1
+T00878,TAG020,tagué,1
+U0030,T00923,assigné_à,1
+T01146,C0054,appartient_à,1
+U0005,T00827,a_créé,1
+T02506,C0018,appartient_à,1
+U0031,M01007,a_envoyé,1
+U0070,M00878,a_envoyé,1
+T02484,TAG014,tagué,1
+T00136,C0018,appartient_à,1
+T00442,TAG010,tagué,1
+T03451,TAG019,tagué,1
+U0048,T00232,a_créé,1
+T01168,TAG013,tagué,1
+T00705,C0024,appartient_à,1
+T00681,TAG023,tagué,1
+T03322,TAG010,tagué,1
+U0006,M00193,a_envoyé,1
+M00259,T00599,lié_à,1
+U0032,M00169,a_envoyé,1
+U0074,T01524,a_créé,1
+U0050,T00810,a_créé,1
+T03493,C0055,appartient_à,1
+U0046,T02946,assigné_à,1
+T01231,C0019,appartient_à,1
+T02765,C0057,appartient_à,1
+T02145,TAG012,tagué,1
+U0076,M00059,a_envoyé,1
+T00334,C0049,appartient_à,1
+T00576,C0005,appartient_à,1
+T02039,TAG008,tagué,1
+U0009,T01619,a_créé,1
+T01049,TAG005,tagué,1
+T01923,TAG015,tagué,1
+T01218,TAG009,tagué,1
+T02126,TAG017,tagué,1
+U0067,T02432,a_créé,1
+U0072,C0047,gère,1
+T02653,TAG018,tagué,1
+T01366,TAG015,tagué,1
+U0076,M00145,a_envoyé,1
+T00320,TAG008,tagué,1
+U0094,T01264,assigné_à,1
+T01995,C0042,appartient_à,1
+U0074,T02371,a_créé,1
+T01601,TAG016,tagué,1
+T03049,C0047,appartient_à,1
+M01122,T00145,lié_à,1
+T02996,TAG012,tagué,1
+U0030,M01086,a_envoyé,1
+T01471,TAG017,tagué,1
+U0036,T01130,a_créé,1
+T01643,C0001,appartient_à,1
+T03428,TAG012,tagué,1
+U0013,T03326,a_créé,1
+T02369,TAG025,tagué,1
+U0083,T02558,assigné_à,1
+T03228,TAG023,tagué,1
+T01006,C0003,appartient_à,1
+T00469,TAG005,tagué,1
+T00920,TAG007,tagué,1
+U0009,T03445,a_créé,1
+M01105,T03378,lié_à,1
+U0053,T03099,a_créé,1
+T00046,TAG009,tagué,1
+T02074,C0055,appartient_à,1
+M00638,T03144,lié_à,1
+T01074,TAG008,tagué,1
+T02228,TAG017,tagué,1
+T03141,C0002,appartient_à,1
+U0099,T00445,a_créé,1
+U0042,M00807,a_envoyé,1
+T02920,TAG003,tagué,1
+U0095,T03274,a_créé,1
+U0043,T02156,a_créé,1
+U0017,M00746,a_envoyé,1
+T03003,TAG019,tagué,1
+T02184,C0020,appartient_à,1
+T00927,TAG005,tagué,1
+T02642,C0039,appartient_à,1
+T01542,TAG009,tagué,1
+T03022,TAG015,tagué,1
+T00886,TAG023,tagué,1
+T00158,TAG016,tagué,1
+T01588,C0045,appartient_à,1
+U0025,M00797,a_envoyé,1
+U0035,T02546,assigné_à,1
+T00316,TAG013,tagué,1
+T00424,C0029,appartient_à,1
+T01841,TAG007,tagué,1
+U0001,T03237,a_créé,1
+T03401,TAG019,tagué,1
+T02771,C0016,appartient_à,1
+T02570,TAG011,tagué,1
+T00304,C0016,appartient_à,1
+T02584,C0058,appartient_à,1
+U0016,T02765,assigné_à,1
+T01903,TAG020,tagué,1
+T02607,TAG002,tagué,1
+U0086,C0019,gère,9
+U0094,T01842,a_créé,1
+U0031,T00871,a_créé,1
+T00937,TAG022,tagué,1
+U0082,T02427,a_créé,1
+M00367,T02600,lié_à,1
+M00051,T03251,lié_à,1
+U0049,T00753,assigné_à,1
+T00953,TAG001,tagué,1
+U0080,T00562,a_créé,1
+U0097,T02771,a_créé,1
+U0038,T02587,assigné_à,1
+U0026,M00959,a_envoyé,1
+T01303,C0014,appartient_à,1
+U0020,T02962,a_créé,1
+T01293,TAG016,tagué,1
+T01270,TAG019,tagué,1
+T02298,TAG003,tagué,1
+T01319,TAG005,tagué,1
+U0063,T03133,assigné_à,1
+U0076,M00255,a_envoyé,1
+T00329,TAG016,tagué,1
+T00759,TAG017,tagué,1
+T01883,C0032,appartient_à,1
+U0013,M00297,a_envoyé,1
+T01551,TAG015,tagué,1
+U0065,T02584,a_créé,1
+M00652,T02960,lié_à,1
+U0092,T01210,a_créé,1
+U0069,T01519,a_créé,1
+T02210,TAG018,tagué,1
+U0020,C0057,gère,6
+U0077,T00371,assigné_à,1
+U0026,C0004,gère,1
+T03176,TAG023,tagué,1
+T01609,TAG013,tagué,1
+T00120,TAG014,tagué,1
+U0004,T00270,assigné_à,1
+U0041,M00016,a_envoyé,1
+U0078,T03051,assigné_à,1
+T02386,C0030,appartient_à,1
+M01185,T00879,lié_à,1
+T02568,C0027,appartient_à,1
+U0052,T02864,assigné_à,1
+U0022,T02202,a_créé,1
+T01383,TAG016,tagué,1
+T00085,C0051,appartient_à,1
+T01081,TAG004,tagué,1
+U0096,T03228,a_créé,1
+T01307,TAG023,tagué,1
+U0043,M01118,a_envoyé,1
+T00650,TAG022,tagué,1
+T01706,C0042,appartient_à,1
+M00020,T03164,lié_à,1
+T02582,TAG004,tagué,1
+T01436,TAG009,tagué,1
+U0064,C0022,gère,8
+M00448,T02135,lié_à,1
+T00606,C0002,appartient_à,1
+U0085,T00617,a_créé,1
+T02704,TAG021,tagué,1
+T00318,TAG023,tagué,1
+T00616,C0050,appartient_à,1
+U0092,T02832,a_créé,1
+T01644,TAG016,tagué,1
+U0020,T01285,assigné_à,1
+U0051,T01425,a_créé,1
+T01706,TAG001,tagué,1
+T02708,TAG008,tagué,1
+T02235,C0048,appartient_à,1
+T03016,C0053,appartient_à,1
+T00290,TAG015,tagué,1
+T02638,C0016,appartient_à,1
+T02833,TAG024,tagué,1
+T00355,TAG023,tagué,1
+T03275,TAG012,tagué,1
+T00033,TAG018,tagué,1
+U0084,T01491,assigné_à,1
+T01139,TAG004,tagué,1
+U0091,M00394,a_envoyé,1
+U0040,T02131,a_créé,1
+T02654,TAG004,tagué,1
+T02863,TAG019,tagué,1
+U0006,T02995,assigné_à,1
+U0031,M00439,a_envoyé,1
+U0019,T01179,a_créé,1
+U0058,T01438,a_créé,1
+T02241,TAG014,tagué,1
+T00587,C0019,appartient_à,1
+T03211,TAG016,tagué,1
+T00183,C0046,appartient_à,1
+T02373,TAG007,tagué,1
+U0077,C0011,gère,7
+U0087,T01036,assigné_à,1
+U0036,T00914,a_créé,1
+T01315,TAG008,tagué,1
+U0012,T00164,assigné_à,1
+T02763,C0035,appartient_à,1
+T00208,C0056,appartient_à,1
+U0059,T01820,a_créé,1
+U0041,T02394,assigné_à,1
+T03364,C0026,appartient_à,1
+T00619,TAG020,tagué,1
+U0059,M00548,a_envoyé,1
+U0040,M00991,a_envoyé,1
+M00739,T01417,lié_à,1
+U0021,M00772,a_envoyé,1
+T02275,TAG013,tagué,1
+T02593,TAG024,tagué,1
+M00231,T03278,lié_à,1
+U0041,T02987,a_créé,1
+U0092,T00685,assigné_à,1
+T00975,TAG005,tagué,1
+U0043,T01594,assigné_à,1
+U0005,T00406,a_créé,1
+U0027,T00207,a_créé,1
+U0005,T02015,assigné_à,1
+T02177,C0016,appartient_à,1
+T00193,TAG023,tagué,1
+T00705,TAG001,tagué,1
+M00264,T01110,lié_à,1
+T02787,TAG010,tagué,1
+T01021,TAG010,tagué,1
+T01873,C0050,appartient_à,1
+T03167,TAG025,tagué,1
+T00741,C0030,appartient_à,1
+T02713,TAG022,tagué,1
+T00197,TAG020,tagué,1
+T03033,TAG023,tagué,1
+U0066,T03397,a_créé,1
+T00353,TAG012,tagué,1
+U0098,T01496,a_créé,1
+M01146,T03069,lié_à,1
+U0039,M00419,a_envoyé,1
+T02383,C0016,appartient_à,1
+T01428,TAG016,tagué,1
+U0059,T00170,assigné_à,1
+T00366,C0031,appartient_à,1
+T03359,TAG016,tagué,1
+T01586,TAG023,tagué,1
+T00709,C0049,appartient_à,1
+M00874,T00411,lié_à,1
+T01611,C0019,appartient_à,1
+T02101,C0002,appartient_à,1
+U0038,T00405,assigné_à,1
+T00593,TAG022,tagué,1
+M00028,T02160,lié_à,1
+T02063,TAG022,tagué,1
+U0009,M00835,a_envoyé,1
+M00235,T02194,lié_à,1
+T02137,TAG018,tagué,1
+T01929,C0058,appartient_à,1
+M00505,T01655,lié_à,1
+U0040,M00364,a_envoyé,1
+T01411,C0045,appartient_à,1
+U0006,T01310,a_créé,1
+T03130,TAG025,tagué,1
+T03072,TAG019,tagué,1
+U0097,T02397,assigné_à,1
+U0019,T02036,assigné_à,1
+U0099,T02671,assigné_à,1
+U0063,T00710,a_créé,1
+T02332,TAG010,tagué,1
+M00731,T01535,lié_à,1
+T00374,TAG017,tagué,1
+T03098,TAG008,tagué,1
+U0007,M00690,a_envoyé,1
+U0051,T00580,a_créé,1
+U0054,T02122,assigné_à,1
+T02265,TAG013,tagué,1
+T01736,C0025,appartient_à,1
+U0090,T03073,assigné_à,1
+T03397,TAG009,tagué,1
+U0040,T02268,assigné_à,1
+T01775,TAG024,tagué,1
+T02222,C0018,appartient_à,1
+U0069,T02386,a_créé,1
+T03355,TAG008,tagué,1
+U0085,T00633,a_créé,1
+U0020,T01463,a_créé,1
+T00221,C0035,appartient_à,1
+U0007,T01909,assigné_à,1
+M01000,T01916,lié_à,1
+T01810,TAG003,tagué,1
+U0043,T00935,a_créé,1
+U0055,T03265,assigné_à,1
+T03348,TAG001,tagué,1
+T02753,C0053,appartient_à,1
+T02063,TAG010,tagué,1
+U0064,M00406,a_envoyé,1
+T02613,TAG001,tagué,1
+T01155,TAG024,tagué,1
+U0077,T03312,a_créé,1
+U0080,T00172,assigné_à,1
+T02406,TAG015,tagué,1
+T03422,C0001,appartient_à,1
+U0066,T01920,assigné_à,1
+M00362,T02941,lié_à,1
+T00137,TAG002,tagué,1
+U0086,T00257,a_créé,1
+T02562,TAG007,tagué,1
+T00140,TAG023,tagué,1
+U0028,T01680,assigné_à,1
+U0091,M00951,a_envoyé,1
+U0067,T02410,a_créé,1
+U0017,M01089,a_envoyé,1
+U0048,T03452,assigné_à,1
+T02188,TAG012,tagué,1
+U0071,T02200,a_créé,1
+T00388,TAG003,tagué,1
+T03129,TAG021,tagué,1
+U0032,T01153,assigné_à,1
+T01146,TAG021,tagué,1
+T01901,TAG014,tagué,1
+T00700,TAG023,tagué,1
+U0061,C0008,gère,7
+U0047,T02633,a_créé,1
+T01344,TAG022,tagué,1
+U0016,T00087,a_créé,1
+T01971,TAG025,tagué,1
+U0020,T00207,assigné_à,1
+U0063,M00408,a_envoyé,1
+T01486,TAG010,tagué,1
+T00531,TAG004,tagué,1
+T03481,TAG013,tagué,1
+T02141,TAG019,tagué,1
+T00509,C0048,appartient_à,1
+U0028,T01626,a_créé,1
+M01149,T02369,lié_à,1
+T02919,TAG006,tagué,1
+U0044,T01693,assigné_à,1
+M00146,T00242,lié_à,1
+U0074,M01136,a_envoyé,1
+T02985,TAG017,tagué,1
+T02699,TAG004,tagué,1
+T02242,TAG009,tagué,1
+U0091,T00414,a_créé,1
+T02651,C0026,appartient_à,1
+T02967,TAG023,tagué,1
+T00380,C0050,appartient_à,1
+U0016,T02555,a_créé,1
+U0069,T00286,a_créé,1
+U0094,T02235,assigné_à,1
+U0100,M01095,a_envoyé,1
+U0014,T03121,a_créé,1
+T03291,TAG008,tagué,1
+U0082,M01158,a_envoyé,1
+U0023,T01897,assigné_à,1
+T02935,C0033,appartient_à,1
+T00341,C0042,appartient_à,1
+T00842,TAG022,tagué,1
+T03175,TAG008,tagué,1
+U0052,T02029,a_créé,1
+U0050,C0011,gère,4
+T02775,TAG023,tagué,1
+U0025,T02548,a_créé,1
+U0075,T02350,assigné_à,1
+U0012,T03002,a_créé,1
+U0061,C0059,gère,6
+T03289,TAG011,tagué,1
+T02601,C0036,appartient_à,1
+T02999,C0035,appartient_à,1
+U0077,T03412,assigné_à,1
+U0089,T02284,a_créé,1
+U0035,T01770,assigné_à,1
+U0093,C0049,gère,4
+U0056,T02051,a_créé,1
+T00997,C0013,appartient_à,1
+U0012,T03270,a_créé,1
+T01008,C0038,appartient_à,1
+T01365,C0056,appartient_à,1
+T02906,TAG024,tagué,1
+U0013,M00222,a_envoyé,1
+U0026,M00184,a_envoyé,1
+U0070,M00430,a_envoyé,1
+T01948,TAG003,tagué,1
+T00253,TAG015,tagué,1
+U0033,M00712,a_envoyé,1
+T01207,TAG025,tagué,1
+T02878,C0002,appartient_à,1
+T03412,C0052,appartient_à,1
+T02786,TAG007,tagué,1
+T01517,TAG017,tagué,1
+M00084,T03000,lié_à,1
+T00719,TAG019,tagué,1
+T01733,TAG011,tagué,1
+U0044,T02983,a_créé,1
+T01019,TAG003,tagué,1
+U0043,T03300,assigné_à,1
+U0065,T03472,assigné_à,1
+U0087,T02492,assigné_à,1
+U0088,T01411,a_créé,1
+T02114,TAG022,tagué,1
+T01316,C0045,appartient_à,1
+M00365,T01054,lié_à,1
+U0042,T00497,assigné_à,1
+T00712,TAG002,tagué,1
+T02652,TAG005,tagué,1
+U0021,M00999,a_envoyé,1
+T00727,C0002,appartient_à,1
+U0086,T00406,assigné_à,1
+T01131,TAG018,tagué,1
+U0012,T02070,assigné_à,1
+T00208,TAG003,tagué,1
+T02615,C0032,appartient_à,1
+T01656,TAG005,tagué,1
+T00483,C0031,appartient_à,1
+T02075,C0043,appartient_à,1
+T01382,TAG005,tagué,1
+U0067,T03257,a_créé,1
+T01363,TAG024,tagué,1
+T00189,TAG004,tagué,1
+U0037,T02401,a_créé,1
+T01796,C0032,appartient_à,1
+T02056,TAG007,tagué,1
+M00576,T01946,lié_à,1
+T00267,TAG012,tagué,1
+T00651,C0038,appartient_à,1
+U0057,M00595,a_envoyé,1
+T01388,TAG011,tagué,1
+U0091,T01841,assigné_à,1
+U0087,T01516,assigné_à,1
+U0047,T01175,a_créé,1
+T02903,C0031,appartient_à,1
+U0095,T01380,a_créé,1
+T00908,TAG002,tagué,1
+T02868,TAG022,tagué,1
+U0006,T00371,a_créé,1
+M00627,T01739,lié_à,1
+U0026,T02548,assigné_à,1
+T01843,TAG007,tagué,1
+U0041,T00383,a_créé,1
+U0064,T00421,assigné_à,1
+U0010,T01561,assigné_à,1
+M01111,T01426,lié_à,1
+U0074,T01460,a_créé,1
+M00637,T00295,lié_à,1
+T01292,TAG012,tagué,1
+T00005,TAG016,tagué,1
+M00393,T02084,lié_à,1
+T02648,TAG015,tagué,1
+T00404,TAG014,tagué,1
+T00026,C0055,appartient_à,1
+T00790,TAG023,tagué,1
+M00233,T00506,lié_à,1
+U0057,T00631,assigné_à,1
+T03136,TAG007,tagué,1
+T02856,C0014,appartient_à,1
+T01534,TAG020,tagué,1
+T00457,TAG007,tagué,1
+T01534,C0056,appartient_à,1
+T03101,TAG024,tagué,1
+T01735,TAG008,tagué,1
+T02014,TAG014,tagué,1
+T02824,C0013,appartient_à,1
+U0098,T02602,assigné_à,1
+U0051,T00792,a_créé,1
+T00058,TAG020,tagué,1
+U0034,T02007,a_créé,1
+U0055,T01178,a_créé,1
+T03302,TAG023,tagué,1
+M01126,T03239,lié_à,1
+U0099,M00370,a_envoyé,1
+T01586,TAG013,tagué,1
+U0006,T03309,a_créé,1
+T02257,TAG003,tagué,1
+U0098,M00124,a_envoyé,1
+M00542,T00859,lié_à,1
+T01536,C0001,appartient_à,1
+T02572,TAG004,tagué,1
+M00169,T01310,lié_à,1
+U0003,T03403,assigné_à,1
+T01327,TAG013,tagué,1
+U0029,T00848,a_créé,1
+T02109,TAG017,tagué,1
+U0095,M01150,a_envoyé,1
+T02317,TAG005,tagué,1
+U0086,T02049,a_créé,1
+U0095,T02510,assigné_à,1
+T01652,TAG007,tagué,1
+T00116,TAG015,tagué,1
+T03406,TAG015,tagué,1
+T03444,C0012,appartient_à,1
+U0054,T01601,assigné_à,1
+T03474,TAG007,tagué,1
+T02157,TAG005,tagué,1
+U0089,T02751,a_créé,1
+U0022,T00930,a_créé,1
+T03488,C0026,appartient_à,1
+T02499,TAG003,tagué,1
+M00975,T01982,lié_à,1
+U0080,T01074,assigné_à,1
+T01596,TAG001,tagué,1
+T01046,TAG004,tagué,1
+T00011,TAG016,tagué,1
+T03379,TAG018,tagué,1
+U0088,T03270,assigné_à,1
+T03466,C0052,appartient_à,1
+U0056,T01599,a_créé,1
+T03455,TAG002,tagué,1
+U0098,T02806,a_créé,1
+T01194,C0023,appartient_à,1
+M00745,T01414,lié_à,1
+U0079,T01318,a_créé,1
+M00338,T00180,lié_à,1
+T01040,TAG021,tagué,1
+T00678,TAG019,tagué,1
+T00639,TAG017,tagué,1
+U0019,T03064,a_créé,1
+U0066,T01395,a_créé,1
+T02140,TAG001,tagué,1
+T01529,TAG021,tagué,1
+T02631,TAG025,tagué,1
+U0078,T01199,assigné_à,1
+U0025,T00386,a_créé,1
+U0040,T02006,assigné_à,1
+M00378,T00145,lié_à,1
+T00918,TAG001,tagué,1
+U0009,T02283,a_créé,1
+U0049,C0019,gère,6
+T03335,TAG022,tagué,1
+M00248,T02614,lié_à,1
+T03005,C0026,appartient_à,1
+T02893,TAG010,tagué,1
+T02874,TAG022,tagué,1
+T00249,C0012,appartient_à,1
+U0052,T00344,a_créé,1
+U0099,M01179,a_envoyé,1
+T02278,C0010,appartient_à,1
+U0053,T02397,a_créé,1
+U0004,T01864,assigné_à,1
+T01874,TAG005,tagué,1
+T02816,TAG012,tagué,1
+U0024,M00992,a_envoyé,1
+U0001,T01960,assigné_à,1
+U0094,M00579,a_envoyé,1
+U0089,T02439,assigné_à,1
+U0008,T02581,assigné_à,1
+T01320,TAG021,tagué,1
+M00977,T00709,lié_à,1
+U0068,T01603,assigné_à,1
+T01547,TAG017,tagué,1
+T01345,TAG025,tagué,1
+T00573,TAG011,tagué,1
+M00154,T00361,lié_à,1
+T00030,TAG004,tagué,1
+T00048,TAG011,tagué,1
+T00227,TAG007,tagué,1
+T02289,C0003,appartient_à,1
+T01360,TAG013,tagué,1
+U0070,T02628,a_créé,1
+U0059,T02400,assigné_à,1
+U0072,T02910,a_créé,1
+M00578,T00601,lié_à,1
+U0034,T02366,a_créé,1
+U0069,M00498,a_envoyé,1
+T00665,TAG025,tagué,1
+T00930,TAG014,tagué,1
+M00048,T01244,lié_à,1
+T01678,TAG009,tagué,1
+T02919,C0035,appartient_à,1
+U0053,T02001,assigné_à,1
+M00160,T03033,lié_à,1
+T00819,TAG002,tagué,1
+U0016,T02117,a_créé,1
+U0069,T02213,assigné_à,1
+T02659,TAG018,tagué,1
+U0061,T03244,assigné_à,1
+T00009,TAG006,tagué,1
+U0057,M00722,a_envoyé,1
+T00056,TAG001,tagué,1
+U0085,T01503,a_créé,1
+T01576,TAG014,tagué,1
+U0024,T01437,a_créé,1
+T02981,C0021,appartient_à,1
+T01642,C0055,appartient_à,1
+U0065,T01410,a_créé,1
+T00148,TAG004,tagué,1
+U0022,T02779,assigné_à,1
+T00970,TAG019,tagué,1
+U0069,T02148,a_créé,1
+U0007,T00851,a_créé,1
+U0024,T01605,a_créé,1
+T00473,C0043,appartient_à,1
+T01610,TAG012,tagué,1
+T02876,C0032,appartient_à,1
+U0039,M00725,a_envoyé,1
+T03167,C0009,appartient_à,1
+U0069,T01865,assigné_à,1
+U0047,T03058,a_créé,1
+U0008,T00557,assigné_à,1
+U0078,T00453,a_créé,1
+T02689,TAG016,tagué,1
+T01373,TAG025,tagué,1
+U0071,T00500,a_créé,1
+U0098,M00724,a_envoyé,1
+T01966,TAG024,tagué,1
+U0031,T00245,a_créé,1
+U0025,T01152,assigné_à,1
+T03055,C0013,appartient_à,1
+M00656,T02318,lié_à,1
+T00548,TAG007,tagué,1
+T01149,TAG001,tagué,1
+U0063,T02272,a_créé,1
+U0084,T01219,assigné_à,1
+T00931,TAG014,tagué,1
+U0073,T00991,a_créé,1
+T00668,TAG015,tagué,1
+U0048,T01068,assigné_à,1
+T01977,TAG021,tagué,1
+T01510,TAG024,tagué,1
+U0027,T02603,a_créé,1
+U0024,M01128,a_envoyé,1
+T00760,C0012,appartient_à,1
+T02482,TAG014,tagué,1
+U0041,C0050,gère,1
+U0099,T01986,a_créé,1
+T00925,TAG013,tagué,1
+M00298,T02708,lié_à,1
+T00077,TAG012,tagué,1
+M00840,T03405,lié_à,1
+T01388,TAG013,tagué,1
+T02715,C0048,appartient_à,1
+T00090,C0018,appartient_à,1
+U0040,T03422,a_créé,1
+T01940,TAG022,tagué,1
+U0033,T02362,a_créé,1
+T01439,TAG007,tagué,1
+T00918,TAG004,tagué,1
+U0100,T02424,a_créé,1
+T01528,TAG018,tagué,1
+T00306,TAG010,tagué,1
+T01967,TAG009,tagué,1
+M01184,T02206,lié_à,1
+U0067,T02723,assigné_à,1
+T02024,TAG011,tagué,1
+T02074,TAG009,tagué,1
+T00470,TAG006,tagué,1
+T00793,C0045,appartient_à,1
+T00912,C0007,appartient_à,1
+U0061,T00980,a_créé,1
+U0098,T00957,a_créé,1
+T00257,C0020,appartient_à,1
+M00549,T02193,lié_à,1
+T01280,TAG021,tagué,1
+U0065,T02536,a_créé,1
+U0049,T02348,a_créé,1
+U0063,T00428,a_créé,1
+T02730,C0012,appartient_à,1
+T02405,TAG010,tagué,1
+T02480,C0003,appartient_à,1
+U0018,T02386,assigné_à,1
+T00734,TAG008,tagué,1
+T00118,C0024,appartient_à,1
