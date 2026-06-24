@@ -22,9 +22,6 @@
 <meta name="twitter:description" content="Ingénieur en Data et IA. Data Science, Sites Web, Logiciels.">
 <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/60719810?v=4">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA5NiA5Nic+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnMScgeDE9JzAlJyB5MT0nMCUnIHgyPScxMDAlJyB5Mj0nMTAwJSc+PHN0b3Agb2Zmc2V0PScwJScgc3RvcC1jb2xvcj0nIzBkMjEzNycvPjxzdG9wIG9mZnNldD0nMTAwJScgc3RvcC1jb2xvcj0nIzBhMWEyZScvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSdncCcgeDE9JzAlJyB5MT0nMCUnIHgyPScxMDAlJyB5Mj0nMTAwJSc+PHN0b3Agb2Zmc2V0PScwJScgc3RvcC1jb2xvcj0nIzdmZmZkNCcvPjxzdG9wIG9mZnNldD0nMTAwJScgc3RvcC1jb2xvcj0nIzJiYjhiOCcvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSc5NicgaGVpZ2h0PSc5Nicgcng9JzIwJyBmaWxsPSd1cmwoI2cxKScvPjx0ZXh0IHg9JzUwJScgeT0nNjglJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nR2VvcmdpYSxzZXJpZicgZm9udC1zaXplPSc2MicgZm9udC13ZWlnaHQ9J2JvbGQnIGZpbGw9J25vbmUnIHN0cm9rZT0nIzJiYjhiOCcgc3Ryb2tlLXdpZHRoPScyLjUnPlA8L3RleHQ+PHRleHQgeD0nNTAlJyB5PSc2OCUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtZmFtaWx5PSdHZW9yZ2lhLHNlcmlmJyBmb250LXNpemU9JzYyJyBmb250LXdlaWdodD0nYm9sZCcgZmlsbD0ndXJsKCNncCknPlA8L3RleHQ+PHBvbHlnb24gcG9pbnRzPSc2MywyMiA2NS41LDI5LjUgNzMsMjkuNSA2NywzNCA2OS41LDQxLjUgNjMsMzcgNTYuNSw0MS41IDU5LDM0IDUzLDI5LjUgNjAuNSwyOS41JyBmaWxsPScjZmZkNzAwJyBvcGFjaXR5PScwLjkyJy8+PC9zdmc+">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Pierre Pétillion</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -960,7 +957,7 @@ footer{text-align:center;padding:10px 0 16px;font-size:13px;opacity:.62;font-wei
 <footer><strong data-fr="&copy; 2026 Pierre Petillion &mdash; Engineer &amp; Software Consultant" data-en="&copy; 2026 Pierre Petillion &mdash; Engineer &amp; Software Consultant">&copy; 2026 Pierre Petillion &mdash; Engineer &amp; Software Consultant</strong></footer>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
   var canvas=document.getElementById('bg-canvas');
   var ctx=canvas.getContext('2d');
@@ -1050,7 +1047,7 @@ function goTo(n){
   window.scrollTo({top:0,behavior:'instant'});
 }
 function changeSlide(d){goTo((current+d+N)%N);}
-document.addEventListener("keydown",function(e){if(e.key==="ArrowLeft")changeSlide(-1);if(e.key==="ArrowRight")changeSlide(1);});
+document.addEventListener("keydown",function(e){var t=e.target;if(t&&(t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName||"")))return;if(e.key==="ArrowLeft")changeSlide(-1);if(e.key==="ArrowRight")changeSlide(1);});
 var tx=0;
 /* swipe désactivé */
 
@@ -1376,8 +1373,10 @@ window.addEventListener("scroll",function(){document.getElementById("scrollTop")
     }, wait);
   }
   scheduleFlash();
-  setLang('fr');
 })();
+
+// Initialisation de la langue par defaut (independante des animations decoratives)
+setLang('fr');
 
 </script>
 
@@ -1401,4 +1400,5 @@ window.addEventListener("scroll",function(){document.getElementById("scrollTop")
     <button class="nav-dot" onclick="goTo(2)"></button>
     <button class="nav-dot" onclick="goTo(3)"></button>
     <button class="nav-dot" onclick="goTo(4)"></button>
+    <button class="nav-dot" onclick="goTo(5)"></button>
    
