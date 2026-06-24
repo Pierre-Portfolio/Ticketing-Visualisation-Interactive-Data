@@ -190,6 +190,19 @@ def _read_csv(path, required):
         return list(reader)
 
 
+def _safe(text):
+    """Neutralise les chevrons < > dans le texte issu des CSV.
+
+    pyvis embarque labels et tooltips en JSON a l'interieur d'un bloc <script>.
+    json.dumps echappe les guillemets mais PAS le caractere '<' : une valeur
+    contenant '</script>' fermerait la balise et permettrait une injection
+    HTML/JS si les CSV ne sont pas de confiance. vis.js affiche ces champs en
+    texte brut (canvas), donc remplacer < et > par des chevrons unicode (‹ ›)
+    preserve la lisibilite tout en empechant toute fermeture de balise.
+    """
+    return str(text).replace("<", "‹").replace(">", "›")
+
+
 def _node_tooltip(row):
     """Construit un tooltip en TEXTE BRUT (aucune balise -> aucun risque XSS)."""
     lines = [
@@ -199,7 +212,7 @@ def _node_tooltip(row):
         "Attribut 2 : {}".format(row.get("attribute2", "")),
         "Attribut 3 : {}".format(row.get("attribute3", "")),
     ]
-    return "\n".join(lines)
+    return _safe("\n".join(lines))
 
 
 def build_network():
@@ -217,13 +230,13 @@ def build_network():
 
     node_ids = set()
     for row in node_rows:
-        node_id = (row.get("id") or "").strip()
+        node_id = _safe((row.get("id") or "").strip())
         if not node_id:
             continue  # ligne sans identifiant : ignoree au lieu de planter
         color, size = TYPE_STYLE.get(row.get("type"), DEFAULT_STYLE)
         net.add_node(
             node_id,
-            label=row.get("label") or node_id,
+            label=_safe(row.get("label") or node_id),
             title=_node_tooltip(row),
             color=color,
             size=size,
@@ -233,8 +246,8 @@ def build_network():
         node_ids.add(node_id)
 
     for row in _read_csv(EDGES_CSV, required=("source", "target")):
-        src = (row.get("source") or "").strip()
-        dst = (row.get("target") or "").strip()
+        src = _safe((row.get("source") or "").strip())
+        dst = _safe((row.get("target") or "").strip())
         if not src or not dst or src not in node_ids or dst not in node_ids:
             continue  # arete orpheline ou incomplete : ignoree
         try:
@@ -243,7 +256,7 @@ def build_network():
             weight = 1.0
         net.add_edge(
             src, dst,
-            title="{} (poids : {:g})".format(row.get("relation", ""), weight),
+            title="{} (poids : {:g})".format(_safe(row.get("relation", "")), weight),
             value=weight,
         )
 
