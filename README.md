@@ -1,7 +1,4 @@
-<h1 align="center">
-  <img src="./assets/images/github/header.gif" alt="Ticketing Graph" />
-</h1>
-<img src="./assets/images/github/star.gif" alt="star" />
+<h1 align="center">Ticketing Graph</h1>
 
 ---
 
@@ -73,8 +70,6 @@ Ticketing-Visualisation-Interactive-Data/
   generate_graph.py     → Génère ticketing_graph.html depuis les CSV (pyvis)
   ticketing_graph.html  → Visualisation interactive (sortie générée, vis.js)
   requirements.txt      → Dépendances Python (pyvis)
-  assets/
-    images/github/      → Images du README (à ajouter)
 ```
 
 ## Schéma des données (modèle graphe)
@@ -134,7 +129,7 @@ RETURN u.label, count(t) AS tickets ORDER BY tickets DESC LIMIT 10;
 ```
 
 ## Aperçu de l'interface
-<img src="./assets/images/github/UI.png" alt="Aperçu du graphe ticketing" />
+Ouvrir `ticketing_graph.html` dans un navigateur (ou la [démo en ligne](https://pierre-portfolio.github.io/Ticketing-Visualisation-Interactive-Data/ticketing_graph.html)) : le graphe s'affiche sur fond sombre, chaque type de nœud ayant sa couleur. Cliquer un nœud met en évidence son voisinage et grise le reste.
 
 ## Auteur
 - [Pierre-Portfolio](https://github.com/Pierre-Portfolio/)

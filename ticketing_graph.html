@@ -228,6 +228,9 @@
     
     <script type="text/javascript">
       // Met en evidence le noeud clique et son voisinage (2 degres), grise le reste.
+      // Les ARETES sont grisees elles aussi : seules celles reliant deux noeuds
+      // conserves restent visibles (correction du highlight qui ne touchait que
+      // les noeuds, laissant les aretes en pleine couleur au-dessus du gris).
       var highlightActive = false;
       function neighbourhoodHighlight(params) {
         var all = nodes.get({ returnType: "Object" });
@@ -265,6 +268,24 @@
             all[selected].label = all[selected].hiddenLabel;
             all[selected].hiddenLabel = undefined;
           }
+          // Aretes : on ne garde en couleur que celles dont les deux extremites
+          // font partie du voisinage mis en evidence.
+          var keep = {};
+          keep[selected] = true;
+          for (var f = 0; f < firstDeg.length; f++) { keep[firstDeg[f]] = true; }
+          for (var s = 0; s < secondDeg.length; s++) { keep[secondDeg[s]] = true; }
+          var edgeUpdates = [];
+          var allEdgesObj = edges.get({ returnType: "Object" });
+          for (var eid in allEdgesObj) {
+            if (!allEdgesObj.hasOwnProperty(eid)) continue;
+            var e = allEdgesObj[eid];
+            var visible = keep[e.from] === true && keep[e.to] === true;
+            edgeUpdates.push({
+              id: e.id,
+              color: visible ? "#555555" : "rgba(80,80,80,0.12)"
+            });
+          }
+          edges.update(edgeUpdates);
         } else if (highlightActive) {
           for (var id2 in all) {
             all[id2].color = nodeColors[id2];
@@ -273,6 +294,13 @@
               all[id2].hiddenLabel = undefined;
             }
           }
+          var resetEdges = [];
+          var allEdgesObj2 = edges.get({ returnType: "Object" });
+          for (var eid2 in allEdgesObj2) {
+            if (!allEdgesObj2.hasOwnProperty(eid2)) continue;
+            resetEdges.push({ id: allEdgesObj2[eid2].id, color: "#555555" });
+          }
+          edges.update(resetEdges);
           highlightActive = false;
         }
         var updateArray = [];

@@ -49,6 +49,9 @@ DEFAULT_STYLE = ("#aaaaaa", 10)
 HIGHLIGHT_JS = """
     <script type="text/javascript">
       // Met en evidence le noeud clique et son voisinage (2 degres), grise le reste.
+      // Les ARETES sont grisees elles aussi : seules celles reliant deux noeuds
+      // conserves restent visibles (correction du highlight qui ne touchait que
+      // les noeuds, laissant les aretes en pleine couleur au-dessus du gris).
       var highlightActive = false;
       function neighbourhoodHighlight(params) {
         var all = nodes.get({ returnType: "Object" });
@@ -86,6 +89,24 @@ HIGHLIGHT_JS = """
             all[selected].label = all[selected].hiddenLabel;
             all[selected].hiddenLabel = undefined;
           }
+          // Aretes : on ne garde en couleur que celles dont les deux extremites
+          // font partie du voisinage mis en evidence.
+          var keep = {};
+          keep[selected] = true;
+          for (var f = 0; f < firstDeg.length; f++) { keep[firstDeg[f]] = true; }
+          for (var s = 0; s < secondDeg.length; s++) { keep[secondDeg[s]] = true; }
+          var edgeUpdates = [];
+          var allEdgesObj = edges.get({ returnType: "Object" });
+          for (var eid in allEdgesObj) {
+            if (!allEdgesObj.hasOwnProperty(eid)) continue;
+            var e = allEdgesObj[eid];
+            var visible = keep[e.from] === true && keep[e.to] === true;
+            edgeUpdates.push({
+              id: e.id,
+              color: visible ? "#555555" : "rgba(80,80,80,0.12)"
+            });
+          }
+          edges.update(edgeUpdates);
         } else if (highlightActive) {
           for (var id2 in all) {
             all[id2].color = nodeColors[id2];
@@ -94,6 +115,13 @@ HIGHLIGHT_JS = """
               all[id2].hiddenLabel = undefined;
             }
           }
+          var resetEdges = [];
+          var allEdgesObj2 = edges.get({ returnType: "Object" });
+          for (var eid2 in allEdgesObj2) {
+            if (!allEdgesObj2.hasOwnProperty(eid2)) continue;
+            resetEdges.push({ id: allEdgesObj2[eid2].id, color: "#555555" });
+          }
+          edges.update(resetEdges);
           highlightActive = false;
         }
         var updateArray = [];
@@ -140,15 +168,32 @@ const options = {
 """
 
 
-def _read_csv(path):
+def _read_csv(path, required):
+    """Lit un CSV en liste de dicts et valide la presence des colonnes attendues.
+
+    Leve une erreur claire si le fichier est introuvable, vide, ou s'il manque
+    une colonne (au lieu d'un KeyError opaque au moment du add_node/add_edge).
+    """
+    if not os.path.exists(path):
+        raise FileNotFoundError("Fichier introuvable : {}".format(path))
     with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            raise ValueError("CSV vide ou sans en-tete : {}".format(path))
+        missing = [c for c in required if c not in reader.fieldnames]
+        if missing:
+            raise ValueError(
+                "Colonnes manquantes dans {} : {} (trouvees : {})".format(
+                    path, ", ".join(missing), ", ".join(reader.fieldnames)
+                )
+            )
+        return list(reader)
 
 
 def _node_tooltip(row):
     """Construit un tooltip en TEXTE BRUT (aucune balise -> aucun risque XSS)."""
     lines = [
-        row.get("label", row["id"]),
+        row.get("label") or row.get("id", ""),
         "Type : {}".format(row.get("type", "")),
         "Attribut 1 : {}".format(row.get("attribute1", "")),
         "Attribut 2 : {}".format(row.get("attribute2", "")),
@@ -166,27 +211,32 @@ def build_network():
         directed=True,
     )
 
-    node_rows = _read_csv(NODES_CSV)
+    node_rows = _read_csv(NODES_CSV, required=("id",))
     if MAX_NODES is not None:
         node_rows = node_rows[:MAX_NODES]
 
+    node_ids = set()
     for row in node_rows:
+        node_id = (row.get("id") or "").strip()
+        if not node_id:
+            continue  # ligne sans identifiant : ignoree au lieu de planter
         color, size = TYPE_STYLE.get(row.get("type"), DEFAULT_STYLE)
         net.add_node(
-            row["id"],
-            label=row.get("label", row["id"]),
+            node_id,
+            label=row.get("label") or node_id,
             title=_node_tooltip(row),
             color=color,
             size=size,
             shape="dot",
             group=row.get("type", "autre"),
         )
+        node_ids.add(node_id)
 
-    node_ids = {row["id"] for row in node_rows}
-    for row in _read_csv(EDGES_CSV):
-        src, dst = row["source"], row["target"]
-        if src not in node_ids or dst not in node_ids:
-            continue  # ignore les aretes orphelines
+    for row in _read_csv(EDGES_CSV, required=("source", "target")):
+        src = (row.get("source") or "").strip()
+        dst = (row.get("target") or "").strip()
+        if not src or not dst or src not in node_ids or dst not in node_ids:
+            continue  # arete orpheline ou incomplete : ignoree
         try:
             weight = float(row.get("weight", 1) or 1)
         except ValueError:
