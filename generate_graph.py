@@ -17,6 +17,7 @@ Usage :
 """
 
 import csv
+import json
 import os
 from pyvis.network import Network
 
@@ -58,33 +59,39 @@ HIGHLIGHT_JS = """
         if (params.nodes.length > 0) {
           highlightActive = true;
           var selected = params.nodes[0];
-          // Voisinage dans des Set : evite les doublons du 2e degre (un noeud
-          // accessible par plusieurs chemins n'etait traite/relabelise qu'une
-          // fois inutilement, en O(aretes^2) sur les hubs).
-          var firstDeg = network.getConnectedNodes(selected);
-          var keep = new Set([selected]);
-          for (var f = 0; f < firstDeg.length; f++) { keep.add(firstDeg[f]); }
-          var firstSet = new Set(firstDeg);
-          var secondSet = new Set();
-          for (var j = 0; j < firstDeg.length; j++) {
-            var nb = network.getConnectedNodes(firstDeg[j]);
-            for (var n = 0; n < nb.length; n++) {
-              if (!keep.has(nb[n])) { secondSet.add(nb[n]); keep.add(nb[n]); }
+          // BFS jusqu'a une profondeur configurable (feature : profondeur de
+          // voisinage reglable). Voisinage stocke dans des Set : evite les
+          // doublons et le travail redondant en O(aretes^2) sur les hubs.
+          var depth = window.HL_DEPTH || 2;
+          var keep = new Set([selected]);   // tout le voisinage retenu
+          var focusSet = new Set([selected]);  // selectionne + 1er degre : pleine couleur
+          var frontier = [selected];
+          for (var d = 1; d <= depth; d++) {
+            var next = [];
+            for (var i = 0; i < frontier.length; i++) {
+              var nb = network.getConnectedNodes(frontier[i]);
+              for (var n = 0; n < nb.length; n++) {
+                if (!keep.has(nb[n])) {
+                  keep.add(nb[n]);
+                  next.push(nb[n]);
+                  if (d === 1) { focusSet.add(nb[n]); }
+                }
+              }
             }
+            frontier = next;
           }
           // Un seul passage sur les noeuds : couleur + (de)masquage du label.
           for (var id in all) {
             if (!all.hasOwnProperty(id)) continue;
             var node = all[id];
-            var inFocus = (id === selected) || firstSet.has(id);
-            if (inFocus) {
+            if (focusSet.has(id)) {
               node.color = nodeColors[id];
-            } else if (secondSet.has(id)) {
+            } else if (keep.has(id)) {
               node.color = "rgba(160,160,160,0.55)";
             } else {
               node.color = "rgba(120,120,120,0.25)";
             }
-            var showLabel = inFocus || secondSet.has(id);
+            var showLabel = keep.has(id);
             if (showLabel) {
               if (node.hiddenLabel !== undefined) {
                 node.label = node.hiddenLabel;
@@ -129,6 +136,449 @@ HIGHLIGHT_JS = """
         }
         nodes.update(Object.values(all));
       }
+    </script>
+"""
+
+# --- Panneau de fonctionnalites (features 1 a 9) ---------------------------
+# Couleur par type, alignee sur TYPE_STYLE (injectee dans le JS via __PALETTE__).
+# Palette de priorite pour la coloration par attribut (feature 6).
+PRIORITY_PALETTE = {
+    "low": "#98c379",
+    "medium": "#e5c07b",
+    "high": "#d19a66",
+    "critical": "#e06c75",
+}
+
+FEATURE_CSS = """
+    <style type="text/css">
+      #cp, #details {
+        position: fixed; top: 12px; z-index: 1000;
+        background: rgba(20,23,31,0.94); color: #e6e6e6;
+        border: 1px solid #2a2f3a; border-radius: 8px;
+        font: 12px/1.45 system-ui, sans-serif;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+      }
+      #cp { left: 12px; width: 250px; max-height: calc(100vh - 24px);
+            overflow-y: auto; padding: 10px 12px; }
+      #details { right: 12px; width: 250px; padding: 10px 12px; display: none; }
+      #cp h2, #details h2 { font-size: 12px; text-transform: uppercase;
+        letter-spacing: .04em; color: #9aa4b2; margin: 0 0 6px; }
+      #cp section { border-top: 1px solid #2a2f3a; padding: 9px 0; }
+      #cp section:first-of-type { border-top: 0; padding-top: 0; }
+      #cp label { display: block; cursor: pointer; }
+      #cp .row { display: flex; gap: 6px; align-items: center; }
+      #cp input[type=text], #cp input[type=date], #cp select {
+        width: 100%; box-sizing: border-box; background: #0f1117;
+        color: #e6e6e6; border: 1px solid #2a2f3a; border-radius: 5px;
+        padding: 4px 6px; }
+      #cp button, #details button {
+        background: #2a3140; color: #e6e6e6; border: 1px solid #3a4250;
+        border-radius: 5px; padding: 5px 8px; cursor: pointer; font-size: 12px; }
+      #cp button:hover, #details button:hover { background: #38415a; }
+      .swatch { display: inline-block; width: 10px; height: 10px;
+        border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+      #cp .muted { color: #8b94a3; }
+      #cpToggle { position: fixed; top: 12px; left: 12px; z-index: 1001;
+        display: none; }
+      #searchMsg { color: #e06c75; min-height: 14px; }
+      #details .kv { margin: 2px 0; }
+      #details .kv b { color: #9aa4b2; font-weight: 600; }
+      #neighList { margin: 4px 0 0; padding-left: 16px; max-height: 150px;
+        overflow-y: auto; }
+      #neighList li { cursor: pointer; }
+      #neighList li:hover { color: #61afef; }
+    </style>
+"""
+
+FEATURE_HTML = """
+    <button id="cpToggle">☰ Panneau</button>
+    <div id="cp">
+      <div class="row" style="justify-content:space-between">
+        <h2 style="margin:0">Exploration</h2>
+        <button id="cpHide" title="Masquer">×</button>
+      </div>
+
+      <section>
+        <h2>Recherche</h2>
+        <div class="row">
+          <input type="text" id="searchInput" placeholder="id ou libellé…">
+          <button id="searchBtn">OK</button>
+        </div>
+        <div id="searchMsg"></div>
+      </section>
+
+      <section>
+        <h2>Types de nœuds</h2>
+        <div id="typeFilters"></div>
+      </section>
+
+      <section>
+        <h2>Relations</h2>
+        <div id="relFilters"></div>
+      </section>
+
+      <section>
+        <h2>Période</h2>
+        <label class="muted">Du <input type="date" id="dateFrom"></label>
+        <label class="muted" style="margin-top:4px">Au <input type="date" id="dateTo"></label>
+        <div class="muted" style="margin-top:4px">Filtre les nœuds datés (tickets, messages).</div>
+      </section>
+
+      <section>
+        <h2>Coloration</h2>
+        <label><input type="radio" name="colormode" value="type" checked> Par type</label>
+        <label><input type="radio" name="colormode" value="priority"> Par priorité (tickets)</label>
+      </section>
+
+      <section>
+        <h2>Voisinage au clic</h2>
+        <label class="muted">Profondeur
+          <select id="depthSel">
+            <option value="1">1 degré</option>
+            <option value="2" selected>2 degrés</option>
+            <option value="3">3 degrés</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <h2>Export</h2>
+        <div class="row">
+          <button id="exportPng">PNG</button>
+          <button id="exportSub">Sous-graphe</button>
+        </div>
+        <div class="muted" style="margin-top:4px">Le sous-graphe exporte le voisinage sélectionné.</div>
+      </section>
+
+      <section>
+        <h2>Légende</h2>
+        <div id="legend"></div>
+      </section>
+
+      <section>
+        <h2>Statistiques</h2>
+        <div id="stats"></div>
+      </section>
+    </div>
+
+    <div id="details">
+      <div class="row" style="justify-content:space-between">
+        <h2 style="margin:0">Détails</h2>
+        <button id="detClose" title="Fermer">×</button>
+      </div>
+      <div id="detBody"></div>
+    </div>
+"""
+
+FEATURE_JS = """
+    <script type="text/javascript">
+    (function () {
+      var TYPE_PALETTE = __PALETTE__;
+      var PRIORITY_PALETTE = __PRIORITY__;
+      var DIM = "rgba(120,120,120,0.25)";
+      window.HL_DEPTH = 2;
+
+      function $(id) { return document.getElementById(id); }
+      function isDate(s) { return /^\\d{4}-\\d{2}-\\d{2}$/.test(s || ""); }
+
+      // Etat des filtres
+      var activeTypes = {};
+      var activeRels = {};
+      var colorMode = "type";
+
+      // --- Couleur de base d'un noeud selon le mode courant -----------------
+      function baseColor(n) {
+        if (colorMode === "priority" && n.group === "ticket"
+            && PRIORITY_PALETTE[n.a3]) {
+          return PRIORITY_PALETTE[n.a3];
+        }
+        return TYPE_PALETTE[n.group] || "#aaaaaa";
+      }
+
+      // Reconstruit nodeColors (utilise par le highlight) + applique au graphe.
+      function applyColors() {
+        var all = nodes.get();
+        var ups = [];
+        for (var i = 0; i < all.length; i++) {
+          var c = baseColor(all[i]);
+          nodeColors[all[i].id] = c;
+          if (!highlightActive) { ups.push({ id: all[i].id, color: c }); }
+        }
+        if (ups.length) { nodes.update(ups); }
+      }
+
+      // --- Filtres types / relations / periode ------------------------------
+      function applyFilters() {
+        var df = $("dateFrom").value, dt = $("dateTo").value;
+        var allNodesArr = nodes.get();
+        var visibleNode = {};
+        var nodeUps = [];
+        for (var i = 0; i < allNodesArr.length; i++) {
+          var n = allNodesArr[i];
+          var ok = activeTypes[n.group] !== false;
+          if (ok && isDate(n.a2)) {
+            if (df && n.a2 < df) { ok = false; }
+            if (dt && n.a2 > dt) { ok = false; }
+          }
+          visibleNode[n.id] = ok;
+          nodeUps.push({ id: n.id, hidden: !ok });
+        }
+        nodes.update(nodeUps);
+        var allEdgesArr = edges.get();
+        var edgeUps = [];
+        for (var j = 0; j < allEdgesArr.length; j++) {
+          var e = allEdgesArr[j];
+          var relOk = activeRels[e.relation] !== false;
+          var show = relOk && visibleNode[e.from] && visibleNode[e.to];
+          edgeUps.push({ id: e.id, hidden: !show });
+        }
+        edges.update(edgeUps);
+      }
+
+      // --- Recherche --------------------------------------------------------
+      function doSearch() {
+        var q = ($("searchInput").value || "").trim().toLowerCase();
+        $("searchMsg").textContent = "";
+        if (!q) { return; }
+        var all = nodes.get();
+        var hit = null;
+        for (var i = 0; i < all.length; i++) {
+          if (String(all[i].id).toLowerCase() === q) { hit = all[i]; break; }
+        }
+        if (!hit) {
+          for (var k = 0; k < all.length; k++) {
+            var lbl = (all[k].hiddenLabel || all[k].label || "");
+            if (String(lbl).toLowerCase().indexOf(q) !== -1) { hit = all[k]; break; }
+          }
+        }
+        if (!hit) { $("searchMsg").textContent = "Aucun nœud trouvé."; return; }
+        network.selectNodes([hit.id]);
+        network.focus(hit.id, { scale: 1.1, animation: true });
+        neighbourhoodHighlight({ nodes: [hit.id] });
+        showDetails(hit.id);
+      }
+
+      // --- Panneau de details ----------------------------------------------
+      function showDetails(id) {
+        var n = nodes.get(id);
+        if (!n) { return; }
+        var deg = network.getConnectedNodes(id);
+        var html = "";
+        html += '<div class="kv"><b>' + (n.hiddenLabel || n.label || id) + '</b></div>';
+        html += '<div class="kv"><b>id</b> : ' + id + '</div>';
+        html += '<div class="kv"><b>type</b> : ' + (n.group || "") + '</div>';
+        if (n.a1) { html += '<div class="kv"><b>attr. 1</b> : ' + n.a1 + '</div>'; }
+        if (n.a2) { html += '<div class="kv"><b>attr. 2</b> : ' + n.a2 + '</div>'; }
+        if (n.a3) { html += '<div class="kv"><b>attr. 3</b> : ' + n.a3 + '</div>'; }
+        html += '<div class="kv"><b>voisins</b> : ' + deg.length + '</div>';
+        if (deg.length) {
+          html += '<ul id="neighList">';
+          for (var i = 0; i < Math.min(deg.length, 50); i++) {
+            var nb = nodes.get(deg[i]);
+            html += '<li data-id="' + deg[i] + '">'
+                  + ((nb && (nb.hiddenLabel || nb.label)) || deg[i]) + '</li>';
+          }
+          html += '</ul>';
+        }
+        $("detBody").innerHTML = html;
+        $("details").style.display = "block";
+        var items = $("detBody").querySelectorAll("#neighList li");
+        for (var j = 0; j < items.length; j++) {
+          items[j].addEventListener("click", function () {
+            var nid = this.getAttribute("data-id");
+            network.selectNodes([nid]);
+            network.focus(nid, { scale: 1.1, animation: true });
+            neighbourhoodHighlight({ nodes: [nid] });
+            showDetails(nid);
+          });
+        }
+      }
+
+      // --- Export -----------------------------------------------------------
+      function download(name, dataUrl) {
+        var a = document.createElement("a");
+        a.href = dataUrl; a.download = name; a.click();
+      }
+      function exportPng() {
+        var cv = network.canvas && network.canvas.frame
+               ? network.canvas.frame.canvas : null;
+        if (!cv) { return; }
+        download("ticketing_graph.png", cv.toDataURL("image/png"));
+      }
+      function exportSubgraph() {
+        var sel = network.getSelectedNodes();
+        if (!sel.length) {
+          $("searchMsg").textContent = "Sélectionnez d'abord un nœud.";
+          return;
+        }
+        var keep = new Set([sel[0]]);
+        var frontier = [sel[0]];
+        for (var d = 1; d <= window.HL_DEPTH; d++) {
+          var next = [];
+          for (var i = 0; i < frontier.length; i++) {
+            var nb = network.getConnectedNodes(frontier[i]);
+            for (var n = 0; n < nb.length; n++) {
+              if (!keep.has(nb[n])) { keep.add(nb[n]); next.push(nb[n]); }
+            }
+          }
+          frontier = next;
+        }
+        var outNodes = [];
+        nodes.get().forEach(function (nd) {
+          if (keep.has(nd.id)) {
+            outNodes.push({ id: nd.id, label: nd.hiddenLabel || nd.label,
+              type: nd.group, a1: nd.a1, a2: nd.a2, a3: nd.a3 });
+          }
+        });
+        var outEdges = [];
+        edges.get().forEach(function (e) {
+          if (keep.has(e.from) && keep.has(e.to)) {
+            outEdges.push({ source: e.from, target: e.to, relation: e.relation });
+          }
+        });
+        var blob = JSON.stringify({ nodes: outNodes, edges: outEdges }, null, 2);
+        download("sous_graphe.json",
+          "data:application/json;charset=utf-8," + encodeURIComponent(blob));
+      }
+
+      // --- Construction de l'UF a partir des donnees ------------------------
+      function buildUI() {
+        var allNodesArr = nodes.get();
+        var allEdgesArr = edges.get();
+
+        // Types presents + cases a cocher
+        var typeCounts = {};
+        var minDate = null, maxDate = null;
+        for (var i = 0; i < allNodesArr.length; i++) {
+          var n = allNodesArr[i];
+          typeCounts[n.group] = (typeCounts[n.group] || 0) + 1;
+          if (isDate(n.a2)) {
+            if (!minDate || n.a2 < minDate) { minDate = n.a2; }
+            if (!maxDate || n.a2 > maxDate) { maxDate = n.a2; }
+          }
+        }
+        var tf = $("typeFilters");
+        Object.keys(typeCounts).sort().forEach(function (t) {
+          activeTypes[t] = true;
+          var col = TYPE_PALETTE[t] || "#aaaaaa";
+          var lab = document.createElement("label");
+          lab.innerHTML = '<input type="checkbox" data-type="' + t + '" checked> '
+            + '<span class="swatch" style="background:' + col + '"></span>'
+            + t + ' <span class="muted">(' + typeCounts[t] + ')</span>';
+          tf.appendChild(lab);
+        });
+        tf.addEventListener("change", function (ev) {
+          var t = ev.target.getAttribute("data-type");
+          if (t !== null) { activeTypes[t] = ev.target.checked; applyFilters(); }
+        });
+
+        // Relations presentes + cases a cocher
+        var relCounts = {};
+        for (var j = 0; j < allEdgesArr.length; j++) {
+          var r = allEdgesArr[j].relation || "(?)";
+          relCounts[r] = (relCounts[r] || 0) + 1;
+        }
+        var rf = $("relFilters");
+        Object.keys(relCounts).sort().forEach(function (r) {
+          activeRels[r] = true;
+          var lab = document.createElement("label");
+          lab.innerHTML = '<input type="checkbox" data-rel="' + r + '" checked> '
+            + r + ' <span class="muted">(' + relCounts[r] + ')</span>';
+          rf.appendChild(lab);
+        });
+        rf.addEventListener("change", function (ev) {
+          var r = ev.target.getAttribute("data-rel");
+          if (r !== null) { activeRels[r] = ev.target.checked; applyFilters(); }
+        });
+
+        // Periode
+        if (minDate) { $("dateFrom").value = minDate; $("dateFrom").min = minDate; }
+        if (maxDate) { $("dateTo").value = maxDate; $("dateTo").max = maxDate; }
+        $("dateFrom").addEventListener("change", applyFilters);
+        $("dateTo").addEventListener("change", applyFilters);
+
+        // Legende
+        var leg = $("legend");
+        Object.keys(TYPE_PALETTE).forEach(function (t) {
+          var d = document.createElement("div");
+          d.innerHTML = '<span class="swatch" style="background:'
+            + TYPE_PALETTE[t] + '"></span>' + t;
+          leg.appendChild(d);
+        });
+
+        // Statistiques : top hubs par degre
+        var deg = {};
+        for (var k = 0; k < allEdgesArr.length; k++) {
+          deg[allEdgesArr[k].from] = (deg[allEdgesArr[k].from] || 0) + 1;
+          deg[allEdgesArr[k].to] = (deg[allEdgesArr[k].to] || 0) + 1;
+        }
+        var hubs = Object.keys(deg).map(function (id) { return [id, deg[id]]; })
+          .sort(function (a, b) { return b[1] - a[1]; }).slice(0, 5);
+        var s = '<div class="kv">' + allNodesArr.length + ' nœuds · '
+              + allEdgesArr.length + ' arêtes</div>';
+        s += '<div class="kv muted" style="margin-top:4px">Nœuds les plus connectés :</div>';
+        hubs.forEach(function (h) {
+          var nb = nodes.get(h[0]);
+          s += '<div class="kv" data-hub="' + h[0] + '" style="cursor:pointer">• '
+            + ((nb && (nb.hiddenLabel || nb.label)) || h[0])
+            + ' <span class="muted">(' + h[1] + ')</span></div>';
+        });
+        $("stats").innerHTML = s;
+        var hubEls = $("stats").querySelectorAll("[data-hub]");
+        for (var m = 0; m < hubEls.length; m++) {
+          hubEls[m].addEventListener("click", function () {
+            var id = this.getAttribute("data-hub");
+            network.selectNodes([id]);
+            network.focus(id, { scale: 1.1, animation: true });
+            neighbourhoodHighlight({ nodes: [id] });
+            showDetails(id);
+          });
+        }
+      }
+
+      // --- Cablage ----------------------------------------------------------
+      function wire() {
+        $("searchBtn").addEventListener("click", doSearch);
+        $("searchInput").addEventListener("keydown", function (e) {
+          if (e.key === "Enter") { doSearch(); }
+        });
+        var radios = document.querySelectorAll('input[name="colormode"]');
+        for (var i = 0; i < radios.length; i++) {
+          radios[i].addEventListener("change", function () {
+            colorMode = this.value; applyColors();
+          });
+        }
+        $("depthSel").addEventListener("change", function () {
+          window.HL_DEPTH = parseInt(this.value, 10) || 2;
+          var sel = network.getSelectedNodes();
+          if (sel.length) { neighbourhoodHighlight({ nodes: [sel[0]] }); }
+        });
+        $("exportPng").addEventListener("click", exportPng);
+        $("exportSub").addEventListener("click", exportSubgraph);
+        $("detClose").addEventListener("click", function () {
+          $("details").style.display = "none";
+        });
+        $("cpHide").addEventListener("click", function () {
+          $("cp").style.display = "none"; $("cpToggle").style.display = "block";
+        });
+        $("cpToggle").addEventListener("click", function () {
+          $("cp").style.display = "block"; this.style.display = "none";
+        });
+        // Details au clic (complete le highlight deja cable)
+        network.on("click", function (params) {
+          if (params.nodes.length) { showDetails(params.nodes[0]); }
+        });
+      }
+
+      function start() {
+        if (typeof network === "undefined" || !network) {
+          return setTimeout(start, 60);  // attend la creation du reseau
+        }
+        buildUI();
+        wire();
+      }
+      start();
+    })();
     </script>
 """
 
@@ -237,6 +687,9 @@ def build_network():
         if not node_id:
             continue  # ligne sans identifiant : ignoree au lieu de planter
         color, size = TYPE_STYLE.get(row.get("type"), DEFAULT_STYLE)
+        # a1/a2/a3 sont embarques (en plus du tooltip) pour donner aux features
+        # un acces structure aux attributs : coloration par attribut, filtre
+        # temporel sur la date, panneau de details.
         net.add_node(
             node_id,
             label=_safe(row.get("label") or node_id),
@@ -245,9 +698,13 @@ def build_network():
             size=size,
             shape="dot",
             group=row.get("type", "autre"),
+            a1=_safe(row.get("attribute1", "")),
+            a2=_safe(row.get("attribute2", "")),
+            a3=_safe(row.get("attribute3", "")),
         )
         node_ids.add(node_id)
 
+    edge_index = 0
     for row in _read_csv(EDGES_CSV, required=("source", "target")):
         src = _safe((row.get("source") or "").strip())
         dst = _safe((row.get("target") or "").strip())
@@ -257,11 +714,17 @@ def build_network():
             weight = float(row.get("weight", 1) or 1)
         except ValueError:
             weight = 1.0
+        relation = _safe(row.get("relation", ""))
+        # id explicite + relation embarquee : indispensables pour filtrer les
+        # aretes par type de relation cote client.
         net.add_edge(
             src, dst,
-            title="{} (poids : {:g})".format(_safe(row.get("relation", "")), weight),
+            id="e{}".format(edge_index),
+            title="{} (poids : {:g})".format(relation, weight),
             value=weight,
+            relation=relation,
         )
+        edge_index += 1
 
     net.set_options(OPTIONS)
     return net
@@ -314,8 +777,17 @@ def _postprocess(html):
         net_anchor + '\n\n                  network.on("click", neighbourhoodHighlight);',
         1,
     )
+    # 5) panneau de fonctionnalites (filtres, recherche, details, stats,
+    #    legende, coloration par attribut, export, periode, profondeur).
+    palette = {t: color for t, (color, _size) in TYPE_STYLE.items()}
+    feature_js = (
+        FEATURE_JS
+        .replace("__PALETTE__", json.dumps(palette, ensure_ascii=False))
+        .replace("__PRIORITY__", json.dumps(PRIORITY_PALETTE, ensure_ascii=False))
+    )
+    injection = HIGHLIGHT_JS + FEATURE_CSS + FEATURE_HTML + feature_js
     _require(html, "</body>", "fermeture du body")
-    html = html.replace("</body>", HIGHLIGHT_JS + "\n    </body>", 1)
+    html = html.replace("</body>", injection + "\n    </body>", 1)
     return html
 
 

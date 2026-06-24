@@ -25,10 +25,21 @@ L'objectif n'est pas de produire une application finie, mais de **comprendre** c
 
 ### Visualisation interactive
 - Rendu **vis.js** (moteur de graphe WebGL/Canvas) avec disposition par force (barnesHut)
-- **Mise en évidence du voisinage au clic** : sélectionner un nœud éclaire ses voisins à 2 degrés et grise le reste
+- **Mise en évidence du voisinage au clic** : sélectionner un nœud éclaire son voisinage (profondeur réglable) et grise le reste, **arêtes comprises**
 - **Tooltips** au survol : type du nœud et ses attributs (texte brut — pas d'injection HTML)
 - Zoom, déplacement, **boutons de navigation** et contrôle clavier
 - **Barre de chargement** pendant la stabilisation, puis **physique coupée** pour une interaction fluide
+
+### Panneau d'exploration (interface intégrée)
+- **Recherche** d'un nœud par `id` ou libellé (centrage + mise en évidence)
+- **Filtres** par type de nœud et par type de relation (cases à cocher)
+- **Filtre temporel** : ne garder que les nœuds datés dans une plage (du / au)
+- **Coloration** par type *ou* par priorité (tickets : low → critical)
+- **Profondeur de voisinage** réglable au clic (1, 2 ou 3 degrés)
+- **Panneau de détails** : attributs du nœud cliqué + liste cliquable des voisins
+- **Statistiques** : volumes nœuds/arêtes et top des nœuds les plus connectés (hubs)
+- **Légende** des couleurs par type
+- **Export** : capture **PNG** du graphe et export **JSON** du sous-graphe sélectionné
 
 ### Génération reproductible
 - `generate_graph.py` reconstruit le HTML depuis les CSV : le dépôt est **régénérable** d'un bout à l'autre
