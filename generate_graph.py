@@ -58,57 +58,58 @@ HIGHLIGHT_JS = """
         if (params.nodes.length > 0) {
           highlightActive = true;
           var selected = params.nodes[0];
-          for (var id in all) {
-            all[id].color = "rgba(120,120,120,0.25)";
-            if (all[id].hiddenLabel === undefined) {
-              all[id].hiddenLabel = all[id].label;
-              all[id].label = undefined;
-            }
-          }
+          // Voisinage dans des Set : evite les doublons du 2e degre (un noeud
+          // accessible par plusieurs chemins n'etait traite/relabelise qu'une
+          // fois inutilement, en O(aretes^2) sur les hubs).
           var firstDeg = network.getConnectedNodes(selected);
-          var secondDeg = [];
+          var keep = new Set([selected]);
+          for (var f = 0; f < firstDeg.length; f++) { keep.add(firstDeg[f]); }
+          var firstSet = new Set(firstDeg);
+          var secondSet = new Set();
           for (var j = 0; j < firstDeg.length; j++) {
-            secondDeg = secondDeg.concat(network.getConnectedNodes(firstDeg[j]));
-          }
-          for (var k = 0; k < secondDeg.length; k++) {
-            all[secondDeg[k]].color = "rgba(160,160,160,0.55)";
-            if (all[secondDeg[k]].hiddenLabel !== undefined) {
-              all[secondDeg[k]].label = all[secondDeg[k]].hiddenLabel;
-              all[secondDeg[k]].hiddenLabel = undefined;
+            var nb = network.getConnectedNodes(firstDeg[j]);
+            for (var n = 0; n < nb.length; n++) {
+              if (!keep.has(nb[n])) { secondSet.add(nb[n]); keep.add(nb[n]); }
             }
           }
-          for (var m = 0; m < firstDeg.length; m++) {
-            all[firstDeg[m]].color = nodeColors[firstDeg[m]];
-            if (all[firstDeg[m]].hiddenLabel !== undefined) {
-              all[firstDeg[m]].label = all[firstDeg[m]].hiddenLabel;
-              all[firstDeg[m]].hiddenLabel = undefined;
+          // Un seul passage sur les noeuds : couleur + (de)masquage du label.
+          for (var id in all) {
+            if (!all.hasOwnProperty(id)) continue;
+            var node = all[id];
+            var inFocus = (id === selected) || firstSet.has(id);
+            if (inFocus) {
+              node.color = nodeColors[id];
+            } else if (secondSet.has(id)) {
+              node.color = "rgba(160,160,160,0.55)";
+            } else {
+              node.color = "rgba(120,120,120,0.25)";
+            }
+            var showLabel = inFocus || secondSet.has(id);
+            if (showLabel) {
+              if (node.hiddenLabel !== undefined) {
+                node.label = node.hiddenLabel;
+                node.hiddenLabel = undefined;
+              }
+            } else if (node.hiddenLabel === undefined) {
+              node.hiddenLabel = node.label;
+              node.label = undefined;
             }
           }
-          all[selected].color = nodeColors[selected];
-          if (all[selected].hiddenLabel !== undefined) {
-            all[selected].label = all[selected].hiddenLabel;
-            all[selected].hiddenLabel = undefined;
-          }
-          // Aretes : on ne garde en couleur que celles dont les deux extremites
-          // font partie du voisinage mis en evidence.
-          var keep = {};
-          keep[selected] = true;
-          for (var f = 0; f < firstDeg.length; f++) { keep[firstDeg[f]] = true; }
-          for (var s = 0; s < secondDeg.length; s++) { keep[secondDeg[s]] = true; }
+          // Aretes : visibles seulement si leurs deux extremites sont dans keep.
           var edgeUpdates = [];
           var allEdgesObj = edges.get({ returnType: "Object" });
           for (var eid in allEdgesObj) {
             if (!allEdgesObj.hasOwnProperty(eid)) continue;
             var e = allEdgesObj[eid];
-            var visible = keep[e.from] === true && keep[e.to] === true;
             edgeUpdates.push({
               id: e.id,
-              color: visible ? "#555555" : "rgba(80,80,80,0.12)"
+              color: (keep.has(e.from) && keep.has(e.to)) ? "#555555" : "rgba(80,80,80,0.12)"
             });
           }
           edges.update(edgeUpdates);
         } else if (highlightActive) {
           for (var id2 in all) {
+            if (!all.hasOwnProperty(id2)) continue;
             all[id2].color = nodeColors[id2];
             if (all[id2].hiddenLabel !== undefined) {
               all[id2].label = all[id2].hiddenLabel;
@@ -123,10 +124,10 @@ HIGHLIGHT_JS = """
           }
           edges.update(resetEdges);
           highlightActive = false;
+        } else {
+          return;  // rien de selectionne et aucun highlight actif : no-op
         }
-        var updateArray = [];
-        for (var id3 in all) { if (all.hasOwnProperty(id3)) updateArray.push(all[id3]); }
-        nodes.update(updateArray);
+        nodes.update(Object.values(all));
       }
     </script>
 """
@@ -216,11 +217,13 @@ def _node_tooltip(row):
 
 
 def build_network():
+    # font_color n'est PAS passe ici : il forcerait un objet "font" duplique
+    # sur chacun des 5000 noeuds. La police est definie une seule fois dans
+    # OPTIONS (nodes.font), ce qui allege fortement le HTML genere.
     net = Network(
         height="850px",
         width="100%",
         bgcolor="#0f1117",
-        font_color="#ffffff",
         directed=True,
     )
 
@@ -264,12 +267,29 @@ def build_network():
     return net
 
 
+def _require(html, anchor, what):
+    """Verifie qu'une ancre attendue du template pyvis est presente.
+
+    Sans cela, une montee de version de pyvis qui renomme/supprime l'ancre
+    produirait silencieusement un HTML incomplet (physique jamais coupee,
+    highlight jamais cable...). On prefere une erreur explicite.
+    """
+    if anchor not in html:
+        raise RuntimeError(
+            "Ancre introuvable dans le HTML pyvis ({}). Le template a peut-etre "
+            "change de version : adapter _postprocess(). Ancre attendue : {!r}".format(
+                what, anchor
+            )
+        )
+
+
 def _postprocess(html):
     """Applique les correctifs qui ne sont pas exposes par l'API pyvis."""
     # 1) DOCTYPE + lang
     if not html.lstrip().startswith("<!DOCTYPE"):
         html = html.replace("<html>", '<!DOCTYPE html>\n<html lang="fr">', 1)
     # 2) viewport + title dans le <head>
+    _require(html, '<meta charset="utf-8">', "meta charset")
     head_inject = (
         '<meta charset="utf-8">\n'
         '        <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
@@ -278,7 +298,8 @@ def _postprocess(html):
     html = html.replace('<meta charset="utf-8">', head_inject, 1)
     # 3) coupe la physique une fois le graphe stabilise (perf)
     anchor = "document.getElementById('bar').style.width = '496px';"
-    if anchor in html and "physics:false" not in html:
+    _require(html, anchor, "fin de stabilisation")
+    if "physics:false" not in html:
         html = html.replace(
             anchor,
             anchor + "\n                          // Coupe la physique une fois stabilise (perf)"
@@ -287,12 +308,13 @@ def _postprocess(html):
         )
     # 4) cable la mise en evidence du voisinage au clic (code rendu fonctionnel)
     net_anchor = "network = new vis.Network(container, data, options);"
-    if net_anchor in html:
-        html = html.replace(
-            net_anchor,
-            net_anchor + '\n\n                  network.on("click", neighbourhoodHighlight);',
-            1,
-        )
+    _require(html, net_anchor, "creation du reseau vis")
+    html = html.replace(
+        net_anchor,
+        net_anchor + '\n\n                  network.on("click", neighbourhoodHighlight);',
+        1,
+    )
+    _require(html, "</body>", "fermeture du body")
     html = html.replace("</body>", HIGHLIGHT_JS + "\n    </body>", 1)
     return html
 
