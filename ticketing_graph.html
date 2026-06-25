@@ -222,87 +222,95 @@
       // conserves restent visibles (correction du highlight qui ne touchait que
       // les noeuds, laissant les aretes en pleine couleur au-dessus du gris).
       var highlightActive = false;
-      function neighbourhoodHighlight(params) {
-        var all = nodes.get({ returnType: "Object" });
-        if (params.nodes.length > 0) {
-          highlightActive = true;
-          var selected = params.nodes[0];
-          // BFS jusqu'a une profondeur configurable (feature : profondeur de
-          // voisinage reglable). Voisinage stocke dans des Set : evite les
-          // doublons et le travail redondant en O(aretes^2) sur les hubs.
-          var depth = window.HL_DEPTH || 2;
-          var keep = new Set([selected]);   // tout le voisinage retenu
-          var focusSet = new Set([selected]);  // selectionne + 1er degre : pleine couleur
-          var frontier = [selected];
-          for (var d = 1; d <= depth; d++) {
-            var next = [];
-            for (var i = 0; i < frontier.length; i++) {
-              var nb = network.getConnectedNodes(frontier[i]);
-              for (var n = 0; n < nb.length; n++) {
-                if (!keep.has(nb[n])) {
-                  keep.add(nb[n]);
-                  next.push(nb[n]);
-                  if (d === 1) { focusSet.add(nb[n]); }
-                }
+
+      // BFS du voisinage jusqu'a une profondeur donnee. Helper partage par le
+      // highlight ET l'export de sous-graphe (evite la duplication). keep =
+      // tout le voisinage retenu ; focus = selectionne + 1er degre (pleine
+      // couleur). Voisinage stocke dans des Set : pas de doublons, pas de
+      // travail redondant en O(aretes^2) sur les hubs.
+      function collectNeighbourhood(seed, depth) {
+        var keep = new Set([seed]);
+        var focus = new Set([seed]);
+        var frontier = [seed];
+        for (var d = 1; d <= depth; d++) {
+          var next = [];
+          for (var i = 0; i < frontier.length; i++) {
+            var nb = network.getConnectedNodes(frontier[i]);
+            for (var n = 0; n < nb.length; n++) {
+              if (!keep.has(nb[n])) {
+                keep.add(nb[n]);
+                next.push(nb[n]);
+                if (d === 1) { focus.add(nb[n]); }
               }
             }
-            frontier = next;
           }
-          // Un seul passage sur les noeuds : couleur + (de)masquage du label.
+          frontier = next;
+        }
+        return { keep: keep, focus: focus };
+      }
+
+      function neighbourhoodHighlight(params) {
+        var all = nodes.get({ returnType: "Object" });
+        // Mises a jour ciblees : on ne pousse au DataSet que les noeuds/aretes
+        // dont la couleur (ou le label) change reellement, au lieu de re-pousser
+        // les 5000 elements a chaque clic -> beaucoup moins de re-rendus.
+        var nodeUpdates = [];
+        var edgeUpdates = [];
+        var allEdgesObj = edges.get({ returnType: "Object" });
+        if (params.nodes.length > 0) {
+          highlightActive = true;
+          var nbh = collectNeighbourhood(params.nodes[0], window.HL_DEPTH || 2);
+          var keep = nbh.keep, focusSet = nbh.focus;
           for (var id in all) {
             if (!all.hasOwnProperty(id)) continue;
             var node = all[id];
-            if (focusSet.has(id)) {
-              node.color = nodeColors[id];
-            } else if (keep.has(id)) {
-              node.color = "rgba(160,160,160,0.55)";
-            } else {
-              node.color = "rgba(120,120,120,0.25)";
-            }
-            var showLabel = keep.has(id);
-            if (showLabel) {
+            var desired = focusSet.has(id) ? nodeColors[id]
+                        : keep.has(id) ? "rgba(160,160,160,0.55)"
+                        : "rgba(120,120,120,0.25)";
+            var up = null;
+            if (node.color !== desired) { up = { id: id, color: desired }; }
+            // (de)masquage du label, seulement si l'etat change.
+            if (keep.has(id)) {
               if (node.hiddenLabel !== undefined) {
-                node.label = node.hiddenLabel;
-                node.hiddenLabel = undefined;
+                up = up || { id: id };
+                up.label = node.hiddenLabel; up.hiddenLabel = undefined;
               }
             } else if (node.hiddenLabel === undefined) {
-              node.hiddenLabel = node.label;
-              node.label = undefined;
+              up = up || { id: id };
+              up.hiddenLabel = node.label; up.label = undefined;
             }
+            if (up) { nodeUpdates.push(up); }
           }
           // Aretes : visibles seulement si leurs deux extremites sont dans keep.
-          var edgeUpdates = [];
-          var allEdgesObj = edges.get({ returnType: "Object" });
           for (var eid in allEdgesObj) {
             if (!allEdgesObj.hasOwnProperty(eid)) continue;
             var e = allEdgesObj[eid];
-            edgeUpdates.push({
-              id: e.id,
-              color: (keep.has(e.from) && keep.has(e.to)) ? "#555555" : "rgba(80,80,80,0.12)"
-            });
+            var ec = (keep.has(e.from) && keep.has(e.to)) ? "#555555" : "rgba(80,80,80,0.12)";
+            if (e.color !== ec) { edgeUpdates.push({ id: e.id, color: ec }); }
           }
-          edges.update(edgeUpdates);
         } else if (highlightActive) {
           for (var id2 in all) {
             if (!all.hasOwnProperty(id2)) continue;
-            all[id2].color = nodeColors[id2];
-            if (all[id2].hiddenLabel !== undefined) {
-              all[id2].label = all[id2].hiddenLabel;
-              all[id2].hiddenLabel = undefined;
+            var node2 = all[id2];
+            var up2 = null;
+            if (node2.color !== nodeColors[id2]) { up2 = { id: id2, color: nodeColors[id2] }; }
+            if (node2.hiddenLabel !== undefined) {
+              up2 = up2 || { id: id2 };
+              up2.label = node2.hiddenLabel; up2.hiddenLabel = undefined;
             }
+            if (up2) { nodeUpdates.push(up2); }
           }
-          var resetEdges = [];
-          var allEdgesObj2 = edges.get({ returnType: "Object" });
-          for (var eid2 in allEdgesObj2) {
-            if (!allEdgesObj2.hasOwnProperty(eid2)) continue;
-            resetEdges.push({ id: allEdgesObj2[eid2].id, color: "#555555" });
+          for (var eid2 in allEdgesObj) {
+            if (!allEdgesObj.hasOwnProperty(eid2)) continue;
+            var e2 = allEdgesObj[eid2];
+            if (e2.color !== "#555555") { edgeUpdates.push({ id: e2.id, color: "#555555" }); }
           }
-          edges.update(resetEdges);
           highlightActive = false;
         } else {
           return;  // rien de selectionne et aucun highlight actif : no-op
         }
-        nodes.update(Object.values(all));
+        if (edgeUpdates.length) { edges.update(edgeUpdates); }
+        if (nodeUpdates.length) { nodes.update(nodeUpdates); }
       }
     </script>
 
@@ -434,8 +442,8 @@
       function isDate(s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ""); }
       // Echappe une valeur avant insertion dans de l'innerHTML (contexte texte
       // ET attribut). _safe() cote Python ne neutralise que < et > pour empecher
-      // une fermeture de </script> a la generation ; ici on protege en plus
-      // l'injection d'attribut (guillemets) et les entites (&) cote client.
+      // la fermeture prematuree de la balise script a la generation ; ici on
+      // protege en plus l'injection d'attribut (guillemets) et les entites (&).
       var ESC_MAP = { "&": "&amp;", "<": "&lt;", ">": "&gt;",
                       '"': "&quot;", "'": "&#39;" };
       function esc(s) {
@@ -587,18 +595,8 @@
           $("searchMsg").textContent = "Sélectionnez d'abord un nœud.";
           return;
         }
-        var keep = new Set([sel[0]]);
-        var frontier = [sel[0]];
-        for (var d = 1; d <= window.HL_DEPTH; d++) {
-          var next = [];
-          for (var i = 0; i < frontier.length; i++) {
-            var nb = network.getConnectedNodes(frontier[i]);
-            for (var n = 0; n < nb.length; n++) {
-              if (!keep.has(nb[n])) { keep.add(nb[n]); next.push(nb[n]); }
-            }
-          }
-          frontier = next;
-        }
+        // Reutilise le BFS du highlight (meme profondeur).
+        var keep = collectNeighbourhood(sel[0], window.HL_DEPTH || 2).keep;
         var outNodes = [];
         nodes.get().forEach(function (nd) {
           if (keep.has(nd.id)) {
