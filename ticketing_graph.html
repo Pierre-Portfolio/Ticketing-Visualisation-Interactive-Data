@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visualisation interactive — Données de ticketing</title>
         
-            <script src="lib/bindings/utils.js"></script>
+            
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             
@@ -460,11 +460,20 @@
       // Reconstruit nodeColors (utilise par le highlight) + applique au graphe.
       function applyColors() {
         var all = nodes.get();
-        var ups = [];
         for (var i = 0; i < all.length; i++) {
-          var c = baseColor(all[i]);
-          nodeColors[all[i].id] = c;
-          if (!highlightActive) { ups.push({ id: all[i].id, color: c }); }
+          nodeColors[all[i].id] = baseColor(all[i]);
+        }
+        // Si un noeud est mis en evidence, on re-joue le highlight pour que les
+        // nouvelles couleurs de base s'appliquent immediatement (sinon le
+        // changement de mode de coloration restait invisible tant qu'on n'avait
+        // pas deselectionne le noeud).
+        if (highlightActive) {
+          var sel = network.getSelectedNodes();
+          if (sel.length) { neighbourhoodHighlight({ nodes: [sel[0]] }); return; }
+        }
+        var ups = [];
+        for (var j = 0; j < all.length; j++) {
+          ups.push({ id: all[j].id, color: nodeColors[all[j].id] });
         }
         if (ups.length) { nodes.update(ups); }
       }
@@ -502,13 +511,17 @@
         var q = ($("searchInput").value || "").trim().toLowerCase();
         $("searchMsg").textContent = "";
         if (!q) { return; }
+        // On ignore les noeuds masques par un filtre (type / periode) : les
+        // selectionner centrerait la vue sur un noeud invisible.
         var all = nodes.get();
         var hit = null;
         for (var i = 0; i < all.length; i++) {
+          if (all[i].hidden) { continue; }
           if (String(all[i].id).toLowerCase() === q) { hit = all[i]; break; }
         }
         if (!hit) {
           for (var k = 0; k < all.length; k++) {
+            if (all[k].hidden) { continue; }
             var lbl = (all[k].hiddenLabel || all[k].label || "");
             if (String(lbl).toLowerCase().indexOf(q) !== -1) { hit = all[k]; break; }
           }

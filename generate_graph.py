@@ -298,11 +298,20 @@ FEATURE_JS = """
       // Reconstruit nodeColors (utilise par le highlight) + applique au graphe.
       function applyColors() {
         var all = nodes.get();
-        var ups = [];
         for (var i = 0; i < all.length; i++) {
-          var c = baseColor(all[i]);
-          nodeColors[all[i].id] = c;
-          if (!highlightActive) { ups.push({ id: all[i].id, color: c }); }
+          nodeColors[all[i].id] = baseColor(all[i]);
+        }
+        // Si un noeud est mis en evidence, on re-joue le highlight pour que les
+        // nouvelles couleurs de base s'appliquent immediatement (sinon le
+        // changement de mode de coloration restait invisible tant qu'on n'avait
+        // pas deselectionne le noeud).
+        if (highlightActive) {
+          var sel = network.getSelectedNodes();
+          if (sel.length) { neighbourhoodHighlight({ nodes: [sel[0]] }); return; }
+        }
+        var ups = [];
+        for (var j = 0; j < all.length; j++) {
+          ups.push({ id: all[j].id, color: nodeColors[all[j].id] });
         }
         if (ups.length) { nodes.update(ups); }
       }
@@ -340,13 +349,17 @@ FEATURE_JS = """
         var q = ($("searchInput").value || "").trim().toLowerCase();
         $("searchMsg").textContent = "";
         if (!q) { return; }
+        // On ignore les noeuds masques par un filtre (type / periode) : les
+        // selectionner centrerait la vue sur un noeud invisible.
         var all = nodes.get();
         var hit = null;
         for (var i = 0; i < all.length; i++) {
+          if (all[i].hidden) { continue; }
           if (String(all[i].id).toLowerCase() === q) { hit = all[i]; break; }
         }
         if (!hit) {
           for (var k = 0; k < all.length; k++) {
+            if (all[k].hidden) { continue; }
             var lbl = (all[k].hiddenLabel || all[k].label || "");
             if (String(lbl).toLowerCase().indexOf(q) !== -1) { hit = all[k]; break; }
           }
@@ -748,6 +761,13 @@ def _require(html, anchor, what):
 
 def _postprocess(html):
     """Applique les correctifs qui ne sont pas exposes par l'API pyvis."""
+    # 0) retire la reference morte a lib/bindings/utils.js : pyvis l'emet
+    #    systematiquement mais le fichier n'est pas embarque ici (404 en
+    #    console, notamment sur la demo GitHub Pages). Le panneau custom
+    #    n'en depend pas.
+    html = html.replace(
+        '<script src="lib/bindings/utils.js"></script>', "", 1
+    )
     # 1) DOCTYPE + lang
     if not html.lstrip().startswith("<!DOCTYPE"):
         html = html.replace("<html>", '<!DOCTYPE html>\n<html lang="fr">', 1)
