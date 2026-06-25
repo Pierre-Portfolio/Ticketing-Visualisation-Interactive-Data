@@ -351,13 +351,36 @@
         overflow-y: auto; }
       #neighList li { cursor: pointer; }
       #neighList li:hover { color: #61afef; }
+
+      /* --- Theme clair (active par la classe .light sur <body>) --- */
+      body.light { background: #f4f6f9; }
+      body.light #mynetwork { background-color: #f4f6f9 !important;
+        border-color: #c9ced8; }
+      body.light #cp, body.light #details {
+        background: rgba(255,255,255,0.97); color: #1c2230;
+        border-color: #d6dbe3; box-shadow: 0 4px 18px rgba(0,0,0,0.12); }
+      body.light #cp h2, body.light #details h2 { color: #5a6677; }
+      body.light #cp section { border-top-color: #e2e6ec; }
+      body.light #cp input[type=text], body.light #cp input[type=date],
+      body.light #cp select {
+        background: #fff; color: #1c2230; border-color: #cfd5de; }
+      body.light #cp button, body.light #details button {
+        background: #eef1f6; color: #1c2230; border-color: #cfd5de; }
+      body.light #cp button:hover, body.light #details button:hover {
+        background: #e2e7ef; }
+      body.light #cp .muted { color: #6b7585; }
+      body.light #details .kv b { color: #5a6677; }
+      body.light #neighList li:hover { color: #2563c9; }
     </style>
 
     <button id="cpToggle">☰ Panneau</button>
     <div id="cp">
       <div class="row" style="justify-content:space-between">
         <h2 style="margin:0">Exploration</h2>
-        <button id="cpHide" title="Masquer">×</button>
+        <div class="row" style="gap:4px">
+          <button id="themeToggle" title="Basculer clair / sombre">🌙</button>
+          <button id="cpHide" title="Masquer">×</button>
+        </div>
       </div>
 
       <section>
@@ -710,8 +733,30 @@
         }
       }
 
+      // --- Theme clair / sombre --------------------------------------------
+      // Bascule la classe .light sur <body> (le CSS gere les panneaux et le
+      // fond), et ajuste la couleur de police des noeuds via vis pour garder
+      // les libelles lisibles sur fond clair. Choix memorise (localStorage).
+      var theme = "dark";
+      function applyTheme(t) {
+        theme = (t === "light") ? "light" : "dark";
+        document.body.classList.toggle("light", theme === "light");
+        var btn = $("themeToggle");
+        if (btn) { btn.textContent = (theme === "light") ? "☀️" : "🌙"; }
+        // Libelles : blancs sur sombre, sombres sur clair.
+        if (typeof network !== "undefined" && network) {
+          network.setOptions({ nodes: { font: { color:
+            (theme === "light") ? "#1c2230" : "#ffffff" } } });
+        }
+        try { localStorage.setItem("tg_theme", theme); } catch (e) {}
+      }
+      function toggleTheme() {
+        applyTheme(theme === "light" ? "dark" : "light");
+      }
+
       // --- Cablage ----------------------------------------------------------
       function wire() {
+        $("themeToggle").addEventListener("click", toggleTheme);
         $("searchBtn").addEventListener("click", doSearch);
         $("searchInput").addEventListener("keydown", function (e) {
           if (e.key === "Enter") { doSearch(); }
@@ -750,6 +795,9 @@
         }
         buildUI();
         wire();
+        var saved = "dark";
+        try { saved = localStorage.getItem("tg_theme") || "dark"; } catch (e) {}
+        applyTheme(saved);
       }
       start();
     })();
