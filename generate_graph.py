@@ -632,8 +632,11 @@ FEATURE_JS = """
         $("cpToggle").addEventListener("click", function () {
           $("cp").style.display = "block"; this.style.display = "none";
         });
-        // Details au clic (complete le highlight deja cable)
+        // Clic sur le graphe : mise en evidence du voisinage + panneau de
+        // details. Cable ici (et non dans le drawGraph de pyvis) car a ce
+        // stade neighbourhoodHighlight est defini et le reseau existe.
         network.on("click", function (params) {
+          neighbourhoodHighlight(params);
           if (params.nodes.length) { showDetails(params.nodes[0]); }
         });
       }
@@ -872,14 +875,16 @@ def _postprocess(html):
                      "\n                          network.setOptions({physics:false});",
             1,
         )
-    # 4) cable la mise en evidence du voisinage au clic (code rendu fonctionnel)
-    net_anchor = "network = new vis.Network(container, data, options);"
-    _require(html, net_anchor, "creation du reseau vis")
-    html = html.replace(
-        net_anchor,
-        net_anchor + '\n\n                  network.on("click", neighbourhoodHighlight);',
-        1,
-    )
+    # 4) on verifie seulement que le reseau est bien cree ici. Le clic de mise
+    #    en evidence n'est PLUS cable a cet endroit : drawGraph() s'execute avant
+    #    que HIGHLIGHT_JS (injecte en fin de <body>) ne definisse
+    #    neighbourhoodHighlight -> on referencait une fonction encore inexistante,
+    #    ce qui levait une ReferenceError AVANT l'enregistrement des handlers de
+    #    stabilisation (physique jamais coupee, barre de chargement figee). Le
+    #    cablage du clic se fait desormais dans wire() (FEATURE_JS), apres que
+    #    le reseau ET la fonction existent.
+    _require(html, "network = new vis.Network(container, data, options);",
+             "creation du reseau vis")
     # 5) panneau de fonctionnalites (filtres, recherche, details, stats,
     #    legende, coloration par attribut, export, periode, profondeur).
     palette = {t: color for t, (color, _size) in TYPE_STYLE.items()}
