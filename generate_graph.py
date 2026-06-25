@@ -19,6 +19,7 @@ Usage :
 import csv
 import json
 import os
+import re
 from pyvis.network import Network
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -280,6 +281,17 @@ FEATURE_JS = """
 
       function $(id) { return document.getElementById(id); }
       function isDate(s) { return /^\\d{4}-\\d{2}-\\d{2}$/.test(s || ""); }
+      // Echappe une valeur avant insertion dans de l'innerHTML (contexte texte
+      // ET attribut). _safe() cote Python ne neutralise que < et > pour empecher
+      // une fermeture de </script> a la generation ; ici on protege en plus
+      // l'injection d'attribut (guillemets) et les entites (&) cote client.
+      var ESC_MAP = { "&": "&amp;", "<": "&lt;", ">": "&gt;",
+                      '"': "&quot;", "'": "&#39;" };
+      function esc(s) {
+        return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+          return ESC_MAP[c];
+        });
+      }
 
       // Etat des filtres
       var activeTypes = {};
@@ -377,19 +389,19 @@ FEATURE_JS = """
         if (!n) { return; }
         var deg = network.getConnectedNodes(id);
         var html = "";
-        html += '<div class="kv"><b>' + (n.hiddenLabel || n.label || id) + '</b></div>';
-        html += '<div class="kv"><b>id</b> : ' + id + '</div>';
-        html += '<div class="kv"><b>type</b> : ' + (n.group || "") + '</div>';
-        if (n.a1) { html += '<div class="kv"><b>attr. 1</b> : ' + n.a1 + '</div>'; }
-        if (n.a2) { html += '<div class="kv"><b>attr. 2</b> : ' + n.a2 + '</div>'; }
-        if (n.a3) { html += '<div class="kv"><b>attr. 3</b> : ' + n.a3 + '</div>'; }
+        html += '<div class="kv"><b>' + esc(n.hiddenLabel || n.label || id) + '</b></div>';
+        html += '<div class="kv"><b>id</b> : ' + esc(id) + '</div>';
+        html += '<div class="kv"><b>type</b> : ' + esc(n.group || "") + '</div>';
+        if (n.a1) { html += '<div class="kv"><b>attr. 1</b> : ' + esc(n.a1) + '</div>'; }
+        if (n.a2) { html += '<div class="kv"><b>attr. 2</b> : ' + esc(n.a2) + '</div>'; }
+        if (n.a3) { html += '<div class="kv"><b>attr. 3</b> : ' + esc(n.a3) + '</div>'; }
         html += '<div class="kv"><b>voisins</b> : ' + deg.length + '</div>';
         if (deg.length) {
           html += '<ul id="neighList">';
           for (var i = 0; i < Math.min(deg.length, 50); i++) {
             var nb = nodes.get(deg[i]);
-            html += '<li data-id="' + deg[i] + '">'
-                  + ((nb && (nb.hiddenLabel || nb.label)) || deg[i]) + '</li>';
+            html += '<li data-id="' + esc(deg[i]) + '">'
+                  + esc((nb && (nb.hiddenLabel || nb.label)) || deg[i]) + '</li>';
           }
           html += '</ul>';
         }
@@ -475,9 +487,9 @@ FEATURE_JS = """
           activeTypes[t] = true;
           var col = TYPE_PALETTE[t] || "#aaaaaa";
           var lab = document.createElement("label");
-          lab.innerHTML = '<input type="checkbox" data-type="' + t + '" checked> '
-            + '<span class="swatch" style="background:' + col + '"></span>'
-            + t + ' <span class="muted">(' + typeCounts[t] + ')</span>';
+          lab.innerHTML = '<input type="checkbox" data-type="' + esc(t) + '" checked> '
+            + '<span class="swatch" style="background:' + esc(col) + '"></span>'
+            + esc(t) + ' <span class="muted">(' + typeCounts[t] + ')</span>';
           tf.appendChild(lab);
         });
         tf.addEventListener("change", function (ev) {
@@ -495,8 +507,8 @@ FEATURE_JS = """
         Object.keys(relCounts).sort().forEach(function (r) {
           activeRels[r] = true;
           var lab = document.createElement("label");
-          lab.innerHTML = '<input type="checkbox" data-rel="' + r + '" checked> '
-            + r + ' <span class="muted">(' + relCounts[r] + ')</span>';
+          lab.innerHTML = '<input type="checkbox" data-rel="' + esc(r) + '" checked> '
+            + esc(r) + ' <span class="muted">(' + relCounts[r] + ')</span>';
           rf.appendChild(lab);
         });
         rf.addEventListener("change", function (ev) {
@@ -515,7 +527,7 @@ FEATURE_JS = """
         Object.keys(TYPE_PALETTE).forEach(function (t) {
           var d = document.createElement("div");
           d.innerHTML = '<span class="swatch" style="background:'
-            + TYPE_PALETTE[t] + '"></span>' + t;
+            + esc(TYPE_PALETTE[t]) + '"></span>' + esc(t);
           leg.appendChild(d);
         });
 
@@ -532,8 +544,8 @@ FEATURE_JS = """
         s += '<div class="kv muted" style="margin-top:4px">Nœuds les plus connectés :</div>';
         hubs.forEach(function (h) {
           var nb = nodes.get(h[0]);
-          s += '<div class="kv" data-hub="' + h[0] + '" style="cursor:pointer">• '
-            + ((nb && (nb.hiddenLabel || nb.label)) || h[0])
+          s += '<div class="kv" data-hub="' + esc(h[0]) + '" style="cursor:pointer">• '
+            + esc((nb && (nb.hiddenLabel || nb.label)) || h[0])
             + ' <span class="muted">(' + h[1] + ')</span></div>';
         });
         $("stats").innerHTML = s;
@@ -771,14 +783,39 @@ def _postprocess(html):
     # 1) DOCTYPE + lang
     if not html.lstrip().startswith("<!DOCTYPE"):
         html = html.replace("<html>", '<!DOCTYPE html>\n<html lang="fr">', 1)
-    # 2) viewport + title dans le <head>
+    # 2) viewport + title + CSP dans le <head>
+    #    La CSP est une defense en profondeur : tout etant inline dans la sortie
+    #    pyvis, 'unsafe-inline' reste necessaire (la protection XSS reelle vient
+    #    de esc()/_safe), mais elle verrouille default-src a 'none', limite les
+    #    origines externes au seul CDN utilise (vis-network) et bloque
+    #    base-uri / form-action / object-src.
     _require(html, '<meta charset="utf-8">', "meta charset")
+    csp = (
+        "default-src 'none'; "
+        "script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; "
+        "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; "
+        "img-src 'self' data:; font-src 'self' data:; connect-src 'self'; "
+        "base-uri 'none'; form-action 'none'; object-src 'none'"
+    )
     head_inject = (
         '<meta charset="utf-8">\n'
+        '        <meta http-equiv="Content-Security-Policy" content="{}">\n'
         '        <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-        '        <title>{}</title>'.format(TITLE)
+        '        <title>{}</title>'.format(csp, TITLE)
     )
     html = html.replace('<meta charset="utf-8">', head_inject, 1)
+    # 2b) retire les includes Bootstrap (beta3 abandonnee depuis 2021, et de
+    #     toute facon quasi inutilisee : seules les classes card/card-body, qui
+    #     restent decoratives). Une dependance CDN figee sur une beta est une
+    #     surface d'attaque inutile.
+    html = re.sub(
+        r'\s*<link\b[^>]*bootstrap@[^>]*?/?>',
+        "", html, count=1, flags=re.IGNORECASE | re.DOTALL,
+    )
+    html = re.sub(
+        r'\s*<script\b[^>]*bootstrap@[^>]*?>\s*</script>',
+        "", html, count=1, flags=re.IGNORECASE | re.DOTALL,
+    )
     # 3) coupe la physique une fois le graphe stabilise (perf)
     anchor = "document.getElementById('bar').style.width = '496px';"
     _require(html, anchor, "fin de stabilisation")
